@@ -43,6 +43,19 @@ city_to_district = {
     "Bentota": "Galle",
     "Hikkaduwa": "Galle",
     "Mirigama": "Gampaha",
+    "Habarana": "Anuradhapura",
+}
+
+# Manual mappings for special Location strings
+manual_location_mappings = {
+    "Udawalawe National Park": {
+        "province": "Sabaragamuwa Province",
+        "district": "Ratnapura",
+    },
+    "North Central Province": {
+        "province": "North Central Province",
+        "district": "Anuradhapura",
+    },
 }
 
 # Helpers
@@ -54,49 +67,83 @@ province_pattern = re.compile(
 def extract_province(location_str):
     if not isinstance(location_str, str) or not location_str.strip():
         return None
-    # Try direct province match
-    m = province_pattern.search(location_str)
+    loc = location_str.strip()
+    # manual mapping exact match (case-insensitive)
+    for k, v in manual_location_mappings.items():
+        if k.lower() == loc.lower():
+            return v.get("province")
+    # direct match using known province names
+    m = province_pattern.search(loc)
     if m:
-        # return canonical capitalization from list
         matched = m.group(1)
-        # normalize to the one in provinces list (case-insensitive)
         for p in provinces:
             if p.lower() == matched.lower():
                 return p
         return matched
-    # If format like 'City, Province' try last token
-    parts = [p.strip() for p in location_str.split(",") if p.strip()]
-    if len(parts) >= 2:
-        # assume last token is province or region
-        return parts[-1]
+    # catch trailing 'Province' text
+    m2 = re.search(r"([A-Za-z ]+Province)\\b", loc)
+    if m2:
+        return m2.group(1).strip()
+    # comma-separated: last token might be province name without 'Province'
+    parts = [p.strip() for p in loc.split(",") if p.strip()]
+    if parts:
+        last = parts[-1]
+        for p in provinces:
+            if (
+                last.lower() == p.replace(" Province", "").lower()
+                or last.lower() == p.lower()
+            ):
+                return p
     return None
 
 
 def infer_district(row):
     city = row.get("Located_City")
     location = row.get("Location")
-    # 1) mapping
+    # manual mapping exact match
+    if isinstance(location, str):
+        loc = location.strip()
+        for k, v in manual_location_mappings.items():
+            if k.lower() == loc.lower():
+                return v.get("district")
+    # prefer explicit city mapping
     if isinstance(city, str) and city in city_to_district:
         return city_to_district[city]
-    # 2) try to extract from location string if it contains a district-like token
-    if isinstance(location, str):
-        # common patterns: 'City, Province' or 'City, District, Province'
-        parts = [p.strip() for p in location.split(",") if p.strip()]
-        # If 3 tokens, middle might be district
-        if len(parts) >= 3:
-            return parts[-2]
-        # If 2 tokens, first token often is city; use Located_City or first token
-        if len(parts) == 2:
-            first = parts[0]
-            # if first looks like a city and differs from Located_City, use first
-            if city and isinstance(city, str) and city.lower() == first.lower():
-                # can't infer district, return city_to_district if exists
-                return city_to_district.get(city)
-            # otherwise return first as district fallback
-            return first
-    # 3) fallback to Located_City
-    if isinstance(city, str) and city.strip():
-        return city
+    if not isinstance(location, str) or not location.strip():
+        return None
+    parts = [p.strip() for p in location.split(",") if p.strip()]
+    # if any part explicitly mentions 'District', use it
+    for part in parts:
+        if "District" in part:
+            return part.replace("District", "").strip()
+    # if location is just a province name, try to use city as district
+    if len(parts) == 1 and (
+        any(parts[0].lower() == p.lower() for p in provinces)
+        or "province" in parts[0].lower()
+    ):
+        if isinstance(city, str) and city.strip():
+            if city in city_to_district:
+                return city_to_district[city]
+            return city
+        return None
+    # if parts are like 'Town, District, Province' -> pick middle as district
+    if len(parts) >= 3:
+        return parts[-2]
+    # if len==2 and first is likely a district/city, return first
+    if len(parts) == 2:
+        first = parts[0]
+        if city and isinstance(city, str) and city.lower() == first.lower():
+            return city_to_district.get(city) or first
+        return first
+    # fallback: if the single token is not a province, return it
+    if len(parts) == 1:
+        single = parts[0]
+        if (
+            any(p.lower() == single.lower() for p in provinces)
+            or "province" in single.lower()
+        ):
+            return None
+        return single
     return None
 
 
