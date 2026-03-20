@@ -6,3 +6,5 @@ nltk>=3.6
 scikit-learn>=1.0
 gensim>=4.0
 wordcloud>=1.8
+pycountry>=24.6.1
+python-dotenv>=1.0.1
