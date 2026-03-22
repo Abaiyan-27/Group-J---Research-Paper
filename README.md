@@ -1,118 +1,78 @@
 # Group-J---Research-Paper
 
-## User location split (country + other)
+Final implementation of the Tourism Review Analysis Framework is available as a
+reproducible script:
 
-Use the script below to split `User_Location` into:
-- `user_country` (sovereign country)
-- `user_other` (state/region only; not city)
+- `scripts/final_tourism_analysis_framework.py`
 
-### Run (deterministic parser)
-
-```bash
-python scripts/split_user_location.py
-```
-
-Default input:
-- `processed_tourism_reviews.csv`
-
-Default output:
-- `processed_tourism_reviews_country_other.csv`
-
-### Optional LLM fallback for unresolved rows
-
-Recommended: use a `.env` file.
-
-1) Create `.env` from template:
+## Setup
 
 ```bash
-cp .env.example .env
+python -m pip install -r requirements.txt
 ```
 
-2) Edit `.env` with your provider values (`LLM_API_KEY`, `LLM_API_BASE_URL`, `LLM_MODEL`).
+If you are on Python 3.14, `gensim` is skipped automatically because stable wheels
+are not available yet for that version.
 
-3) Run:
+If you want a lighter install for quick testing (no transformer models), use:
 
 ```bash
-python scripts/split_user_location.py --use-llm --llm-model google/gemma-2-9b-it:free
+python -m pip install pandas numpy pycountry scikit-learn python-dotenv
 ```
 
-The script auto-loads `.env`.
-
-You can still use shell exports if preferred:
+## Run Final Framework
 
 ```bash
-export LLM_API_KEY="your_provider_key"
-export LLM_API_BASE_URL="https://openrouter.ai/api/v1"
-python scripts/split_user_location.py --use-llm --llm-model google/gemma-2-9b-it:free
+python scripts/final_tourism_analysis_framework.py \
+  --input-csv processed_tourism_reviews_with_locations.csv \
+  --output-csv processed_tourism_reviews_final_framework.csv
 ```
 
-You can use other free providers by setting:
+Optional flags:
 
 ```bash
-export LLM_API_KEY="your_provider_key"
-export LLM_API_BASE_URL="https://your-provider.example/v1"
-python scripts/split_user_location.py --use-llm --llm-model your-model-name
+# Faster fallback (no transformer inference)
+python scripts/final_tourism_analysis_framework.py --disable-models
+
+# Skip BERTopic step
+python scripts/final_tourism_analysis_framework.py --disable-topic
 ```
 
-CLI flags are also supported:
+## Models Used (Final)
 
-```bash
-python scripts/split_user_location.py --use-llm \
-	--llm-api-key "your_provider_key" \
-	--llm-api-base-url "https://your-provider.example/v1" \
-	--llm-model "your-model-name"
-```
+Sentiment ensemble:
 
-The script appends these columns:
-- `user_country`
-- `user_other`
-- `user_location_parse_method`
-- `user_location_parse_confidence`
+- `cardiffnlp/twitter-roberta-base-sentiment`
+- `siebert/sentiment-roberta-large-english`
+- `finiteautomata/bertweet-base-sentiment-analysis`
 
-## Compare two LLM providers
+Emotion model:
 
-Run two separate outputs (example: OpenRouter vs Groq), then compare them.
+- `j-hartmann/emotion-english-distilroberta-base`
 
-Recommended: set provider-specific variables in `.env`:
-- `OPENROUTER_API_KEY`, `OPENROUTER_API_BASE_URL`, `OPENROUTER_MODEL`
-- `GROQ_API_KEY`, `GROQ_API_BASE_URL`, `GROQ_MODEL`
-- optional output controls: `OUTPUT_A_CSV`, `OUTPUT_B_CSV`, `MISMATCHES_OUT`
+Topic modeling:
 
-Then run everything in one command:
+- `BERTopic`
+- embedding model: `sentence-transformers/all-MiniLM-L6-v2`
 
-```bash
-python scripts/run_provider_comparison.py
-```
+Keyword extraction support:
 
-### Run A (OpenRouter example)
+- `KeyBERT` with `sentence-transformers/all-MiniLM-L6-v2` (supporting topic interpretation)
 
-```bash
-export LLM_API_KEY="your_openrouter_key"
-export LLM_API_BASE_URL="https://openrouter.ai/api/v1"
-python scripts/split_user_location.py --use-llm \
-	--llm-model "google/gemma-2-9b-it:free" \
-	--output-csv processed_tourism_reviews_country_other_openrouter.csv
-```
+## Output Columns Added
 
-### Run B (Groq example)
+The script generates the framework columns below:
 
-```bash
-export LLM_API_KEY="your_groq_key"
-export LLM_API_BASE_URL="https://api.groq.com/openai/v1"
-python scripts/split_user_location.py --use-llm \
-	--llm-model "llama-3.3-70b-versatile" \
-	--output-csv processed_tourism_reviews_country_other_groq.csv
-```
-
-### Compare results
-
-```bash
-python scripts/compare_location_runs.py \
-	--file-a processed_tourism_reviews_country_other_openrouter.csv \
-	--file-b processed_tourism_reviews_country_other_groq.csv \
-	--label-a openrouter \
-	--label-b groq \
-	--mismatches-out location_llm_mismatches.csv
-```
-
-This prints resolution rates and agreement metrics, and writes row-level differences to `location_llm_mismatches.csv`.
+- `review_count_per_location`, `review_count_per_city`
+- `avg_rating_location`, `avg_rating_city`, `rating_class`
+- `combined_sentiment`, `sentiment_score`, `emotion`, `sentiment_rating_gap`
+- `dominant_topic`, `topic_probability`, `topic_keywords`, `review_theme`
+- `province`, `district`, `tourism_region`
+- `user_country`, `user_region`
+- `travel_year`, `travel_month`, `travel_season`, `published_year`, `published_month`, `review_delay_days`
+- `review_length`, `word_count`, `title_length`, `reviewer_experience_level`, `helpfulness_ratio`
+- `has_helpful_votes`, `helpful_vote_bucket`, `review_quality_score`
+- `rating_sentiment_match`, `inconsistency_flag`
+- `destination_avg_rating`, `destination_review_count`, `destination_sentiment_mean`
+- `length_bucket`, `avg_helpful_by_length`, `avg_rating_by_length`
+- `destination_rank_by_rating`, `destination_rank_by_reviews`, `popularity_vs_quality_gap`
