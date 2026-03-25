@@ -1,0 +1,16 @@
+pandas>=1.3
+numpy>=1.21
+matplotlib>=3.4
+seaborn>=0.11
+nltk>=3.6
+scikit-learn>=1.0
+gensim>=4.0; python_version < "3.14"
+wordcloud>=1.8
+pycountry>=24.6.1
+python-dotenv>=1.0.1
+torch>=2.1
+transformers>=4.40
+sentence-transformers>=2.7
+bertopic>=0.16
+keybert>=0.8
+tqdm>=4.66
