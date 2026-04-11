@@ -80,7 +80,6 @@ venv.bak/
 Thumbs.db
 
 # Project specific
-*.csv
 *.xlsx
 *.xls
 *.json
