@@ -1,0 +1,3281 @@
+normalized_location,country,status
+,Unknown,not_found_offline
+"100 mile house, canada",Canada,direct_match
+"6th of october city, egypt",Egypt,direct_match
+"aachen, germany",Germany,direct_match
+aalborg,Unknown,unknown_fallback_cache
+"aalst, belgium",Belgium,direct_match
+"aalter, belgi",Unknown,unknown_fallback_cache
+"aarau, switzerland",Switzerland,direct_match
+"aarhus, denmark",Denmark,direct_match
+"aars, denmark",Denmark,direct_match
+"aarschot, belgium",Belgium,direct_match
+"abbotsford, australia",Australia,direct_match
+"abbottabad, pakistan",Pakistan,direct_match
+"aberdeen, scotland, united kingdom",United Kingdom,direct_match
+"aberdeen, united kingdom",United Kingdom,direct_match
+aberdeenshire,Unknown,unknown_fallback_cache
+"abergavenny, united kingdom",United Kingdom,direct_match
+"abergele, united kingdom",United Kingdom,direct_match
+"abersoch, united kingdom",United Kingdom,direct_match
+abertawe,Unknown,unknown_fallback_cache
+"aberystwyth, united kingdom",United Kingdom,direct_match
+"abingdon, united kingdom",United Kingdom,direct_match
+"aboyne, united kingdom",United Kingdom,direct_match
+"abu dhabi, united arab emirates",United Arab Emirates,direct_match
+"abuja, nigeria",Nigeria,direct_match
+"addis ababa, ethiopia",Ethiopia,direct_match
+"addison, texas",Unknown,unknown_fallback_cache
+adelaide,Unknown,unknown_fallback_cache
+"adelaide hills, australia",Australia,direct_match
+adelaide sth aust,Unknown,unknown_fallback_cache
+"adelaide, australia",Australia,direct_match
+"aeschiried, switzerland",Switzerland,direct_match
+"agde, france",France,direct_match
+"agios gordios, greece",Greece,direct_match
+"agra, india",India,direct_match
+"ahmadi, kuwait",Kuwait,direct_match
+"ahmedabad, india",India,direct_match
+"ahmednagar, india",India,direct_match
+"airdrie, scotland, united kingdom",United Kingdom,direct_match
+"airlie beach, australia",Australia,direct_match
+"ait azzi, morocco",Morocco,direct_match
+"aix-en-provence, france",France,direct_match
+"ajax, canada",Canada,direct_match
+"ajman, united arab emirates",United Arab Emirates,direct_match
+"akaroa, new zealand",New Zealand,direct_match
+"al ahsa, saudi arabia",Saudi Arabia,direct_match
+al ain,Albania,direct_match
+"al ain, united arab emirates",United Arab Emirates,direct_match
+"al hamala, bahrain",Bahrain,direct_match
+"al jubail, saudi arabia",Saudi Arabia,direct_match
+"al kheesa, qatar",Qatar,direct_match
+"al khobar, saudi arabia",Saudi Arabia,direct_match
+"al madinah province, saudi arabia",Saudi Arabia,direct_match
+"al wakrah, qatar",Qatar,direct_match
+"al-rayyan, qatar",Qatar,direct_match
+"albany, australia",Australia,direct_match
+"albany, new york",Unknown,unknown_fallback_cache
+"alberta, canada",Canada,direct_match
+"albion park rail, australia",Australia,direct_match
+"albion park, australia",Australia,direct_match
+"albox, spain",Spain,direct_match
+"albufeira, portugal",Portugal,direct_match
+"albuquerque, new mexico",Mexico,direct_match
+"albury, australia",Australia,direct_match
+"alcester, united kingdom",United Kingdom,direct_match
+"alderley edge, united kingdom",United Kingdom,direct_match
+"alderney, united kingdom",United Kingdom,direct_match
+"aldershot, united kingdom",United Kingdom,direct_match
+aldonaviciuliene gmail.com,Comoros,direct_match
+"alesund, norway",Norway,direct_match
+"alexandria, egypt",Egypt,direct_match
+"alexandria, united states",United States,direct_match
+"alexandria, virginia",Unknown,unknown_fallback_cache
+"alfold, united kingdom",United Kingdom,direct_match
+algeria,Algeria,direct_match
+"alicante, spain",Spain,direct_match
+"alice springs, australia",Australia,direct_match
+"allahabad, india",India,direct_match
+"almaty, kazakhstan",Kazakhstan,direct_match
+"almere, the netherlands",Netherlands,direct_match
+"almeria, spain",Spain,direct_match
+"alnwick, united kingdom",United Kingdom,direct_match
+alsager,Unknown,unknown_fallback_cache
+"altea, spain",Spain,direct_match
+"alton, united kingdom",United Kingdom,direct_match
+"altrincham, united kingdom",United Kingdom,direct_match
+"amaroo, australia",Australia,direct_match
+"ambikapur, india",India,direct_match
+"amble, united kingdom",United Kingdom,direct_match
+"americus, georgia",Georgia,direct_match
+"amersfoort, the netherlands",Netherlands,direct_match
+"amersham, united kingdom",United Kingdom,direct_match
+"amman, jordan",Jordan,direct_match
+"ammanford, united kingdom",United Kingdom,direct_match
+"amritsar, india",India,direct_match
+"amstelveen, the netherlands",Netherlands,direct_match
+amsterdam,Unknown,unknown_fallback_cache
+"amsterdam, noord-holland, netherlands",Netherlands,direct_match
+"amsterdam, pays-bas",Unknown,unknown_fallback_cache
+"amsterdam, the netherlands",Netherlands,direct_match
+"amwaj islands, bahrain",Bahrain,direct_match
+"anaconda, montana",Unknown,unknown_fallback_cache
+"ancaster, canada",Canada,direct_match
+"anchorage, alaska",Unknown,unknown_fallback_cache
+"andover, united kingdom",United Kingdom,direct_match
+"andreyevka, russia",Unknown,unknown_fallback_cache
+"anglesey, united kingdom",United Kingdom,direct_match
+"ankara, turkiye",Unknown,unknown_fallback_cache
+"anna bay, australia",Australia,direct_match
+"annan, united kingdom",United Kingdom,direct_match
+"ansbach, germany",Germany,direct_match
+"ansiao, portugal",Portugal,direct_match
+"antibes, france",France,direct_match
+"antwerp, belgium",Belgium,direct_match
+antwerpen,Unknown,unknown_fallback_cache
+"arad, romania",Romania,direct_match
+"arambol, india",India,direct_match
+"arcata, california",Unknown,unknown_fallback_cache
+"ardooie, belgium",Belgium,direct_match
+"arendal, norway",Norway,direct_match
+"arequipa, peru",Peru,direct_match
+"argenton-sur-creuse, france",France,direct_match
+"argyll and bute, united kingdom",United Kingdom,direct_match
+"arkansas, usa",United States,direct_match
+"arlington, texas",Unknown,unknown_fallback_cache
+"arlington, virginia",Unknown,unknown_fallback_cache
+"armenia, belize",Armenia,direct_match
+"arnhem, the netherlands",Netherlands,direct_match
+"arona, italy",Italy,direct_match
+"arta, spain",Spain,direct_match
+"arth, switzerland",Switzerland,direct_match
+"arundel, australia",Australia,direct_match
+"arundel, united kingdom",United Kingdom,direct_match
+"arusha region, tanzania","Tanzania, United Republic of",direct_match
+"aschaffenburg, germany",Germany,direct_match
+"ascot, united kingdom",United Kingdom,direct_match
+"ashbourne, united kingdom",United Kingdom,direct_match
+"ashburton, australia",Australia,direct_match
+"ashburton, new zealand",New Zealand,direct_match
+"ashfield, australia",Australia,direct_match
+"ashford, england, united kingdom",United Kingdom,direct_match
+"ashford, middlesex, uk",United Kingdom,direct_match
+"ashford, united kingdom",United Kingdom,direct_match
+ashland,Unknown,unknown_fallback_cache
+"ashtead, united kingdom",United Kingdom,direct_match
+asia,Unknown,unknown_fallback_cache
+"askwith, united kingdom",United Kingdom,direct_match
+"assagao, india",India,direct_match
+"asse, belgium",Belgium,direct_match
+"assen, the netherlands",Netherlands,direct_match
+"assendelft, the netherlands",Netherlands,direct_match
+"astana, kazakhstan",Kazakhstan,direct_match
+"astoria, new york",Unknown,unknown_fallback_cache
+"athens, greece",Greece,direct_match
+"atlacomulco, mexico",Mexico,direct_match
+"atlanta, georgia",Georgia,direct_match
+"auburn, maine",Unknown,unknown_fallback_cache
+"auchtermuchty, scotland, united kingdom",United Kingdom,direct_match
+auckland,Unknown,unknown_fallback_cache
+"auckland central, new zealand",New Zealand,direct_match
+"auckland, new zealand",New Zealand,direct_match
+"auroville, india",India,direct_match
+aussie,Unknown,unknown_fallback_cache
+"austell, georgia",Georgia,direct_match
+"austin, texas",Unknown,unknown_fallback_cache
+australia,Australia,direct_match
+"australia plains, australia",Australia,direct_match
+"australian capital territory, australia",Australia,direct_match
+"austrey, united kingdom",United Kingdom,direct_match
+austria,Austria,direct_match
+"aventura, florida, usa",United States,direct_match
+"avoca beach, australia",Australia,direct_match
+"awasa, ethiopia",Ethiopia,direct_match
+"aylesbury, united kingdom",United Kingdom,direct_match
+"ayr, united kingdom",United Kingdom,direct_match
+"ayrshire, scotland",United Kingdom,direct_match
+"baarn, the netherlands",Netherlands,direct_match
+"babylon, new york",Unknown,unknown_fallback_cache
+"bacolod, philippines",Philippines,direct_match
+"bacup, united kingdom",United Kingdom,direct_match
+"bad durkheim, germany",Germany,direct_match
+"bad krozingen, germany",Germany,direct_match
+"baden, switzerland",Switzerland,direct_match
+bahrain,Bahrain,direct_match
+"bairnsdale, australia",Australia,direct_match
+"bajawa, indonesia",Indonesia,direct_match
+"baku, azerbaijan",Azerbaijan,direct_match
+"balashikha, russia",Unknown,unknown_fallback_cache
+"balclutha, new zealand",New Zealand,direct_match
+"baldock, united kingdom",United Kingdom,direct_match
+bali,Unknown,unknown_fallback_cache
+"bali, indonesia",Indonesia,direct_match
+"ballarat, australia",Australia,direct_match
+"balmain, australia",Australia,direct_match
+"balmoral, australia",Australia,direct_match
+"baltimore, maryland",Unknown,unknown_fallback_cache
+"baltimore, united states",United States,direct_match
+"bamako, mali",Mali,direct_match
+"banbury, united kingdom",United Kingdom,direct_match
+"bandar abbas, iran","Iran, Islamic Republic of",direct_match
+"bandar seri begawan, brunei darussalam",Brunei Darussalam,direct_match
+bandaragama,Unknown,unknown_fallback_cache
+"bandung, indonesia",Indonesia,direct_match
+"banff, canada",Canada,direct_match
+bangalore,Unknown,unknown_fallback_cache
+"bangalore district, india",India,direct_match
+"bangalore, india",India,direct_match
+"bangalore, karnataka, india",India,direct_match
+bangkok,Unknown,unknown_fallback_cache
+"bangkok, thailand",Thailand,direct_match
+bangladesh,Bangladesh,direct_match
+"bangor, united kingdom",United Kingdom,direct_match
+"banksia beach, australia",Australia,direct_match
+banwell,Unknown,unknown_fallback_cache
+barcelona,Unknown,unknown_fallback_cache
+"barcelona, spain",Spain,direct_match
+"barendrecht, the netherlands",Netherlands,direct_match
+"barka, oman",Oman,direct_match
+"barnard castle, united kingdom",United Kingdom,direct_match
+"barnet, united kingdom",United Kingdom,direct_match
+"barnham, united kingdom",United Kingdom,direct_match
+"barnoldswick, united kingdom",United Kingdom,direct_match
+"barnsley, united kingdom",United Kingdom,direct_match
+"barnstaple, united kingdom",United Kingdom,direct_match
+"barrie, canada",Canada,direct_match
+"barrow-in-furness, united kingdom",United Kingdom,direct_match
+"barto, pa",Panama,direct_match
+"barueri, sp",Unknown,unknown_fallback_cache
+basel,Unknown,unknown_fallback_cache
+"basel, switzerland",Switzerland,direct_match
+"basildon, united kingdom",United Kingdom,direct_match
+basingstoke,Unknown,unknown_fallback_cache
+"basingstoke, united kingdom",United Kingdom,direct_match
+"batam, indonesia",Indonesia,direct_match
+"bath, united kingdom",United Kingdom,direct_match
+"bathmen, the netherlands",Netherlands,direct_match
+"bathurst, australia",Australia,direct_match
+"batroun, lebanon",Lebanon,direct_match
+"battambang province, cambodia",Cambodia,direct_match
+"bavaria, germany",Germany,direct_match
+bay area,Unknown,unknown_fallback_cache
+"bay of plenty region, new zealand",New Zealand,direct_match
+"beaumaris, australia",Australia,direct_match
+"beavercreek, ohio",Unknown,unknown_fallback_cache
+"beckenham, united kingdom",United Kingdom,direct_match
+"bedale, united kingdom",United Kingdom,direct_match
+"bedford, united kingdom",United Kingdom,direct_match
+bedfordshire,Unknown,unknown_fallback_cache
+"bedfordview, south africa",South Africa,direct_match
+"bedlington, united kingdom",United Kingdom,direct_match
+"bedworth, england, united kingdom",United Kingdom,direct_match
+"beersheba, israel",Israel,direct_match
+"begues, spain",Spain,direct_match
+beijing,Unknown,unknown_fallback_cache
+"beijing, china",China,direct_match
+"beilen, the netherlands",Netherlands,direct_match
+"beirut, lebanon",Lebanon,direct_match
+"beitun, taichung",Unknown,unknown_fallback_cache
+"belem, pa",Panama,direct_match
+belfast,Unknown,unknown_fallback_cache
+"belfast, united kingdom",United Kingdom,direct_match
+"belgaum, india",India,direct_match
+belgium,Belgium,direct_match
+"belgrade, serbia",Serbia,direct_match
+"belinchon, spain",Spain,direct_match
+"belize cayes, belize",Belize,direct_match
+"bellevue, washington",Unknown,unknown_fallback_cache
+"bellingen, australia",Australia,direct_match
+"bellshill, united kingdom",United Kingdom,direct_match
+"belo horizonte, mg",Madagascar,direct_match
+"belrose, australia",Australia,direct_match
+"belthangady, india",India,direct_match
+"bemmel, the netherlands",Netherlands,direct_match
+bendigo,Unknown,unknown_fallback_cache
+"bendigo, australia",Australia,direct_match
+"bendigo, victoria, australia",Australia,direct_match
+"bengaluru, india",India,direct_match
+"benidorm, spain",Spain,direct_match
+"benson, united kingdom",United Kingdom,direct_match
+bentota,Unknown,unknown_fallback_cache
+bequia,Unknown,unknown_fallback_cache
+"bere regis, united kingdom",United Kingdom,direct_match
+"berga, spain",Spain,direct_match
+"bergamo, italy",Italy,direct_match
+"bergen op zoom, the netherlands",Netherlands,direct_match
+"bergen, norway",Norway,direct_match
+"berkeley, california",Unknown,unknown_fallback_cache
+"berkeley, california, united states",United States,direct_match
+"berkhamsted, united kingdom",United Kingdom,direct_match
+berks,Unknown,unknown_fallback_cache
+berkshire,Unknown,unknown_fallback_cache
+"berkshire, united kingdom",United Kingdom,direct_match
+"berlare, belgium",Belgium,direct_match
+"berlin, germany",Germany,direct_match
+bern,Unknown,unknown_fallback_cache
+"bern, switzerland",Switzerland,direct_match
+"berowra heights, australia",Australia,direct_match
+"berwick upon tweed, united kingdom",United Kingdom,direct_match
+"berwick, australia",Australia,direct_match
+"bethpage, new york",Unknown,unknown_fallback_cache
+"beverley, united kingdom",United Kingdom,direct_match
+"bexhill-on-sea, united kingdom",United Kingdom,direct_match
+"bexley, united kingdom",United Kingdom,direct_match
+"beziers, france",France,direct_match
+"bhilai, india",India,direct_match
+"bhilwara, india",India,direct_match
+"bhiwadi, india",India,direct_match
+"bhopal, india",India,direct_match
+"bhubaneswar, india",India,direct_match
+"biarritz, france",France,direct_match
+"bibra lake, australia",Australia,direct_match
+"bicester, united kingdom",United Kingdom,direct_match
+"bideford, united kingdom",United Kingdom,direct_match
+"bielefeld, germany",Germany,direct_match
+"biggleswade, united kingdom",United Kingdom,direct_match
+"bikfaya, lebanon",Lebanon,direct_match
+"bilaspur, india",India,direct_match
+"bilekahalli, india",India,direct_match
+billericay,Unknown,unknown_fallback_cache
+"billericay, united kingdom",United Kingdom,direct_match
+"billingham, united kingdom",United Kingdom,direct_match
+"billingshurst, united kingdom",United Kingdom,direct_match
+"binfield, united kingdom",United Kingdom,direct_match
+"bintan island, indonesia",Indonesia,direct_match
+"binyamina, israel",Israel,direct_match
+"birkirkara, malta",Malta,direct_match
+birmingham,Unknown,unknown_fallback_cache
+"birmingham, uk",United Kingdom,direct_match
+"birmingham, united kingdom",United Kingdom,direct_match
+"bishop auckland, united kingdom",United Kingdom,direct_match
+"bishops stortford, united kingdom",United Kingdom,direct_match
+bittern,Unknown,unknown_fallback_cache
+"black rock, australia",Australia,direct_match
+"blackburn, united kingdom",United Kingdom,direct_match
+"blackpool, united kingdom",United Kingdom,direct_match
+"blantyre, malawi",Malawi,direct_match
+"blarney, ireland",Ireland,direct_match
+"blenheim, new zealand",New Zealand,direct_match
+"bli bli, australia",Australia,direct_match
+"blockley, united kingdom",United Kingdom,direct_match
+"blyth, united kingdom",United Kingdom,direct_match
+"boca raton, florida",Unknown,unknown_fallback_cache
+"boechout, belgium",Belgium,direct_match
+"bognor regis, united kingdom",United Kingdom,direct_match
+"bogota, colombia",Colombia,direct_match
+"boise, idaho",Unknown,unknown_fallback_cache
+"bologna, italy",Italy,direct_match
+"bolton, united kingdom",United Kingdom,direct_match
+bombay,Unknown,unknown_fallback_cache
+"bongaigaon, india",India,direct_match
+"bonheiden, belgium",Belgium,direct_match
+"bonn, germany",Germany,direct_match
+"boortmeerbeek, belgium",Belgium,direct_match
+"bophut, thailand",Thailand,direct_match
+"boras, sweden",Sweden,direct_match
+"bordeaux, france",France,direct_match
+"bordon, united kingdom",United Kingdom,direct_match
+"borehamwood, united kingdom",United Kingdom,direct_match
+boston,Unknown,unknown_fallback_cache
+"boston spa, united kingdom",United Kingdom,direct_match
+"boston, massachusetts",Unknown,unknown_fallback_cache
+"bothell, washington",Unknown,unknown_fallback_cache
+"boulder, colorado",Unknown,unknown_fallback_cache
+"bouloc, france",France,direct_match
+"boulogne-billancourt, france",France,direct_match
+"bourne, united kingdom",United Kingdom,direct_match
+"bournemouth, united kingdom",United Kingdom,direct_match
+"bovenkarspel, the netherlands",Netherlands,direct_match
+"bowral, australia",Australia,direct_match
+"box hill, australia",Australia,direct_match
+"boynton beach, florida",Unknown,unknown_fallback_cache
+"bozeman, montana",Unknown,unknown_fallback_cache
+"brackla, united kingdom",United Kingdom,direct_match
+"bracknell, united kingdom",United Kingdom,direct_match
+"bradenton, florida",Unknown,unknown_fallback_cache
+"bradford, united kingdom",United Kingdom,direct_match
+"braga, portugal",Portugal,direct_match
+"braintree, england, united kingdom",United Kingdom,direct_match
+"braintree, united kingdom",United Kingdom,direct_match
+brampton,Unknown,unknown_fallback_cache
+"brampton, canada",Canada,direct_match
+"brandon, null, united kingdom",United Kingdom,direct_match
+"bratislava region, slovakia",Slovakia,direct_match
+"bratislava, slovakia",Slovakia,direct_match
+"bray on thames, united kingdom",United Kingdom,direct_match
+"braybrook, australia",Australia,direct_match
+"breda, the netherlands",Netherlands,direct_match
+"bremen, germany",Germany,direct_match
+"brentonico, italy",Italy,direct_match
+"brentwood, united kingdom",United Kingdom,direct_match
+"brescia, italy",Italy,direct_match
+"bretignolles sur mer, france",France,direct_match
+"brewood, united kingdom",United Kingdom,direct_match
+"brezno, slovakia",Slovakia,direct_match
+"briarcliff manor, new york",Unknown,unknown_fallback_cache
+"bridge, united kingdom",United Kingdom,direct_match
+"bridgend, united kingdom",United Kingdom,direct_match
+"bridgetown, barbados",Barbados,direct_match
+"bridgewater, new jersey",Jersey,direct_match
+"bridgnorth, united kingdom",United Kingdom,direct_match
+"bridgwater, united kingdom",United Kingdom,direct_match
+"bridlington, united kingdom",United Kingdom,direct_match
+"bridport, united kingdom",United Kingdom,direct_match
+"brigg, united kingdom",United Kingdom,direct_match
+"brighton and hove, united kingdom",United Kingdom,direct_match
+"brighton, australia",Australia,direct_match
+"brighton, united kingdom",United Kingdom,direct_match
+"brigton, england",United Kingdom,direct_match
+brisbane,Unknown,unknown_fallback_cache
+"brisbane region, australia",Australia,direct_match
+"brisbane, australia",Australia,direct_match
+"brisbane, queensland, australia",Australia,direct_match
+bristol,Unknown,unknown_fallback_cache
+"bristol, england",United Kingdom,direct_match
+"bristol, england, united kingdom",United Kingdom,direct_match
+"bristol, united kingdom",United Kingdom,direct_match
+"briston, united kingdom",United Kingdom,direct_match
+"british columbia, canada",Canada,direct_match
+"brixham, united kingdom",United Kingdom,direct_match
+"brixworth, united kingdom",United Kingdom,direct_match
+"brno, czech republic",Czechia,direct_match
+"broadstairs, united kingdom",United Kingdom,direct_match
+"broken hill, australia",Australia,direct_match
+"bromley, united kingdom",United Kingdom,direct_match
+"bromma, sweden",Sweden,direct_match
+"bromsgrove, united kingdom",United Kingdom,direct_match
+"bronshoej, denmark",Denmark,direct_match
+"brooklyn, new york",Unknown,unknown_fallback_cache
+"brooklyn, ny",Unknown,unknown_fallback_cache
+"broome, australia",Australia,direct_match
+"brora, united kingdom",United Kingdom,direct_match
+"broulee, australia",Australia,direct_match
+"brunswick heads, australia",Australia,direct_match
+"brussels, belgium",Belgium,direct_match
+bucharest,Unknown,unknown_fallback_cache
+"bucharest, romania",Romania,direct_match
+"buckfastleigh, united kingdom",United Kingdom,direct_match
+"buckhead, georgia",Georgia,direct_match
+"buckhurst hill, united kingdom",United Kingdom,direct_match
+"buckingham, united kingdom",United Kingdom,direct_match
+buckinghamshire,Unknown,unknown_fallback_cache
+"buckinghamshire, united kingdom",United Kingdom,direct_match
+"bucks, england",United Kingdom,direct_match
+bucuresti,Unknown,unknown_fallback_cache
+budapest,Unknown,unknown_fallback_cache
+"budapest, hungary",Hungary,direct_match
+"bude, united kingdom",United Kingdom,direct_match
+buderim,Unknown,unknown_fallback_cache
+"buderim, australia",Australia,direct_match
+"buderim, queensland, australia",Australia,direct_match
+"budgewoi, australia",Australia,direct_match
+"buenos aires, argentina",Argentina,direct_match
+"bukit mertajam, malaysia",Malaysia,direct_match
+"bulandshahr, india",India,direct_match
+"bulawayo, zimbabwe",Zimbabwe,direct_match
+"bunbury, australia",Australia,direct_match
+"bunbury, united kingdom",United Kingdom,direct_match
+"bundaberg, australia",Australia,direct_match
+"bundi, india",India,direct_match
+"bundoora, australia",Australia,direct_match
+"bungay, united kingdom",United Kingdom,direct_match
+"burgdorf, switzerland",Switzerland,direct_match
+"burgess hill, united kingdom",United Kingdom,direct_match
+"burley, united kingdom",United Kingdom,direct_match
+"burlington, canada",Canada,direct_match
+"burnaby, canada",Canada,direct_match
+"burnley, united kingdom",United Kingdom,direct_match
+"burnside, australia",Australia,direct_match
+"burscheid, germany",Germany,direct_match
+"burton upon trent, united kingdom",United Kingdom,direct_match
+"burton, texas",Unknown,unknown_fallback_cache
+burton-on-trent,Unknown,unknown_fallback_cache
+"burwash, united kingdom",United Kingdom,direct_match
+"bury st edmunds, uk",Sao Tome and Principe,direct_match
+"bury st. edmunds, united kingdom",United Kingdom,direct_match
+"bury, united kingdom",United Kingdom,direct_match
+"busan, south korea","Korea, Republic of",direct_match
+"bushey, united kingdom",United Kingdom,direct_match
+"busselton, australia",Australia,direct_match
+"bussum, the netherlands",Netherlands,direct_match
+"buxtehude, germany",Germany,direct_match
+"buxton, united kingdom",United Kingdom,direct_match
+"bydgoszcz, poland",Poland,direct_match
+"byron bay, australia",Australia,direct_match
+"bystrice nad pernstejnem, czech republic",Czechia,direct_match
+"cadishead, united kingdom",United Kingdom,direct_match
+"caen, france",France,direct_match
+"caerleon, united kingdom",United Kingdom,direct_match
+"caernarfon, united kingdom",United Kingdom,direct_match
+"caerphilly, united kingdom",United Kingdom,direct_match
+"caersws, united kingdom",United Kingdom,direct_match
+"cagliari, italy",Italy,direct_match
+"cairns, australia",Australia,direct_match
+"cairns, queensland",Unknown,unknown_fallback_cache
+"cairns, queensland, australia",Australia,direct_match
+cairo,Unknown,unknown_fallback_cache
+"cairo governorate, egypt",Egypt,direct_match
+"cairo, egypt",Egypt,direct_match
+"calangute, india",India,direct_match
+"calcutta, west bengal, india",India,direct_match
+"calgary, canada",Canada,direct_match
+california,Unknown,unknown_fallback_cache
+"california desert, california",Unknown,unknown_fallback_cache
+"callanish, united kingdom",United Kingdom,direct_match
+"calne, united kingdom",United Kingdom,direct_match
+"caloundra, australia",Australia,direct_match
+"calpe, spain",Spain,direct_match
+"camberley, surrey",Unknown,unknown_fallback_cache
+"camberley, united kingdom",United Kingdom,direct_match
+camberwell,Unknown,unknown_fallback_cache
+"camberwell, australia",Australia,direct_match
+cambridge uk,United Kingdom,direct_match
+"cambridge, massachusetts",Unknown,unknown_fallback_cache
+"cambridge, ontario",Unknown,unknown_fallback_cache
+"cambridge, united kingdom",United Kingdom,direct_match
+"cambridgeshire, united kingdom",United Kingdom,direct_match
+"camden, united kingdom",United Kingdom,direct_match
+"camp pendleton, california",Unknown,unknown_fallback_cache
+canada,Canada,direct_match
+"canada de calatrava, spain",Canada,direct_match
+"canadensis, pa",Panama,direct_match
+"canberra, act",Unknown,unknown_fallback_cache
+"canberra, australia",Australia,direct_match
+"cancun, mexico",Mexico,direct_match
+"candolim, india",India,direct_match
+"canggu, indonesia",Indonesia,direct_match
+"cannes, france",France,direct_match
+"cannes, provence-alpes-cote d azur, france",France,direct_match
+"cannington, australia",Australia,direct_match
+"cannon creek, australia",Australia,direct_match
+"canterbury, australia",Australia,direct_match
+"canterbury, united kingdom",United Kingdom,direct_match
+"canton of geneva, switzerland",Switzerland,direct_match
+"canton of neuchatel, switzerland",Switzerland,direct_match
+"canton of zurich, switzerland",Switzerland,direct_match
+"canvey island, united kingdom",United Kingdom,direct_match
+cape town,Unknown,unknown_fallback_cache
+"cape town central, south africa",South Africa,direct_match
+"cape town, south africa",South Africa,direct_match
+cape verde,Unknown,unknown_fallback_cache
+"cape woolamai, australia",Australia,direct_match
+"capelle aan den ijssel, the netherlands",Netherlands,direct_match
+"caracas, venezuela","Venezuela, Bolivarian Republic of",direct_match
+cardiff,Unknown,unknown_fallback_cache
+"cardiff, united kingdom",United Kingdom,direct_match
+"cardiff-by-the-sea, california",Belarus,direct_match
+caribbean,Unknown,unknown_fallback_cache
+carlisle,Unknown,unknown_fallback_cache
+"carlisle, united kingdom",United Kingdom,direct_match
+"carmarthen, united kingdom",United Kingdom,direct_match
+carnforth,Unknown,unknown_fallback_cache
+"carnforth, united kingdom",United Kingdom,direct_match
+"carshalton, united kingdom",United Kingdom,direct_match
+"cartagena, colombia",Colombia,direct_match
+"carvoeiro, portugal",Portugal,direct_match
+"cary, north carolina",Unknown,unknown_fallback_cache
+"casablanca, morocco",Morocco,direct_match
+"casper, wyoming",Unknown,unknown_fallback_cache
+"castel goffredo, italy",Italy,direct_match
+"castle donington, united kingdom",United Kingdom,direct_match
+"castle hill, australia",Australia,direct_match
+"cavan, ireland",Ireland,direct_match
+"caythorpe, united kingdom",United Kingdom,direct_match
+"celje, slovenia",Slovenia,direct_match
+"centre hall, pennsylvania, united states",United States,direct_match
+"centurion, south africa",South Africa,direct_match
+"ceske budejovice, czech republic",Czechia,direct_match
+"cesky krumlov, czech republic",Czechia,direct_match
+chagford,Unknown,unknown_fallback_cache
+"chalfont st. giles, united kingdom",United Kingdom,direct_match
+"chamni, thailand",Thailand,direct_match
+"chamonix, france",France,direct_match
+"chandigarh, india",India,direct_match
+"changchun, china",China,direct_match
+"chania prefecture, greece",Greece,direct_match
+"chapin, south carolina",Unknown,unknown_fallback_cache
+"chapora, india",India,direct_match
+"chardstock, united kingdom",United Kingdom,direct_match
+"charlbury, united kingdom",United Kingdom,direct_match
+"charleston, south carolina",Unknown,unknown_fallback_cache
+"charlestown, australia",Australia,direct_match
+"chatel-saint denis, switzerland",Switzerland,direct_match
+"chatham, united kingdom",United Kingdom,direct_match
+"chaweng, thailand",Thailand,direct_match
+chelmsford,Unknown,unknown_fallback_cache
+"chelmsford, united kingdom",United Kingdom,direct_match
+cheltenham,Unknown,unknown_fallback_cache
+"cheltenham, united kingdom",United Kingdom,direct_match
+"chengdu, china",China,direct_match
+chennai,Unknown,unknown_fallback_cache
+"chennai district, india",India,direct_match
+"chennai madras, india",India,direct_match
+"chennai madras, tamil nadu, india",India,direct_match
+"chennai, india",India,direct_match
+"chennai, tamil nadu, india",India,direct_match
+"chepstow, united kingdom",United Kingdom,direct_match
+"chernivtsi, ukraine",Ukraine,direct_match
+"cherry hills village, colorado",Unknown,unknown_fallback_cache
+"chesham, united kingdom",United Kingdom,direct_match
+cheshire,Unknown,unknown_fallback_cache
+"cheshire, united kingdom",United Kingdom,direct_match
+chester,Unknown,unknown_fallback_cache
+"chester hill, australia",Australia,direct_match
+"chester, united kingdom",United Kingdom,direct_match
+"chester-le-street, united kingdom",United Kingdom,direct_match
+"chesterfield, united kingdom",United Kingdom,direct_match
+"cheze, france",France,direct_match
+"chiang mai, thailand",Thailand,direct_match
+chiangmai,Unknown,unknown_fallback_cache
+"chiba, japan",Japan,direct_match
+chicago,Unknown,unknown_fallback_cache
+"chicago, illinois",Unknown,unknown_fallback_cache
+chichester,Unknown,unknown_fallback_cache
+"chichester, united kingdom",United Kingdom,direct_match
+"chilworth, united kingdom",United Kingdom,direct_match
+china,China,direct_match
+"chippenham, united kingdom",United Kingdom,direct_match
+"chipping ongar, united kingdom",United Kingdom,direct_match
+"chorley, england, united kingdom",United Kingdom,direct_match
+"chorley, united kingdom",United Kingdom,direct_match
+christchirch,Unknown,unknown_fallback_cache
+christchurch,Unknown,unknown_fallback_cache
+christchurch nz,New Zealand,direct_match
+"christchurch, new zealand",New Zealand,direct_match
+"christchurch, united kingdom",United Kingdom,direct_match
+"christmas island, australia",Christmas Island,direct_match
+"chula vista, california",Unknown,unknown_fallback_cache
+"chur, switzerland",Switzerland,direct_match
+"church fenton, united kingdom",United Kingdom,direct_match
+"church stretton, united kingdom",United Kingdom,direct_match
+"cincinnati, ohio",Unknown,unknown_fallback_cache
+"cinderford, united kingdom",United Kingdom,direct_match
+"cirencester, united kingdom",United Kingdom,direct_match
+"citta di castello, italy",Italy,direct_match
+"city island, new york",Unknown,unknown_fallback_cache
+"claygate, united kingdom",United Kingdom,direct_match
+"clayton, australia",Australia,direct_match
+"clayton, california",Unknown,unknown_fallback_cache
+"clearwater, florida",Unknown,unknown_fallback_cache
+cleethorpes,Unknown,unknown_fallback_cache
+"cleobury mortimer, united kingdom",United Kingdom,direct_match
+"cleveland, ohio",Unknown,unknown_fallback_cache
+"clichy, france",France,direct_match
+"clifton hill, australia",Australia,direct_match
+"clitheroe, united kingdom",United Kingdom,direct_match
+"clovis, california",Unknown,unknown_fallback_cache
+"cluj-napoca, romania",Romania,direct_match
+"cobham, united kingdom",United Kingdom,direct_match
+"coeur d alene, idaho",Unknown,unknown_fallback_cache
+"coffs harbour, australia",Australia,direct_match
+coimbatore,Unknown,unknown_fallback_cache
+"coimbatore, india",India,direct_match
+"coimbra, portugal",Portugal,direct_match
+"colchester, united kingdom",United Kingdom,direct_match
+"collaroy beach, australia",Australia,direct_match
+"collie, australia",Australia,direct_match
+"cologne, germany",Germany,direct_match
+colombo,Unknown,unknown_fallback_cache
+"colombo, pr",Puerto Rico,direct_match
+colorado,Unknown,unknown_fallback_cache
+"colorado springs, colorado",Unknown,unknown_fallback_cache
+"columbia, missouri",Unknown,unknown_fallback_cache
+"columbia, south carolina",Unknown,unknown_fallback_cache
+"columbus, ohio",Unknown,unknown_fallback_cache
+"como, australia",Australia,direct_match
+"compton dundon, united kingdom",United Kingdom,direct_match
+"conder, australia",Australia,direct_match
+"congleton, united kingdom",United Kingdom,direct_match
+connecticut,Unknown,unknown_fallback_cache
+"consett, united kingdom",United Kingdom,direct_match
+"constanta, romania",Romania,direct_match
+"coogee, australia",Australia,direct_match
+"cookham dean, united kingdom",United Kingdom,direct_match
+"coolangatta, australia",Australia,direct_match
+"coolum beach, australia",Australia,direct_match
+"cooper city, florida",Unknown,unknown_fallback_cache
+"cooper landing, alaska",Unknown,unknown_fallback_cache
+copacabana,Unknown,unknown_fallback_cache
+copenhagen,Unknown,unknown_fallback_cache
+"copenhagen region, denmark",Denmark,direct_match
+"copenhagen, denmark",Denmark,direct_match
+"copenhagen, new york",Unknown,unknown_fallback_cache
+"coquitlam, canada",Canada,direct_match
+"corbridge, united kingdom",United Kingdom,direct_match
+"corby, united kingdom",United Kingdom,direct_match
+"cordoba, spain",Spain,direct_match
+"cordova, tennessee",Unknown,unknown_fallback_cache
+"corfe castle, united kingdom",United Kingdom,direct_match
+"corfu, greece",Greece,direct_match
+"cork, ireland",Ireland,direct_match
+"cormeilles-en-parisis, france",France,direct_match
+"cornwall, england",United Kingdom,direct_match
+"cornwall, uk",United Kingdom,direct_match
+"cornwall, united kingdom",United Kingdom,direct_match
+"corona del mar, california",Morocco,direct_match
+"corpus christi, texas",Unknown,unknown_fallback_cache
+corsham,Unknown,unknown_fallback_cache
+"corsham, united kingdom",United Kingdom,direct_match
+"corwen, united kingdom",United Kingdom,direct_match
+"costa da caparica, portugal",Portugal,direct_match
+"costa mesa, california",Unknown,unknown_fallback_cache
+"cotswolds, united kingdom",United Kingdom,direct_match
+"cottonwood, arizona",Unknown,unknown_fallback_cache
+"county cork, ireland",Ireland,direct_match
+"county donegal, ireland",Ireland,direct_match
+"county dublin, ireland",Ireland,direct_match
+"county durham, united kingdom",United Kingdom,direct_match
+"county mayo, ireland",Ireland,direct_match
+"county meath, ireland",Ireland,direct_match
+"county westmeath, ireland",Ireland,direct_match
+"courchevel, france",France,direct_match
+"coventry, united kingdom",United Kingdom,direct_match
+"craigavon, united kingdom",United Kingdom,direct_match
+"craigie, australia",Australia,direct_match
+"craigieburn, australia",Australia,direct_match
+"cranbourne, australia",Australia,direct_match
+"cranbrook, canada",Canada,direct_match
+"cranbrook, united kingdom",United Kingdom,direct_match
+"cranleigh, united kingdom",United Kingdom,direct_match
+"craven arms, united kingdom",United Kingdom,direct_match
+"crawley, united kingdom",United Kingdom,direct_match
+"cremorne, australia",Australia,direct_match
+"crete, greece",Greece,direct_match
+"creteil, france",France,direct_match
+"crewe, united kingdom",United Kingdom,direct_match
+"crieff, united kingdom",United Kingdom,direct_match
+cristinegelato,Unknown,unknown_fallback_cache
+croatia,Croatia,direct_match
+"cromwell, new zealand",New Zealand,direct_match
+"crouch end, united kingdom",United Kingdom,direct_match
+"crowthorne, united kingdom",United Kingdom,direct_match
+"croxley green, united kingdom",United Kingdom,direct_match
+"croyde, united kingdom",United Kingdom,direct_match
+"croydon, united kingdom",United Kingdom,direct_match
+"cruzeiro, df",Unknown,unknown_fallback_cache
+ct,Unknown,unknown_fallback_cache
+"cuckfield, united kingdom",United Kingdom,direct_match
+"cudrefin, switzerland",Switzerland,direct_match
+"cuijk, the netherlands",Netherlands,direct_match
+"culburra beach, australia",Australia,direct_match
+"culcheth, united kingdom",United Kingdom,direct_match
+cumbria,Unknown,unknown_fallback_cache
+"cupar, united kingdom",United Kingdom,direct_match
+"currumbin, australia",Australia,direct_match
+"cusco, peru",Peru,direct_match
+"cwmbran, united kingdom",United Kingdom,direct_match
+cyprus,Cyprus,direct_match
+"da nang, vietnam",Viet Nam,direct_match
+"dallas, texas",Unknown,unknown_fallback_cache
+"dalton-on-tees, united kingdom",United Kingdom,direct_match
+"dalyan, turkiye",Unknown,unknown_fallback_cache
+"dammam, saudi arabia",Saudi Arabia,direct_match
+"dammartin-en-goele, france",France,direct_match
+"dana point, california",Unknown,unknown_fallback_cache
+"dandenong, australia",Australia,direct_match
+dangriga,Unknown,unknown_fallback_cache
+"danube-auen national park, austria",Austria,direct_match
+"danze, france",France,direct_match
+"darley dale, united kingdom",United Kingdom,direct_match
+darlington,Unknown,unknown_fallback_cache
+"darmstadt, germany",Germany,direct_match
+"dartford, england, united kingdom",United Kingdom,direct_match
+"dartford, united kingdom",United Kingdom,direct_match
+"dartmouth, canada",Canada,direct_match
+darwin,Unknown,unknown_fallback_cache
+"darwin, australia",Australia,direct_match
+"davenport, florida",Unknown,unknown_fallback_cache
+"daventry, united kingdom",United Kingdom,direct_match
+"dawlish, united kingdom",United Kingdom,direct_match
+dawmat al jandal - ksa,Albania,direct_match
+"dax, france",France,direct_match
+dc,Unknown,unknown_fallback_cache
+"de kwakel, the netherlands",Netherlands,direct_match
+"de pere, wisconsin",Germany,direct_match
+"debrecen, hungary",Hungary,direct_match
+"decatur, georgia",Georgia,direct_match
+"dedestapolcsany, hungary",Hungary,direct_match
+dehiwela,Unknown,unknown_fallback_cache
+"dehradun, india",India,direct_match
+"dej, romania",Romania,direct_match
+"delft, the netherlands",Netherlands,direct_match
+delhi,Unknown,unknown_fallback_cache
+"delhi, india",India,direct_match
+"delta, canada",Canada,direct_match
+"den bosch, the netherlands",Netherlands,direct_match
+denmark,Denmark,direct_match
+"denmark, australia",Australia,direct_match
+"denmark, maine",Denmark,direct_match
+"denpasar, indonesia",Indonesia,direct_match
+"denver, colorado",Unknown,unknown_fallback_cache
+derby,Unknown,unknown_fallback_cache
+"derby, united kingdom",United Kingdom,direct_match
+derbyshire,Unknown,unknown_fallback_cache
+"derbyshire, united kingdom",United Kingdom,direct_match
+"dereham, united kingdom",United Kingdom,direct_match
+"derry, united kingdom",United Kingdom,direct_match
+"detroit, michigan",Unknown,unknown_fallback_cache
+deutschland,Unknown,unknown_fallback_cache
+"deventer, the netherlands",Netherlands,direct_match
+devizes,Unknown,unknown_fallback_cache
+"devizes, united kingdom",United Kingdom,direct_match
+devon,Unknown,unknown_fallback_cache
+"devon, united kingdom",United Kingdom,direct_match
+devonport,Unknown,unknown_fallback_cache
+"devonport, new zealand",New Zealand,direct_match
+"dewsbury, united kingdom",United Kingdom,direct_match
+"dhahran, saudi arabia",Saudi Arabia,direct_match
+"dhaka city, bangladesh",Bangladesh,direct_match
+"dharamsala, india",India,direct_match
+dhigurah island,Unknown,unknown_fallback_cache
+"dholpur, india",India,direct_match
+"diamond bar, california",Unknown,unknown_fallback_cache
+"dibba al bay ah, oman",Oman,direct_match
+"dibba al fujairah, united arab emirates",United Arab Emirates,direct_match
+"didcot, united kingdom",United Kingdom,direct_match
+"dieppe, canada",Canada,direct_match
+disneyland paris,Unknown,unknown_fallback_cache
+"diss, united kingdom",United Kingdom,direct_match
+"ditchling, united kingdom",United Kingdom,direct_match
+dk,Denmark,direct_match
+"dnipro, ukraine",Ukraine,direct_match
+doha,Unknown,unknown_fallback_cache
+"doha, ad dawhah, qatar",Qatar,direct_match
+"doha, qatar",Qatar,direct_match
+"dolgellau, united kingdom",United Kingdom,direct_match
+"dolgoprudny, russia",Unknown,unknown_fallback_cache
+"dollard-des-ormeaux, canada",Canada,direct_match
+doncaster,Unknown,unknown_fallback_cache
+"doncaster, united kingdom",United Kingdom,direct_match
+"dongo, italy",Italy,direct_match
+"donovaly, slovakia",Slovakia,direct_match
+"dorchester, united kingdom",United Kingdom,direct_match
+dorking,Unknown,unknown_fallback_cache
+"dorking, united kingdom",United Kingdom,direct_match
+"dorset, united kingdom",United Kingdom,direct_match
+"dortmund, germany",Germany,direct_match
+"douala, cameroon",Cameroon,direct_match
+"douglas, united kingdom",United Kingdom,direct_match
+"dover, new hampshire",Unknown,unknown_fallback_cache
+"down thomas, united kingdom",United Kingdom,direct_match
+"downham market, united kingdom",United Kingdom,direct_match
+"downton, united kingdom",United Kingdom,direct_match
+"drammen municipality, norway",Norway,direct_match
+"drammen, norway",Norway,direct_match
+"dresden, germany",Germany,direct_match
+"driffield, united kingdom",United Kingdom,direct_match
+"drysdale, australia",Australia,direct_match
+dubai,Unknown,unknown_fallback_cache
+"dubai, dubai, united arab emirates",United Arab Emirates,direct_match
+"dubai, united arab emirates",United Arab Emirates,direct_match
+"dubbo, australia",Australia,direct_match
+dublin,Unknown,unknown_fallback_cache
+"dublin, ireland",Ireland,direct_match
+"dubrovnik, croatia",Croatia,direct_match
+"dumaguete city, philippines",Philippines,direct_match
+"dumbarton, united kingdom",United Kingdom,direct_match
+"dumfries and galloway, united kingdom",United Kingdom,direct_match
+"dundee, united kingdom",United Kingdom,direct_match
+dunedin,Unknown,unknown_fallback_cache
+"dunedin, new zealand",New Zealand,direct_match
+"dunkeld west, south africa",South Africa,direct_match
+"dunoon, united kingdom",United Kingdom,direct_match
+"dunsborough, australia",Australia,direct_match
+"dunstable, united kingdom",United Kingdom,direct_match
+"durban, south africa",South Africa,direct_match
+"durgapur, india",India,direct_match
+durham,Unknown,unknown_fallback_cache
+"durham, north carolina",Unknown,unknown_fallback_cache
+"durham, united kingdom",United Kingdom,direct_match
+"dursley, united kingdom",United Kingdom,direct_match
+"dusseldorf, germany",Germany,direct_match
+east anglia,Unknown,unknown_fallback_cache
+"east anglia, uk",United Kingdom,direct_match
+"east anglia, united kingdom",United Kingdom,direct_match
+"east greenbush, new york",Unknown,unknown_fallback_cache
+"east grinstead, united kingdom",United Kingdom,direct_match
+"east molesey, united kingdom",United Kingdom,direct_match
+east sussex,Unknown,unknown_fallback_cache
+"east sussex, united kingdom",United Kingdom,direct_match
+"eastbourne, united kingdom",United Kingdom,direct_match
+"eastleigh, united kingdom",United Kingdom,direct_match
+eastofeast,Unknown,unknown_fallback_cache
+"eatontown, new jersey",Jersey,direct_match
+"eching, germany",Germany,direct_match
+"echuca, australia",Australia,direct_match
+"edava, india",India,direct_match
+"eden prairie, minnesota",Unknown,unknown_fallback_cache
+"edenton, north carolina",Unknown,unknown_fallback_cache
+"edgware, united kingdom",United Kingdom,direct_match
+edinburgh,Unknown,unknown_fallback_cache
+"edinburgh, united kingdom",United Kingdom,direct_match
+edison,Unknown,unknown_fallback_cache
+"edmond, oklahoma",Unknown,unknown_fallback_cache
+"edmonton, canada",Canada,direct_match
+"eelde, the netherlands",Netherlands,direct_match
+"egmond-binnen, the netherlands",Netherlands,direct_match
+"eigersund municipality, norway",Norway,direct_match
+"eilat, israel",Israel,direct_match
+"eindhoven, noord-brabant, netherlands",Netherlands,direct_match
+"eindhoven, the netherlands",Netherlands,direct_match
+"ekero, sweden",Sweden,direct_match
+"el dorado hills, california",Unknown,unknown_fallback_cache
+"el nido, philippines",Philippines,direct_match
+"el paso, texas",Unknown,unknown_fallback_cache
+"el valle de anton, panama",Panama,direct_match
+"elanora, australia",Australia,direct_match
+"ellesmere port, united kingdom",United Kingdom,direct_match
+"elstree, united kingdom",United Kingdom,direct_match
+"ely, united kingdom",United Kingdom,direct_match
+"emersons green, united kingdom",United Kingdom,direct_match
+"emirate of abu dhabi, united arab emirates",United Arab Emirates,direct_match
+"emirate of dubai, united arab emirates",United Arab Emirates,direct_match
+"emirate of sharjah, united arab emirates",United Arab Emirates,direct_match
+"emu park, australia",Australia,direct_match
+"enfield, united kingdom",United Kingdom,direct_match
+england,United Kingdom,direct_match
+"england, united kingdom",United Kingdom,direct_match
+"englewood, florida",Unknown,unknown_fallback_cache
+"enkhuizen, the netherlands",Netherlands,direct_match
+"enkoping, sweden",Sweden,direct_match
+"ennis, ireland",Ireland,direct_match
+"enschede, the netherlands",Netherlands,direct_match
+"epping, united kingdom",United Kingdom,direct_match
+"epsom, united kingdom",United Kingdom,direct_match
+"ericeira, portugal",Portugal,direct_match
+"ernakulam, india",India,direct_match
+"erskine, united kingdom",United Kingdom,direct_match
+"esbjerg, denmark",Denmark,direct_match
+"esher, united kingdom",United Kingdom,direct_match
+"esperance, australia",Australia,direct_match
+"espoo, finland",Finland,direct_match
+essen,Unknown,unknown_fallback_cache
+"essen, belgium",Belgium,direct_match
+"essen, germany",Germany,direct_match
+"essendon, australia",Australia,direct_match
+essex,Unknown,unknown_fallback_cache
+essex england,United Kingdom,direct_match
+essex uk,United Kingdom,direct_match
+"essex, united kingdom",United Kingdom,direct_match
+"etchingham, united kingdom",United Kingdom,direct_match
+"etna green, indiana",Unknown,unknown_fallback_cache
+europe,Unknown,unknown_fallback_cache
+"euskirchen, germany",Germany,direct_match
+"evanton, united kingdom",United Kingdom,direct_match
+everywhere usa,United States,direct_match
+examba,Unknown,unknown_fallback_cache
+"exeter, united kingdom",United Kingdom,direct_match
+"exmouth, united kingdom",United Kingdom,direct_match
+"eye, united kingdom",United Kingdom,direct_match
+"failsworth, united kingdom",United Kingdom,direct_match
+"fair oaks, california",Unknown,unknown_fallback_cache
+"fairlight, united kingdom",United Kingdom,direct_match
+"faja grande, portugal",Portugal,direct_match
+"falkirk, united kingdom",United Kingdom,direct_match
+"falls church, virginia",Unknown,unknown_fallback_cache
+"falmouth, united kingdom",United Kingdom,direct_match
+"fareham, united kingdom",United Kingdom,direct_match
+"faridabad, india",India,direct_match
+"farjestaden, sweden",Sweden,direct_match
+"farnborough, united kingdom",United Kingdom,direct_match
+"farnham, united kingdom",United Kingdom,direct_match
+"faro, portugal",Portugal,direct_match
+"farwaniya, kuwait",Kuwait,direct_match
+"federal way, washington",Unknown,unknown_fallback_cache
+"fehraltorf, switzerland",Switzerland,direct_match
+"felbridge, united kingdom",United Kingdom,direct_match
+"feltham, united kingdom",United Kingdom,direct_match
+"felton, united kingdom",United Kingdom,direct_match
+"fernandina beach, florida",Unknown,unknown_fallback_cache
+"ferntree gully, australia",Australia,direct_match
+"fethiye, turkiye",Unknown,unknown_fallback_cache
+fife,Unknown,unknown_fallback_cache
+finland,Finland,direct_match
+"fishers, indiana",Unknown,unknown_fallback_cache
+fitjar,Unknown,unknown_fallback_cache
+"fjenneslev, denmark",Denmark,direct_match
+"flagstaff, arizona",Unknown,unknown_fallback_cache
+"flaxton, australia",Australia,direct_match
+"fleetwood, united kingdom",United Kingdom,direct_match
+"flint hills, kansas",Unknown,unknown_fallback_cache
+"florence, alabama",Unknown,unknown_fallback_cache
+"florence, italy",Italy,direct_match
+florida,Unknown,unknown_fallback_cache
+"florida panhandle, florida",Unknown,unknown_fallback_cache
+"folkestone, united kingdom",United Kingdom,direct_match
+"fonte, italy",Italy,direct_match
+"forest row, uk",United Kingdom,direct_match
+"foristell, missouri",Unknown,unknown_fallback_cache
+"forrestfield, australia",Australia,direct_match
+"fort collins, colorado",Unknown,unknown_fallback_cache
+"fort langley, canada",Canada,direct_match
+"fort pierce, florida",Unknown,unknown_fallback_cache
+"fort walton beach, florida",Unknown,unknown_fallback_cache
+"four marks, united kingdom",United Kingdom,direct_match
+"fox island, washington",Unknown,unknown_fallback_cache
+"framingham, massachusetts",Unknown,unknown_fallback_cache
+france,France,direct_match
+"frankfurt oder, germany",Germany,direct_match
+"frankfurt, germany",Germany,direct_match
+"frankston, australia",Australia,direct_match
+"frankton, new zealand",New Zealand,direct_match
+"franschhoek, south africa",South Africa,direct_match
+"frauenfeld, switzerland",Switzerland,direct_match
+"fredericia, denmark",Denmark,direct_match
+"fredericton, canada",Canada,direct_match
+"frederiksberg, denmark",Denmark,direct_match
+"fredrikstad, norway",Norway,direct_match
+"freiburg im breisgau, germany",Germany,direct_match
+"freistadt, austria",Austria,direct_match
+"fremantle, australia",Australia,direct_match
+french riviera,Unknown,unknown_fallback_cache
+"frettenham, united kingdom",United Kingdom,direct_match
+"friday harbor, washington",Unknown,unknown_fallback_cache
+"frisco, texas",Unknown,unknown_fallback_cache
+"frodsham, united kingdom",United Kingdom,direct_match
+"frome, united kingdom",United Kingdom,direct_match
+"fuente librilla, spain",Spain,direct_match
+fuerteventura,Unknown,unknown_fallback_cache
+"fuerteventura, spain",Spain,direct_match
+"fuerth, germany",Germany,direct_match
+"fujairah, united arab emirates",United Arab Emirates,direct_match
+"fulbourn, united kingdom",United Kingdom,direct_match
+"fullarton, australia",Australia,direct_match
+"gaborone, botswana",Botswana,direct_match
+galle,Unknown,unknown_fallback_cache
+"galway, ireland",Ireland,direct_match
+"gandhinagar, india",India,direct_match
+"gangtok, india",India,direct_match
+"gastonia, north carolina",Unknown,unknown_fallback_cache
+"gateshead, united kingdom",United Kingdom,direct_match
+"gauteng, south africa",South Africa,direct_match
+"gavere, belgium",Belgium,direct_match
+"gdansk, poland",Poland,direct_match
+"gdynia, poland",Poland,direct_match
+"geel, belgium",Belgium,direct_match
+"geelong, australia",Australia,direct_match
+gelderland,Unknown,unknown_fallback_cache
+gemert,Unknown,unknown_fallback_cache
+geneva,Unknown,unknown_fallback_cache
+"geneva, switzerland",Switzerland,direct_match
+"genk, belgium",Belgium,direct_match
+"genoa, italy",Italy,direct_match
+gent,Unknown,unknown_fallback_cache
+"gentofte municipality, denmark",Denmark,direct_match
+"george town, australia",Australia,direct_match
+"george town, malaysia",Malaysia,direct_match
+"georgetown, canada",Canada,direct_match
+"georgetown, texas",Unknown,unknown_fallback_cache
+"geraldton, australia",Australia,direct_match
+"germantown, tennessee",Unknown,unknown_fallback_cache
+germany,Germany,direct_match
+gerrards cross,Unknown,unknown_fallback_cache
+"gerrards cross, united kingdom",United Kingdom,direct_match
+"ghaziabad, india",India,direct_match
+"ghent, belgium",Belgium,direct_match
+gibraltar,Gibraltar,direct_match
+"giessen, germany",Germany,direct_match
+"gillingham, united kingdom",United Kingdom,direct_match
+"gistel, belgium",Belgium,direct_match
+"gladesville, australia",Australia,direct_match
+glasgow,Unknown,unknown_fallback_cache
+"glasgow, united kingdom",United Kingdom,direct_match
+"glen waverley, australia",Australia,direct_match
+"glencoe, united kingdom",United Kingdom,direct_match
+"glossop, united kingdom",United Kingdom,direct_match
+"gloucester, united kingdom",United Kingdom,direct_match
+gloucestershire,Unknown,unknown_fallback_cache
+"gloucestershire, united kingdom",United Kingdom,direct_match
+"glowe, germany",Germany,direct_match
+"gniezno, poland",Poland,direct_match
+"goa, india",India,direct_match
+"godalming, united kingdom",United Kingdom,direct_match
+"goennheim, germany",Germany,direct_match
+gold coast,Unknown,unknown_fallback_cache
+gold coast australia,Australia,direct_match
+"gold coast, australia",Australia,direct_match
+"golden sands, bulgaria",Bulgaria,direct_match
+"golden, colorado",Unknown,unknown_fallback_cache
+"golfe-juan vallauris, france",France,direct_match
+"gooik, belgium",Belgium,direct_match
+"goole, united kingdom",United Kingdom,direct_match
+"gorefield, united kingdom",United Kingdom,direct_match
+"gorey, ireland",Ireland,direct_match
+"goring-on thames, united kingdom",United Kingdom,direct_match
+"gosford, australia",Australia,direct_match
+"gosselies, belgium",Belgium,direct_match
+"gothenburg, sweden",Sweden,direct_match
+"goudhurst, united kingdom",United Kingdom,direct_match
+"goulburn, australia",Australia,direct_match
+"gourock, united kingdom",United Kingdom,direct_match
+"grafton, australia",Australia,direct_match
+"gran canaria, spain",Spain,direct_match
+"granada, spain",Spain,direct_match
+"granby, canada",Canada,direct_match
+grand baie,Unknown,unknown_fallback_cache
+"grand baie, riviere du rempart, mauritius",Mauritius,direct_match
+grand cayman,Unknown,unknown_fallback_cache
+"grand rapids, michigan",Unknown,unknown_fallback_cache
+"grande prairie, canada",Canada,direct_match
+"grantham, united kingdom",United Kingdom,direct_match
+"grass valley, california",Unknown,unknown_fallback_cache
+"grays thurrock, united kingdom",United Kingdom,direct_match
+"graz, austria",Austria,direct_match
+"great bircham, united kingdom",United Kingdom,direct_match
+"great coxwell, united kingdom",United Kingdom,direct_match
+"great dunmow, united kingdom",United Kingdom,direct_match
+"great malvern, united kingdom",United Kingdom,direct_match
+"great missenden, united kingdom",United Kingdom,direct_match
+"great yarmouth, united kingdom",United Kingdom,direct_match
+"greater adelaide, australia",Australia,direct_match
+"greater johannesburg, south africa",South Africa,direct_match
+"greater london, united kingdom",United Kingdom,direct_match
+"greater manchester, united kingdom",United Kingdom,direct_match
+"greater melbourne, australia",Australia,direct_match
+"greater newcastle, australia",Australia,direct_match
+"greater noida, india",India,direct_match
+"greater perth, australia",Australia,direct_match
+"greater shepparton, australia",Australia,direct_match
+"greater sydney, australia",Australia,direct_match
+"greenford, united kingdom",United Kingdom,direct_match
+"greenock, united kingdom",United Kingdom,direct_match
+"greentown, pennsylvania",Unknown,unknown_fallback_cache
+"greenvale, australia",Australia,direct_match
+"greenville, south carolina",Unknown,unknown_fallback_cache
+"greenwood village, colorado",Unknown,unknown_fallback_cache
+"greenwood, missouri",Unknown,unknown_fallback_cache
+"grenoble, france",France,direct_match
+"greve, denmark",Denmark,direct_match
+"greymouth, new zealand",New Zealand,direct_match
+"griffith, australia",Australia,direct_match
+"grimsby, united kingdom",United Kingdom,direct_match
+"groningen, the netherlands",Netherlands,direct_match
+"gropada, italy",Italy,direct_match
+"grosswilfersdorf, austria",Austria,direct_match
+"gryon, switzerland",Switzerland,direct_match
+"guam, mariana islands",Guam,direct_match
+"guangzhou, china",China,direct_match
+guatemala,Guatemala,direct_match
+"guernsey, channel islands",Guernsey,direct_match
+"guernsey, united kingdom",United Kingdom,direct_match
+"guignen, france",France,direct_match
+guildford,Unknown,unknown_fallback_cache
+"guildford, united kingdom",United Kingdom,direct_match
+"guisborough, united kingdom",United Kingdom,direct_match
+"gumusluk, turkiye",Unknown,unknown_fallback_cache
+"gunnedah, australia",Australia,direct_match
+"gunnison, colorado",Unknown,unknown_fallback_cache
+gurgaon,Unknown,unknown_fallback_cache
+"gurgaon district, india",India,direct_match
+"gurugram gurgaon, india",India,direct_match
+"gympie, australia",Australia,direct_match
+"haacht, belgium",Belgium,direct_match
+"haarlem, the netherlands",Netherlands,direct_match
+hadahaa island,Unknown,unknown_fallback_cache
+"hagley, united kingdom",United Kingdom,direct_match
+haifa,Unknown,unknown_fallback_cache
+"haifa, israel",Israel,direct_match
+"hailsham, united kingdom",United Kingdom,direct_match
+"halesowen, united kingdom",United Kingdom,direct_match
+"halifax, canada",Canada,direct_match
+"halifax, nova scotia",Unknown,unknown_fallback_cache
+"halifax, united kingdom",United Kingdom,direct_match
+"halkirk, united kingdom",United Kingdom,direct_match
+"halstead, united kingdom",United Kingdom,direct_match
+"hamar, norway",Norway,direct_match
+"hambrook, united kingdom",United Kingdom,direct_match
+"hamburg, deutschland",Unknown,unknown_fallback_cache
+"hamburg, germany",Germany,direct_match
+"hameenlinna, finland",Finland,direct_match
+"hamilton, bermuda",Bermuda,direct_match
+"hamilton, canada",Canada,direct_match
+"hamilton, new zealand",New Zealand,direct_match
+"hamilton, on",Unknown,unknown_fallback_cache
+"hammel, denmark",Denmark,direct_match
+hampshire,Unknown,unknown_fallback_cache
+hampshire uk,United Kingdom,direct_match
+"hampshire, united kingdom",United Kingdom,direct_match
+hampton,Unknown,unknown_fallback_cache
+"hangzhou, china",China,direct_match
+"hannover, germany",Germany,direct_match
+hanoi,Unknown,unknown_fallback_cache
+"hanoi, vietnam",Viet Nam,direct_match
+"hanwell, united kingdom",United Kingdom,direct_match
+"harare, zimbabwe",Zimbabwe,direct_match
+"haridwar, india",India,direct_match
+"haringey, united kingdom",United Kingdom,direct_match
+"harleston, united kingdom",United Kingdom,direct_match
+"harlow, united kingdom",United Kingdom,direct_match
+"harmondsworth, united kingdom",United Kingdom,direct_match
+harpenden,Unknown,unknown_fallback_cache
+"harpenden, united kingdom",United Kingdom,direct_match
+"harrogate, united kingdom",United Kingdom,direct_match
+"harrow, united kingdom",United Kingdom,direct_match
+"hartford, united kingdom",United Kingdom,direct_match
+"hartlepool, united kingdom",United Kingdom,direct_match
+"haslemere, united kingdom",United Kingdom,direct_match
+"hasselt, belgium",Belgium,direct_match
+"hastings, michigan",Unknown,unknown_fallback_cache
+"hastings, new zealand",New Zealand,direct_match
+"hastings, united kingdom",United Kingdom,direct_match
+"hatfield, pennsylvania",Unknown,unknown_fallback_cache
+"hatfield, united kingdom",United Kingdom,direct_match
+"hatta, united arab emirates",United Arab Emirates,direct_match
+"hauts-de-france, france",France,direct_match
+"havelock north, new zealand",New Zealand,direct_match
+"hawalli governorate, kuwait",Kuwait,direct_match
+"hawalli, kuwait",Kuwait,direct_match
+"hawkhurst, united kingdom",United Kingdom,direct_match
+"haworth, united kingdom",United Kingdom,direct_match
+"headingley, united kingdom",United Kingdom,direct_match
+heathcote junction australia,Australia,direct_match
+"heathfield, united kingdom",United Kingdom,direct_match
+"hedel, the netherlands",Netherlands,direct_match
+"heerhugowaard, the netherlands",Netherlands,direct_match
+"heeze, the netherlands",Netherlands,direct_match
+"heidelberg, germany",Germany,direct_match
+"heilbronn, germany",Germany,direct_match
+"heiloo, the netherlands",Netherlands,direct_match
+"heist-op-den-berg, belgium",Belgium,direct_match
+"helena, montana",Unknown,unknown_fallback_cache
+"helensburgh, united kingdom",United Kingdom,direct_match
+"hellerup, denmark",Denmark,direct_match
+"hellingly, united kingdom",United Kingdom,direct_match
+"helsingborg, sweden",Sweden,direct_match
+helsinki,Unknown,unknown_fallback_cache
+"helsinki, finland",Finland,direct_match
+helston,Unknown,unknown_fallback_cache
+"hemel hempstead, united kingdom",United Kingdom,direct_match
+"hendaye, france",France,direct_match
+"henderson, nevada",Unknown,unknown_fallback_cache
+"henfield, united kingdom",United Kingdom,direct_match
+"hengelo, the netherlands",Netherlands,direct_match
+"henley beach, australia",Australia,direct_match
+"heppenheim, germany",Germany,direct_match
+"herault, france",France,direct_match
+"hereford, united kingdom",United Kingdom,direct_match
+"herefordshire, united kingdom",United Kingdom,direct_match
+"heric, france",France,direct_match
+"herlev, denmark",Denmark,direct_match
+"hermanus, south africa",South Africa,direct_match
+"herne bay, united kingdom",United Kingdom,direct_match
+"herten, the netherlands",Netherlands,direct_match
+"hertford, united kingdom",United Kingdom,direct_match
+hertfordshire,Unknown,unknown_fallback_cache
+"hertfordshire, united kingdom",United Kingdom,direct_match
+herts,Unknown,unknown_fallback_cache
+"hervey bay, australia",Australia,direct_match
+"herzliya, israel",Israel,direct_match
+"hessle, united kingdom",United Kingdom,direct_match
+"heverlee, belgium",Belgium,direct_match
+"hexham, united kingdom",United Kingdom,direct_match
+"heysham, united kingdom",United Kingdom,direct_match
+high peak,Unknown,unknown_fallback_cache
+"high wycombe, united kingdom",United Kingdom,direct_match
+"highland park, illinois, united states",United States,direct_match
+"highlands, new jersey",Jersey,direct_match
+hikkaduwa,Unknown,unknown_fallback_cache
+"hildesheim, germany",Germany,direct_match
+"hilsenheim, france",France,direct_match
+"hilversum, the netherlands",Netherlands,direct_match
+"hinckley, united kingdom",United Kingdom,direct_match
+"hinsdale, illinois",Unknown,unknown_fallback_cache
+"hirwaun, united kingdom",United Kingdom,direct_match
+"hisar, india",India,direct_match
+"hitchin, united kingdom",United Kingdom,direct_match
+"ho chi minh city, vietnam",Viet Nam,direct_match
+"hobart, australia",Australia,direct_match
+"hockley, united kingdom",United Kingdom,direct_match
+"hod hasharon, israel",Israel,direct_match
+"hoedspruit, south africa",South Africa,direct_match
+"hoi an, vietnam",Viet Nam,direct_match
+"holbeach, united kingdom",United Kingdom,direct_match
+"holbeton, united kingdom",United Kingdom,direct_match
+"holbox island, mexico",Mexico,direct_match
+"hollywood, florida",Unknown,unknown_fallback_cache
+"holmfirth, united kingdom",United Kingdom,direct_match
+"holon, israel",Israel,direct_match
+"holte, denmark",Denmark,direct_match
+"hometown, finland",Finland,direct_match
+"honefoss, norway",Norway,direct_match
+hong kong,Hong Kong,direct_match
+"hong kong, china",Hong Kong,direct_match
+"honolulu, hawaii",Unknown,unknown_fallback_cache
+"hooghly, india",India,direct_match
+"hook, united kingdom",United Kingdom,direct_match
+"hoorn, the netherlands",Netherlands,direct_match
+"hoover, alabama",Unknown,unknown_fallback_cache
+"hordle, united kingdom",United Kingdom,direct_match
+"horley, united kingdom",United Kingdom,direct_match
+"hornchurch, united kingdom",United Kingdom,direct_match
+"horomerice, czech republic",Czechia,direct_match
+"horsforth, united kingdom",United Kingdom,direct_match
+"horsham, australia",Australia,direct_match
+"horsham, united kingdom",United Kingdom,direct_match
+"horwich, united kingdom",United Kingdom,direct_match
+houghton regis,Unknown,unknown_fallback_cache
+"houston, texas",Unknown,unknown_fallback_cache
+"hove, united kingdom",United Kingdom,direct_match
+"huddersfield, united kingdom",United Kingdom,direct_match
+"hue, vietnam",Viet Nam,direct_match
+"huismes, france",France,direct_match
+huissen,Unknown,unknown_fallback_cache
+"huissen, the netherlands",Netherlands,direct_match
+hull,Unknown,unknown_fallback_cache
+hull uk,United Kingdom,direct_match
+"hull, uk",United Kingdom,direct_match
+"huntingdon, united kingdom",United Kingdom,direct_match
+"huntington beach, california",Unknown,unknown_fallback_cache
+"hutton rudby, united kingdom",United Kingdom,direct_match
+"hyattsville, maryland",Unknown,unknown_fallback_cache
+"hyde, united kingdom",United Kingdom,direct_match
+hyderabad,Unknown,unknown_fallback_cache
+"hyderabad, india",India,direct_match
+"hyderabad, pakistan",Pakistan,direct_match
+"hythe, united kingdom",United Kingdom,direct_match
+"iasi, romania",Romania,direct_match
+"ibiza, spain",Spain,direct_match
+"igatpuri, india",India,direct_match
+"ikoma, japan",Japan,direct_match
+"ile-de-france, france",France,direct_match
+"ilford, united kingdom",United Kingdom,direct_match
+"ilfov county, romania",Romania,direct_match
+"immingham, united kingdom",United Kingdom,direct_match
+india,India,direct_match
+"indian hills, colorado",Unknown,unknown_fallback_cache
+"indianapolis, indiana",Unknown,unknown_fallback_cache
+indonesia,Indonesia,direct_match
+"indore district, india",India,direct_match
+"indore, india",India,direct_match
+"innisfil, canada",Canada,direct_match
+"innsbruck, austria",Austria,direct_match
+"ins, switzerland",Switzerland,direct_match
+"invercargill, new zealand",New Zealand,direct_match
+"inverloch, australia",Australia,direct_match
+"inverness, florida",Unknown,unknown_fallback_cache
+"inverness, illinois",Unknown,unknown_fallback_cache
+"inverness, united kingdom",United Kingdom,direct_match
+"ipoh, malaysia",Malaysia,direct_match
+"ipswich, united kingdom",United Kingdom,direct_match
+iran,"Iran, Islamic Republic of",direct_match
+ireland,Ireland,direct_match
+"ireland, west virginia",Ireland,direct_match
+iru-fushi,Unknown,unknown_fallback_cache
+"irvine, california",Unknown,unknown_fallback_cache
+"irving, texas",Unknown,unknown_fallback_cache
+"ishoej, denmark",Denmark,direct_match
+"islamabad, pakistan",Pakistan,direct_match
+"island of hawaii, hawaii",Unknown,unknown_fallback_cache
+"island of malta, malta",Malta,direct_match
+"isle of man, united kingdom",United Kingdom,direct_match
+isle of skye,Unknown,unknown_fallback_cache
+"isle of wight, united kingdom",United Kingdom,direct_match
+"ispra, italy",Italy,direct_match
+israel,Israel,direct_match
+istanbul,Unknown,unknown_fallback_cache
+"istanbul, turkiye",Unknown,unknown_fallback_cache
+italy,Italy,direct_match
+"itanagar, india",India,direct_match
+"iver, united kingdom",United Kingdom,direct_match
+"ivybridge, united kingdom",United Kingdom,direct_match
+"izmir, turkiye",Unknown,unknown_fallback_cache
+ja-ela,Unknown,unknown_fallback_cache
+"jabalpur, india",India,direct_match
+"jablonec nad nisou, czech republic",Czechia,direct_match
+"jackson, tennessee",Unknown,unknown_fallback_cache
+"jacksonville, florida",Unknown,unknown_fallback_cache
+"jaipur, india",India,direct_match
+"jakarta, indonesia",Indonesia,direct_match
+jamaica,Jamaica,direct_match
+"jamieson, australia",Australia,direct_match
+"jamshedpur, india",India,direct_match
+"jaunmarupe, latvia",Latvia,direct_match
+"java, indonesia",Indonesia,direct_match
+jeddah saudi arabia,Saudi Arabia,direct_match
+"jeddah, saudi arabia",Saudi Arabia,direct_match
+"jefferson valley, new york",Unknown,unknown_fallback_cache
+"jeita, lebanon",Lebanon,direct_match
+"jersey, c.i.",Jersey,direct_match
+"jersey, united kingdom",United Kingdom,direct_match
+"jerusalem, israel",Israel,direct_match
+"jigani, india",India,direct_match
+"jinan, china",China,direct_match
+"jodhpur, india",India,direct_match
+"johannesburg south, south africa",South Africa,direct_match
+"johannesburg, south africa",South Africa,direct_match
+"johnstown, ireland",Ireland,direct_match
+"johor bahru, malaysia",Malaysia,direct_match
+"joplin, missouri",Unknown,unknown_fallback_cache
+"jounieh, lebanon",Lebanon,direct_match
+"juelsminde, denmark",Denmark,direct_match
+"jupiter, florida",Unknown,unknown_fallback_cache
+kaafu atoll,Unknown,unknown_fallback_cache
+"kabul, afghanistan",Afghanistan,direct_match
+kadawatha,Unknown,unknown_fallback_cache
+"kaiserslautern, germany",Germany,direct_match
+"kajaani, finland",Finland,direct_match
+"kajang, malaysia",Malaysia,direct_match
+"kalkan, turkiye",Unknown,unknown_fallback_cache
+kalutara,Unknown,unknown_fallback_cache
+"kampen, the netherlands",Netherlands,direct_match
+"kampot, cambodia",Cambodia,direct_match
+"kanata, canada",Canada,direct_match
+kandy,Unknown,unknown_fallback_cache
+"kangaroo island, australia",Australia,direct_match
+"kani, japan",Japan,direct_match
+"kannur, india",India,direct_match
+"kanpur, india",India,direct_match
+"kansas city, kansas",Unknown,unknown_fallback_cache
+"kaohsiung, taiwan","Taiwan, Province of China",direct_match
+"kapellen, belgium",Belgium,direct_match
+"kapfenberg, austria",Austria,direct_match
+"karachi, pakistan",Pakistan,direct_match
+"karachi, sindh, pakistan",Pakistan,direct_match
+"karbala, iraq",Iraq,direct_match
+"kardamena, greece",Greece,direct_match
+"karen, kenya",Kenya,direct_match
+"karlslunde, denmark",Denmark,direct_match
+"karlsruhe, germany",Germany,direct_match
+"karlstad, sweden",Sweden,direct_match
+"karur, india",India,direct_match
+"kashmir, india",India,direct_match
+"kasperske hory, czech republic",Czechia,direct_match
+"kassel, deutschland",Unknown,unknown_fallback_cache
+"kasumigaura, japan",Japan,direct_match
+"kathmandu valley, nepal",Nepal,direct_match
+"kathmandu, nepal",Nepal,direct_match
+"katowice, poland",Poland,direct_match
+"katy, texas",Unknown,unknown_fallback_cache
+"kaunas, lithuania",Lithuania,direct_match
+"kawasaki, japan",Japan,direct_match
+"kedzierzyn kozle, poland",Poland,direct_match
+"keighley, united kingdom",United Kingdom,direct_match
+"kellyville, australia",Australia,direct_match
+"kelowna, canada",Canada,direct_match
+"kempsey, australia",Australia,direct_match
+"kemptville, canada",Canada,direct_match
+"kendal, united kingdom",United Kingdom,direct_match
+"kenilworth, united kingdom",United Kingdom,direct_match
+"kenley, united kingdom",United Kingdom,direct_match
+"kenmore, australia",Australia,direct_match
+"kennett square, pennsylvania",Unknown,unknown_fallback_cache
+kent,Unknown,unknown_fallback_cache
+"kent, uk",United Kingdom,direct_match
+"kent, united kingdom",United Kingdom,direct_match
+"kerala, india",India,direct_match
+"kerava, finland",Finland,direct_match
+"kerkrade, the netherlands",Netherlands,direct_match
+"kerman, iran","Iran, Islamic Republic of",direct_match
+"kerobokan, indonesia",Indonesia,direct_match
+"kessel-lo, belgium",Belgium,direct_match
+"kessingland, united kingdom",United Kingdom,direct_match
+"kettering, england, united kingdom",United Kingdom,direct_match
+"kew, australia",Australia,direct_match
+"kew, united kingdom",United Kingdom,direct_match
+"key west, florida",Unknown,unknown_fallback_cache
+"kfar saba, israel",Israel,direct_match
+"kharkiv, ukraine",Ukraine,direct_match
+khartoum,Unknown,unknown_fallback_cache
+"kigali, rwanda",Rwanda,direct_match
+"kilkenny, ireland",Ireland,direct_match
+"kilwinning, united kingdom",United Kingdom,direct_match
+"king s lynn, united kingdom",United Kingdom,direct_match
+kings meadow,Unknown,unknown_fallback_cache
+"kingsbury, united kingdom",United Kingdom,direct_match
+"kingshill, st. croix",Sao Tome and Principe,direct_match
+"kingsteignton, united kingdom",United Kingdom,direct_match
+"kingston upon thames, united kingdom",United Kingdom,direct_match
+"kingston, canada",Canada,direct_match
+"kingston, nj usa",United States,direct_match
+"kingston-upon-hull, united kingdom",United Kingdom,direct_match
+"kington, united kingdom",United Kingdom,direct_match
+"kinvara, ireland",Ireland,direct_match
+"kirchdorf, germany",Germany,direct_match
+"kirkkonummi, finland",Finland,direct_match
+kiwi in london,India,direct_match
+kl,Unknown,unknown_fallback_cache
+"klagenfurt, karnten, austria",Austria,direct_match
+"klaipeda, lithuania",Lithuania,direct_match
+"klampenborg, denmark",Denmark,direct_match
+klang,Unknown,unknown_fallback_cache
+"klang, malaysia",Malaysia,direct_match
+"klippan, sweden",Sweden,direct_match
+"klosterlechfeld, germany",Germany,direct_match
+"knaresborough, united kingdom",United Kingdom,direct_match
+"knutsford, united kingdom",United Kingdom,direct_match
+"ko kret, thailand",Thailand,direct_match
+"ko pha-ngan, thailand",Thailand,direct_match
+"ko samui, thailand",Thailand,direct_match
+"kochi cochin, india",India,direct_match
+"kodagu coorg, india",India,direct_match
+"koege, denmark",Denmark,direct_match
+"koenigstein, germany",Germany,direct_match
+"koh tao, thailand",Thailand,direct_match
+"kolding, denmark",Denmark,direct_match
+kolkata,Unknown,unknown_fallback_cache
+"kolkata calcutta, india",India,direct_match
+"konstancin-jeziorna, poland",Poland,direct_match
+"kontum, vietnam",Viet Nam,direct_match
+"korbach, germany",Germany,direct_match
+"koriyama, japan",Japan,direct_match
+"kortenberg, belgium",Belgium,direct_match
+"kortrijk, belgium",Belgium,direct_match
+"kosice, slovakia",Slovakia,direct_match
+"koszalin, poland",Poland,direct_match
+"kota kinabalu, malaysia",Malaysia,direct_match
+"kota, india",India,direct_match
+"kotor, montenegro",Montenegro,direct_match
+"kottayam district, india",India,direct_match
+"kottayam, india",India,direct_match
+kowloon,Unknown,unknown_fallback_cache
+"kozhikode district, india",India,direct_match
+krabi,Unknown,unknown_fallback_cache
+"krakow, poland",Poland,direct_match
+"kranjska gora, slovenia",Slovenia,direct_match
+"kressbronn am bodensee, germany",Germany,direct_match
+"kristiansand, norway",Norway,direct_match
+"kristianstad, sweden",Sweden,direct_match
+kuala lumpur,Unknown,unknown_fallback_cache
+"kuala lumpur, malaysia",Malaysia,direct_match
+"kuala lumpur, wilayah persekutuan, malaysia",Malaysia,direct_match
+"kuantan district, malaysia",Malaysia,direct_match
+"kuching, malaysia",Malaysia,direct_match
+"kulaijaya district, malaysia",Malaysia,direct_match
+"kullu, india",India,direct_match
+"kungsbacka, sweden",Sweden,direct_match
+"kunming, china",China,direct_match
+kuopio,Unknown,unknown_fallback_cache
+"kuranda, australia",Australia,direct_match
+"kurseong, india",India,direct_match
+"kurukshetra, india",India,direct_match
+kurunegala,Unknown,unknown_fallback_cache
+"kutchan-cho, japan",Japan,direct_match
+"kutna hora, czech republic",Czechia,direct_match
+kuwait,Kuwait,direct_match
+"kuwait city, kuwait",Kuwait,direct_match
+"kyiv, ukraine",Ukraine,direct_match
+"kyoto, japan",Japan,direct_match
+"kyrenia, cyprus",Cyprus,direct_match
+"l ametlla de mar, spain",Spain,direct_match
+"l etang-sale, reunion island",Unknown,unknown_fallback_cache
+"la balme-les-grottes, france",France,direct_match
+"la condamine, monaco",Monaco,direct_match
+"la herradura, spain",Spain,direct_match
+"la paz, bolivia","Bolivia, Plurinational State of",direct_match
+"laarne, belgium",Belgium,direct_match
+"lafayette, california",Unknown,unknown_fallback_cache
+lagos,Unknown,unknown_fallback_cache
+"lagos, nigeria",Nigeria,direct_match
+"lagrangeville, new york",Unknown,unknown_fallback_cache
+"lagunitas, california",Unknown,unknown_fallback_cache
+lahore,Unknown,unknown_fallback_cache
+"lahore, pakistan",Pakistan,direct_match
+"lahore, punjab, pakistan",Pakistan,direct_match
+"lahti, finland",Finland,direct_match
+"lake district, united kingdom",United Kingdom,direct_match
+"lalitpur, india",India,direct_match
+lancashire,Unknown,unknown_fallback_cache
+"lancashire, united kingdom",United Kingdom,direct_match
+"lancaster, united kingdom",United Kingdom,direct_match
+lancs england,United Kingdom,direct_match
+landsmeer,Unknown,unknown_fallback_cache
+"lane cove, australia",Australia,direct_match
+"langkawi, malaysia",Malaysia,direct_match
+lanka,Unknown,unknown_fallback_cache
+"lanzarote, spain",Spain,direct_match
+"larkspur, california",Unknown,unknown_fallback_cache
+"las cruces, new mexico",Mexico,direct_match
+"las vegas, nevada",Unknown,unknown_fallback_cache
+latvia,Latvia,direct_match
+"launceston, australia",Australia,direct_match
+"launceston, united kingdom",United Kingdom,direct_match
+"lausanne, switzerland",Switzerland,direct_match
+"lausanne-sur-lausanne, switzerland",Switzerland,direct_match
+"lauwersoog, the netherlands",Netherlands,direct_match
+"lawrence, kansas",Unknown,unknown_fallback_cache
+"layer de la haye, united kingdom",United Kingdom,direct_match
+"layton, utah",Unknown,unknown_fallback_cache
+"le touquet paris-plage, france",France,direct_match
+"leamington spa, united kingdom",United Kingdom,direct_match
+"leatherhead, united kingdom",United Kingdom,direct_match
+lebanon,Lebanon,direct_match
+"ledbury, united kingdom",United Kingdom,direct_match
+"lee s summit, missouri",Unknown,unknown_fallback_cache
+"lee-on-the-solent, united kingdom",United Kingdom,direct_match
+leeds,Unknown,unknown_fallback_cache
+"leeds, united kingdom",United Kingdom,direct_match
+leek,Unknown,unknown_fallback_cache
+"leek, united kingdom",United Kingdom,direct_match
+"leerdam, the netherlands",Netherlands,direct_match
+"leeton, australia",Australia,direct_match
+"leeuwarden, the netherlands",Netherlands,direct_match
+"legian, indonesia",Indonesia,direct_match
+leicester,Unknown,unknown_fallback_cache
+"leicester, england, united kingdom",United Kingdom,direct_match
+"leicester, united kingdom",United Kingdom,direct_match
+"leicestershire, united kingdom",United Kingdom,direct_match
+"leiden, the netherlands",Netherlands,direct_match
+"leigh-on sea, united kingdom",United Kingdom,direct_match
+"leipzig, germany",Germany,direct_match
+"lelystad, the netherlands",Netherlands,direct_match
+"lembeke, belgium",Belgium,direct_match
+"lenasia, south africa",South Africa,direct_match
+"les deux-alpes, france",France,direct_match
+"les gets, france",France,direct_match
+"les houches, france",France,direct_match
+"lesbos, greece",Greece,direct_match
+"lesmurdie, australia",Australia,direct_match
+"letchworth garden city, united kingdom",United Kingdom,direct_match
+"leuven, belgium",Belgium,direct_match
+"lewes, united kingdom",United Kingdom,direct_match
+"leyland, united kingdom",United Kingdom,direct_match
+"leyte island, philippines",Philippines,direct_match
+"leyton, united kingdom",United Kingdom,direct_match
+"lhasa, china",China,direct_match
+li er,Eritrea,direct_match
+"liberec, czech republic",Czechia,direct_match
+"lichfield, united kingdom",United Kingdom,direct_match
+"lichtervelde, belgium",Belgium,direct_match
+"lienz, austria",Austria,direct_match
+"liepaja, latvia",Latvia,direct_match
+"lightwater, united kingdom",United Kingdom,direct_match
+lija,Unknown,unknown_fallback_cache
+"lille, france",France,direct_match
+"lillehammer, norway",Norway,direct_match
+"lillestrom, norway",Norway,direct_match
+"lima, peru",Peru,direct_match
+limassol,Unknown,unknown_fallback_cache
+"limassol city, cyprus",Cyprus,direct_match
+"limbang, malaysia",Malaysia,direct_match
+"limmen, the netherlands",Netherlands,direct_match
+"limousin, france",France,direct_match
+lincoln,Unknown,unknown_fallback_cache
+"lincoln, united kingdom",United Kingdom,direct_match
+"lincolnshire, united kingdom",United Kingdom,direct_match
+"lincs, england",United Kingdom,direct_match
+"linkoping, sweden",Sweden,direct_match
+"linlithgow, united kingdom",United Kingdom,direct_match
+"linz, austria",Austria,direct_match
+"liphook, united kingdom",United Kingdom,direct_match
+"lisbon district, portugal",Portugal,direct_match
+"lisbon, portugal",Portugal,direct_match
+"liskeard, united kingdom",United Kingdom,direct_match
+"lismore, australia",Australia,direct_match
+"liverpool, united kingdom",United Kingdom,direct_match
+"liversedge, united kingdom",United Kingdom,direct_match
+"livingston, united kingdom",United Kingdom,direct_match
+"ljubljana, bohinj, slovenia",Slovenia,direct_match
+"ljubljana, slovenia",Slovenia,direct_match
+"ljungsbro, sweden",Sweden,direct_match
+"ljustero, sweden",Sweden,direct_match
+"llandovery, united kingdom",United Kingdom,direct_match
+"llandyrnog, united kingdom",United Kingdom,direct_match
+"llanelli, united kingdom",United Kingdom,direct_match
+"llanfairfechan, united kingdom",United Kingdom,direct_match
+"llanrhaeadr ym mochnant, united kingdom",United Kingdom,direct_match
+"llwyngwril, united kingdom",United Kingdom,direct_match
+"lochristi, belgium",Belgium,direct_match
+"loddefjord, norway",Norway,direct_match
+"lodz, poland",Poland,direct_match
+"logan city, australia",Australia,direct_match
+"lohmen, germany",Germany,direct_match
+"lombardy, italy",Italy,direct_match
+"lomma, sweden",Sweden,direct_match
+london,Unknown,unknown_fallback_cache
+london uk,United Kingdom,direct_match
+"london, canada",Canada,direct_match
+"london, england, united kingdom",United Kingdom,direct_match
+"london, uk",United Kingdom,direct_match
+"london, united kingdom",United Kingdom,direct_match
+"longfield, united kingdom",United Kingdom,direct_match
+"longyearbyen, norway",Norway,direct_match
+"looe, united kingdom",United Kingdom,direct_match
+"loon op zand, the netherlands",Netherlands,direct_match
+"loosdrecht, the netherlands",Netherlands,direct_match
+los angeles,Unknown,unknown_fallback_cache
+"los angeles, california",Unknown,unknown_fallback_cache
+"los angeles, california, usa",United States,direct_match
+"losone, switzerland",Switzerland,direct_match
+"loughor, united kingdom",United Kingdom,direct_match
+"loughrea, ireland",Ireland,direct_match
+"loughton, united kingdom",United Kingdom,direct_match
+"louisville, kentucky",Unknown,unknown_fallback_cache
+"loule, portugal",Portugal,direct_match
+"louny, czech republic",Czechia,direct_match
+"louth, united kingdom",United Kingdom,direct_match
+"lower hutt, new zealand",New Zealand,direct_match
+"lowestoft, united kingdom",United Kingdom,direct_match
+"luang prabang, laos",Lao People's Democratic Republic,direct_match
+"lublin, poland",Poland,direct_match
+lucca,Unknown,unknown_fallback_cache
+"lucca, italy",Italy,direct_match
+"lucerne, switzerland",Switzerland,direct_match
+"luckington, united kingdom",United Kingdom,direct_match
+"lucknow, india",India,direct_match
+"ludenscheid, germany",Germany,direct_match
+"ludhiana, india",India,direct_match
+"lugano, switzerland",Switzerland,direct_match
+"lulea, sweden",Sweden,direct_match
+"lund, sweden",Sweden,direct_match
+"luneburg, germany",Germany,direct_match
+"luscherz, switzerland",Switzerland,direct_match
+"lusiana, italy",Italy,direct_match
+"luton, england, united kingdom",United Kingdom,direct_match
+"luton, united kingdom",United Kingdom,direct_match
+"lutterworth, united kingdom",United Kingdom,direct_match
+"luxembourg city, luxembourg",Luxembourg,direct_match
+"luz, portugal",Portugal,direct_match
+"luzhu district, taoyuan",Unknown,unknown_fallback_cache
+"luzon, philippines",Philippines,direct_match
+"lyme regis, united kingdom",United Kingdom,direct_match
+"lymington, united kingdom",United Kingdom,direct_match
+"lyndhurst, united kingdom",United Kingdom,direct_match
+"lyon, france",France,direct_match
+m,Unknown,unknown_fallback_cache
+m nchen,Unknown,unknown_fallback_cache
+"maasin, philippines",Philippines,direct_match
+"maassluis, the netherlands",Netherlands,direct_match
+"maastricht, the netherlands",Netherlands,direct_match
+"macau, china",China,direct_match
+"macclesfield, united kingdom",United Kingdom,direct_match
+"macedon ranges, australia",Australia,direct_match
+"machida, japan",Japan,direct_match
+mackay,Unknown,unknown_fallback_cache
+"mackay, australia",Australia,direct_match
+"madeira, portugal",Portugal,direct_match
+"madinat zayed, united arab emirates",United Arab Emirates,direct_match
+"madison, wisconsin",Unknown,unknown_fallback_cache
+"madrid, spain",Spain,direct_match
+"madurai, india",India,direct_match
+"magliano sabina, italy",Italy,direct_match
+"mahale mountains national park, tanzania","Tanzania, United Republic of",direct_match
+"mahe island, seychelles",Seychelles,direct_match
+maidenhead,Unknown,unknown_fallback_cache
+"maidenhead, united kingdom",United Kingdom,direct_match
+"maidstone, united kingdom",United Kingdom,direct_match
+maine,Unknown,unknown_fallback_cache
+"mainz, germany",Germany,direct_match
+"maitland, australia",Australia,direct_match
+"majorca, spain",Spain,direct_match
+"makarska, croatia",Croatia,direct_match
+"malacky, slovakia",Slovakia,direct_match
+"malaga, spain",Spain,direct_match
+malaysia,Malaysia,direct_match
+maldives,Maldives,direct_match
+"maldon, australia",Australia,direct_match
+"maldon, united kingdom",United Kingdom,direct_match
+male,Unknown,unknown_fallback_cache
+male maldives,Maldives,direct_match
+"male, asia",Unknown,unknown_fallback_cache
+"male, maldvies",Unknown,unknown_fallback_cache
+"malibu, california",Unknown,unknown_fallback_cache
+"malmo, sweden",Sweden,direct_match
+malta,Malta,direct_match
+"manalapan, new jersey",Jersey,direct_match
+"manama, bahrain",Bahrain,direct_match
+manchester,Unknown,unknown_fallback_cache
+"manchester, united kingdom",United Kingdom,direct_match
+"manchester, vermont",Unknown,unknown_fallback_cache
+"mandalay, myanmar",Myanmar,direct_match
+"mandurah, australia",Australia,direct_match
+"mangalore, india",India,direct_match
+"manhattan beach, california",Unknown,unknown_fallback_cache
+"manhattan, ks",Unknown,unknown_fallback_cache
+"manila, philippines",Philippines,direct_match
+"manipal, india",India,direct_match
+manitoba,Unknown,unknown_fallback_cache
+"manley, united kingdom",United Kingdom,direct_match
+"mansfield, united kingdom",United Kingdom,direct_match
+"mantua, italy",Italy,direct_match
+"marbella, spain",Spain,direct_match
+"margao, india",India,direct_match
+"margaret river, australia",Australia,direct_match
+"margate, australia",Australia,direct_match
+"margate, united kingdom",United Kingdom,direct_match
+"marianske lazne, czech republic",Czechia,direct_match
+"maribor, slovenia",Slovenia,direct_match
+"maribyrnong, australia",Australia,direct_match
+mariefred,Unknown,unknown_fallback_cache
+"market drayton, united kingdom",United Kingdom,direct_match
+"markfield, united kingdom",United Kingdom,direct_match
+"markham, canada",Canada,direct_match
+"marlborough, massachusetts",Unknown,unknown_fallback_cache
+"marlborough, united kingdom",United Kingdom,direct_match
+"marlow, united kingdom",United Kingdom,direct_match
+maroochydore,Unknown,unknown_fallback_cache
+"maroochydore, australia",Australia,direct_match
+"marple, united kingdom",United Kingdom,direct_match
+"marquette, michigan",Unknown,unknown_fallback_cache
+"marrakech, morocco",Morocco,direct_match
+"marsascala, malta",Malta,direct_match
+"marseille, france",France,direct_match
+maryland,Unknown,unknown_fallback_cache
+"mashhad, iran","Iran, Islamic Republic of",direct_match
+"matawan, new jersey",Jersey,direct_match
+"maumee, ohio",Unknown,unknown_fallback_cache
+mauritius,Mauritius,direct_match
+"mayenne, france",France,direct_match
+"mayfield, united kingdom",United Kingdom,direct_match
+"mayrhofen, austria",Austria,direct_match
+"mbabane, eswatini swaziland",Eswatini,direct_match
+"mccrae, australia",Australia,direct_match
+"mckinnon, australia",Australia,direct_match
+"mclaren vale, australia",Australia,direct_match
+"mclean, virginia",Unknown,unknown_fallback_cache
+"mcmurray, pennsylvania",Unknown,unknown_fallback_cache
+"mechelen, belgium",Belgium,direct_match
+"medford, massachusetts",Unknown,unknown_fallback_cache
+"medina, saudi arabia",Saudi Arabia,direct_match
+"medlow bath, australia",Australia,direct_match
+meegoda,Unknown,unknown_fallback_cache
+"meerut, india",India,direct_match
+"meiningen, germany",Germany,direct_match
+"meir, belgium",Belgium,direct_match
+"meitar, israel",Israel,direct_match
+"melaka state, malaysia",Malaysia,direct_match
+"melaka, malaysia",Malaysia,direct_match
+melboune,Unknown,unknown_fallback_cache
+melbourne,Unknown,unknown_fallback_cache
+melbourne victoria,Unknown,unknown_fallback_cache
+"melbourne, australia",Australia,direct_match
+"melbourne, victoria, australia",Australia,direct_match
+"melksham, united kingdom",United Kingdom,direct_match
+"melrose, united kingdom",United Kingdom,direct_match
+"melton mowbray, united kingdom",United Kingdom,direct_match
+"memphis, tennessee",Unknown,unknown_fallback_cache
+"mena, arkansas",Unknown,unknown_fallback_cache
+"menen, belgium",Belgium,direct_match
+"menlo park, california",Unknown,unknown_fallback_cache
+"menton, france",France,direct_match
+"meppershall, united kingdom",United Kingdom,direct_match
+"merchtem, belgium",Belgium,direct_match
+"mere, united kingdom",United Kingdom,direct_match
+"meredith, new hampshire",Unknown,unknown_fallback_cache
+"mersin, turkiye",Unknown,unknown_fallback_cache
+"merthyr tydfil county, united kingdom",United Kingdom,direct_match
+merzig,Unknown,unknown_fallback_cache
+"mestre, italy",Italy,direct_match
+"metchosin, canada",Canada,direct_match
+"metro manila, philippines",Philippines,direct_match
+mexborough south yorkshire,Unknown,unknown_fallback_cache
+"mexico city, mexico",Mexico,direct_match
+miami beach,Unknown,unknown_fallback_cache
+"miami, florida",Unknown,unknown_fallback_cache
+michigan,Unknown,unknown_fallback_cache
+"middelbeers, the netherlands",Netherlands,direct_match
+"middelburg, the netherlands",Netherlands,direct_match
+"middlesbrough, united kingdom",United Kingdom,direct_match
+"middleton, australia",Australia,direct_match
+"midhurst, united kingdom",United Kingdom,direct_match
+midlands,Unknown,unknown_fallback_cache
+midlothian,Unknown,unknown_fallback_cache
+"midsomer norton, united kingdom",United Kingdom,direct_match
+"mijas, spain",Spain,direct_match
+"milan, italy",Italy,direct_match
+"milano, lombardia, italy",Italy,direct_match
+"mildura, australia",Australia,direct_match
+"milford haven, united kingdom",United Kingdom,direct_match
+"milford, new zealand",New Zealand,direct_match
+"mill creek, united states",United States,direct_match
+"mill, the netherlands",Netherlands,direct_match
+"millbrae, california",Unknown,unknown_fallback_cache
+"millet, canada",Canada,direct_match
+"millom, united kingdom",United Kingdom,direct_match
+milton keynes,Unknown,unknown_fallback_cache
+"milton keynes, united kingdom",United Kingdom,direct_match
+"milwaukee, wisconsin",Unknown,unknown_fallback_cache
+"minehead, united kingdom",United Kingdom,direct_match
+minneapolis,Unknown,unknown_fallback_cache
+"minneapolis, minnesota",Unknown,unknown_fallback_cache
+"minnetonka, minnesota",Unknown,unknown_fallback_cache
+"minster on sea, united kingdom",United Kingdom,direct_match
+"mirfield, united kingdom",United Kingdom,direct_match
+"mirrabooka, australia",Australia,direct_match
+"miskolc, miskolc, hungary",Hungary,direct_match
+"mississauga, canada",Canada,direct_match
+"modbury, united kingdom",United Kingdom,direct_match
+"modena, italy",Italy,direct_match
+"moehrendorf, germany",Germany,direct_match
+"mogadishu, somalia",Somalia,direct_match
+"moissac, france",France,direct_match
+"mol, belgium",Belgium,direct_match
+"mold, united kingdom",United Kingdom,direct_match
+"molndal, sweden",Sweden,direct_match
+"mombasa, kenya",Kenya,direct_match
+"monasterevin, ireland",Ireland,direct_match
+"monbulk, australia",Australia,direct_match
+"monesties, france",France,direct_match
+"monkton combe, united kingdom",United Kingdom,direct_match
+"monmouth junction, new jersey",Jersey,direct_match
+"monmouthshire, united kingdom",United Kingdom,direct_match
+"mont-sur-rolle, switzerland",Switzerland,direct_match
+"montagnac, france",France,direct_match
+"montagu, south africa",South Africa,direct_match
+montana,Unknown,unknown_fallback_cache
+"montesson, france",France,direct_match
+"montpellier, france",France,direct_match
+"montreal, canada",Canada,direct_match
+"montreal, quebec, canada",Canada,direct_match
+montrealcanada,Unknown,unknown_fallback_cache
+"montreuil, france",France,direct_match
+"montreux, switzerland",Switzerland,direct_match
+"montrose, united kingdom",United Kingdom,direct_match
+mooroolbark,Unknown,unknown_fallback_cache
+"morecambe, united kingdom",United Kingdom,direct_match
+"morley, australia",Australia,direct_match
+"mornington peninsula, australia",Australia,direct_match
+"morpeth, united kingdom",United Kingdom,direct_match
+"morrisville, north carolina",Unknown,unknown_fallback_cache
+moscow,Unknown,unknown_fallback_cache
+"moscow, russia",Unknown,unknown_fallback_cache
+"mosman, australia",Australia,direct_match
+"moss beach, california",Unknown,unknown_fallback_cache
+"moss vale, australia",Australia,direct_match
+"mosta, malta",Malta,direct_match
+"motueka, new zealand",New Zealand,direct_match
+mount lavinia,Unknown,unknown_fallback_cache
+"mount maunganui, new zealand",New Zealand,direct_match
+"mount pleasant, australia",Australia,direct_match
+mount warning,Unknown,unknown_fallback_cache
+"mount waverley, australia",Australia,direct_match
+"mountain creek, australia",Australia,direct_match
+mountlavinia,Unknown,unknown_fallback_cache
+"msida, malta",Malta,direct_match
+mucklagh,Unknown,unknown_fallback_cache
+"mudgeeraba, australia",Australia,direct_match
+"muenster, germany",Germany,direct_match
+"mugla province, turkiye",Unknown,unknown_fallback_cache
+"mukilteo, washington",Unknown,unknown_fallback_cache
+"mukteshwar, india",India,direct_match
+"mulhouse, france",France,direct_match
+"mullaloo, australia",Australia,direct_match
+"multan, pakistan",Pakistan,direct_match
+mumbai,Unknown,unknown_fallback_cache
+"mumbai bombay, india",India,direct_match
+"mumbai, india",India,direct_match
+"mumbai, maharashtra, india",India,direct_match
+"munich, germany",Germany,direct_match
+"munkebo, denmark",Denmark,direct_match
+"munster, germany",Germany,direct_match
+"munster, united states",United States,direct_match
+"murcia, spain",Spain,direct_match
+muscat,Unknown,unknown_fallback_cache
+"muscat governorate, oman",Oman,direct_match
+"muscat, masqat, oman",Oman,direct_match
+"muscat, oman",Oman,direct_match
+"muta, slovenia",Slovenia,direct_match
+"myrniong, australia",Australia,direct_match
+"mysuru mysore, india",India,direct_match
+n yorks,Unknown,unknown_fallback_cache
+n.ireland,Ireland,direct_match
+"naas, ireland",Ireland,direct_match
+"nadi, fiji",Fiji,direct_match
+"naestved, denmark",Denmark,direct_match
+"nagahama, japan",Japan,direct_match
+"nagano, japan",Japan,direct_match
+nagpur,Unknown,unknown_fallback_cache
+"nagpur, india",India,direct_match
+"naha, japan",Japan,direct_match
+"nailsworth, united kingdom",United Kingdom,direct_match
+"nairn, united kingdom",United Kingdom,direct_match
+nairobi,Unknown,unknown_fallback_cache
+"nairobi, kenya",Kenya,direct_match
+"namur, belgium",Belgium,direct_match
+"nana glen, australia",Australia,direct_match
+"nanaimo, canada",Canada,direct_match
+"nanchang, china",China,direct_match
+"nancy, france",France,direct_match
+"nantes, france",France,direct_match
+"nantwich, united kingdom",United Kingdom,direct_match
+"nanyuki town, kenya",Kenya,direct_match
+"napier, new zealand",New Zealand,direct_match
+"naples, florida",Unknown,unknown_fallback_cache
+"naples, italy",Italy,direct_match
+narara,Unknown,unknown_fallback_cache
+"nashik, india",India,direct_match
+"nashville, tennessee",Unknown,unknown_fallback_cache
+"national capital territory of delhi, india",India,direct_match
+"navi mumbai, india",India,direct_match
+ne england,United Kingdom,direct_match
+near prague,Unknown,unknown_fallback_cache
+"neath, united kingdom",United Kingdom,direct_match
+"nederland, texas",Unknown,unknown_fallback_cache
+"nedescina, croatia",Croatia,direct_match
+"needham market, united kingdom",United Kingdom,direct_match
+negombo,Unknown,unknown_fallback_cache
+"nelliyampathy, india",India,direct_match
+"nellore, india",India,direct_match
+"nelson, new zealand",New Zealand,direct_match
+"nelspruit, south africa",South Africa,direct_match
+nepal,Nepal,direct_match
+"nerang, australia",Australia,direct_match
+"nerja, spain",Spain,direct_match
+"nesna, norway",Norway,direct_match
+"neuenstadt am kocher, germany",Germany,direct_match
+"neustadt an der weinstrasse, germany",Germany,direct_match
+"neutral bay, australia",Australia,direct_match
+nevada,Unknown,unknown_fallback_cache
+never never land,Unknown,unknown_fallback_cache
+"new aurora-english turn district, louisiana",Unknown,unknown_fallback_cache
+"new braunfels, texas",Unknown,unknown_fallback_cache
+"new brunswick, new jersey",Jersey,direct_match
+"new castle, pennsylvania",Unknown,unknown_fallback_cache
+"new city, new york",Unknown,unknown_fallback_cache
+new delhi,Unknown,unknown_fallback_cache
+"new delhi, india",India,direct_match
+new england,United Kingdom,direct_match
+"new forest national park hampshire, united kingdom",United Kingdom,direct_match
+new hampshire,Unknown,unknown_fallback_cache
+"new haven, connecticut",Unknown,unknown_fallback_cache
+"new hyde park, new york",Unknown,unknown_fallback_cache
+new jersey,Jersey,direct_match
+"new malden, united kingdom",United Kingdom,direct_match
+"new milton, united kingdom",United Kingdom,direct_match
+"new providence, new jersey",Jersey,direct_match
+new quay,Unknown,unknown_fallback_cache
+"new ross, ireland",Ireland,direct_match
+"new south wales, australia",Australia,direct_match
+new york,Unknown,unknown_fallback_cache
+"new york city, new york",Unknown,unknown_fallback_cache
+"new york, new york",Unknown,unknown_fallback_cache
+"new york, new york, united states",United States,direct_match
+"new york, ny",Unknown,unknown_fallback_cache
+new zealand,New Zealand,direct_match
+"newbridge, ireland",Ireland,direct_match
+"newbury, united kingdom",United Kingdom,direct_match
+newcastle,Unknown,unknown_fallback_cache
+"newcastle upon tyne, uk",United Kingdom,direct_match
+"newcastle upon tyne, united kingdom",United Kingdom,direct_match
+"newcastle, australia",Australia,direct_match
+"newcastle, staffs, england",United Kingdom,direct_match
+"newcastle-under-lyme, united kingdom",United Kingdom,direct_match
+"newfoundland and labrador, canada",Canada,direct_match
+"newhaven, united kingdom",United Kingdom,direct_match
+"newmarket, united kingdom",United Kingdom,direct_match
+"newnham, united kingdom",United Kingdom,direct_match
+"newport pagnell, united kingdom",United Kingdom,direct_match
+"newport, rhode island",Unknown,unknown_fallback_cache
+"newport, united kingdom",United Kingdom,direct_match
+"newport-on-tay, united kingdom",United Kingdom,direct_match
+"newquay, united kingdom",United Kingdom,direct_match
+"newry, united kingdom",United Kingdom,direct_match
+"newton abbot, united kingdom",United Kingdom,direct_match
+newton aycliffe,Unknown,unknown_fallback_cache
+"newton, massachusetts",Unknown,unknown_fallback_cache
+"newtown, united kingdom",United Kingdom,direct_match
+"nha trang, vietnam",Viet Nam,direct_match
+"nhulunbuy, australia",Australia,direct_match
+"niagara-on-the-lake, canada",Canada,direct_match
+"niamey, niger",Niger,direct_match
+"nice, france",France,direct_match
+"nicosia, cyprus",Cyprus,direct_match
+"nijmegen, the netherlands",Netherlands,direct_match
+"nishinomiya-shi, hyogo, japan",Japan,direct_match
+"nitra, slovakia",Slovakia,direct_match
+"nivelles, belgium",Belgium,direct_match
+"nizhny novgorod, russia",Unknown,unknown_fallback_cache
+nl,Netherlands,direct_match
+"noida, india",India,direct_match
+"nokia, finland",Finland,direct_match
+"noosa north shore, australia",Australia,direct_match
+"noosa, australia",Australia,direct_match
+norfolk,Unknown,unknown_fallback_cache
+"norfolk, united kingdom",United Kingdom,direct_match
+"norrkoping, sweden",Sweden,direct_match
+"norrtalje, sweden",Sweden,direct_match
+north devon,Unknown,unknown_fallback_cache
+north east england,United Kingdom,direct_match
+"north east england, united kingdom",United Kingdom,direct_match
+"north ferriby, united kingdom",United Kingdom,direct_match
+"north fremantle, australia",Australia,direct_match
+"north haven, australia",Australia,direct_match
+"north holland province, the netherlands",Netherlands,direct_match
+"north lanarkshire, united kingdom",United Kingdom,direct_match
+"north wales, united kingdom",United Kingdom,direct_match
+"north west england, united kingdom",United Kingdom,direct_match
+north yorks,Unknown,unknown_fallback_cache
+north yorkshire,Unknown,unknown_fallback_cache
+"north yorkshire, united kingdom",United Kingdom,direct_match
+"northallerton, united kingdom",United Kingdom,direct_match
+northampton,Unknown,unknown_fallback_cache
+"northampton, united kingdom",United Kingdom,direct_match
+"northeast, england",United Kingdom,direct_match
+"northern norway, norway",Norway,direct_match
+"northern portugal, portugal",Portugal,direct_match
+"northport, new york",Unknown,unknown_fallback_cache
+northumberland,Unknown,unknown_fallback_cache
+northumberland uk,United Kingdom,direct_match
+"northumberland, england",United Kingdom,direct_match
+"northwich, united kingdom",United Kingdom,direct_match
+"northwood, united kingdom",United Kingdom,direct_match
+norway,Norway,direct_match
+"norwich, norfolk",Unknown,unknown_fallback_cache
+"norwich, united kingdom",United Kingdom,direct_match
+"notteroy municipality, norway",Norway,direct_match
+nottingham,Unknown,unknown_fallback_cache
+"nottingham, england, united kingdom",United Kingdom,direct_match
+"nottingham, united kingdom",United Kingdom,direct_match
+"nottinghamshire, united kingdom",United Kingdom,direct_match
+"novi sad, serbia",Serbia,direct_match
+"novigrad, croatia",Croatia,direct_match
+"novo mesto, slovenia",Slovenia,direct_match
+nsw australia,Australia,direct_match
+nugegoda,Unknown,unknown_fallback_cache
+nuneaton,Unknown,unknown_fallback_cache
+"nuremberg, germany",Germany,direct_match
+"nusa dua, indonesia",Indonesia,direct_match
+nuwara eliya,Unknown,unknown_fallback_cache
+nuwaraeliya,Unknown,unknown_fallback_cache
+ny,Unknown,unknown_fallback_cache
+"ny, ny",Unknown,unknown_fallback_cache
+"nymburk, czech republic",Czechia,direct_match
+"o fallon, illinois",Unknown,unknown_fallback_cache
+"oahu, hawaii",Unknown,unknown_fallback_cache
+"oakland, california",Unknown,unknown_fallback_cache
+"oakville, canada",Canada,direct_match
+"oberurnen, switzerland",Switzerland,direct_match
+"ocean grove, australia",Australia,direct_match
+"ocean shores, nsw, australia",Australia,direct_match
+"odense, denmark",Denmark,direct_match
+"odesa, ukraine",Ukraine,direct_match
+"oegstgeest, the netherlands",Netherlands,direct_match
+"oeiras, portugal",Portugal,direct_match
+"ogden, utah",Unknown,unknown_fallback_cache
+"ohio city, ohio",Unknown,unknown_fallback_cache
+"oklahoma city, oklahoma",Unknown,unknown_fallback_cache
+old bar,Unknown,unknown_fallback_cache
+"oldenzaal, the netherlands",Netherlands,direct_match
+"oldham, united kingdom",United Kingdom,direct_match
+"olhao, portugal",Portugal,direct_match
+"olomouc, czech republic",Czechia,direct_match
+"olongapo, philippines",Philippines,direct_match
+"olsztyn, poland",Poland,direct_match
+oman,Oman,direct_match
+"onsala, sweden",Sweden,direct_match
+"ontario, canada",Canada,direct_match
+"oosterhout, the netherlands",Netherlands,direct_match
+"ooty udhagamandalam, india",India,direct_match
+"opoczno, poland",Poland,direct_match
+"opole, poland",Poland,direct_match
+"orange county, california",Unknown,unknown_fallback_cache
+"orangeville, canada",Canada,direct_match
+"orebro, sweden",Sweden,direct_match
+"orland park, illinois",Unknown,unknown_fallback_cache
+"orlando, florida",Unknown,unknown_fallback_cache
+"orleans, france",France,direct_match
+"ormskirk, united kingdom",United Kingdom,direct_match
+"ornskoldsvik, sweden",Sweden,direct_match
+"oroklini, cyprus",Cyprus,direct_match
+orpington kent,Unknown,unknown_fallback_cache
+"orpington, united kingdom",United Kingdom,direct_match
+"osaka, japan",Japan,direct_match
+"oshawa, canada",Canada,direct_match
+"oshkosh, wisconsin",Unknown,unknown_fallback_cache
+"osijek, croatia",Croatia,direct_match
+oslo,Unknown,unknown_fallback_cache
+"oslo, norway",Norway,direct_match
+"oslo, oslo, norway",Norway,direct_match
+"oss, the netherlands",Netherlands,direct_match
+"ossining, new york",Unknown,unknown_fallback_cache
+"ostrava, czech republic",Czechia,direct_match
+"otley, united kingdom",United Kingdom,direct_match
+"otrokovice, czech republic",Czechia,direct_match
+ottawa,Unknown,unknown_fallback_cache
+"ottawa, canada",Canada,direct_match
+"ottensheim, austria",Austria,direct_match
+"ottoland, the netherlands",Netherlands,direct_match
+"ouagadougou, burkina faso",Burkina Faso,direct_match
+"oud-beijerland, the netherlands",Netherlands,direct_match
+"overijse, belgium",Belgium,direct_match
+"oviedo, spain",Spain,direct_match
+oxford,Unknown,unknown_fallback_cache
+"oxford, england, united kingdom",United Kingdom,direct_match
+"oxford, united kingdom",United Kingdom,direct_match
+"oxfordshire, united kingdom",United Kingdom,direct_match
+oz,Unknown,unknown_fallback_cache
+"paarl, south africa",South Africa,direct_match
+"pacific coast australia, australia",Australia,direct_match
+"padua, italy",Italy,direct_match
+"pagewood, australia",Australia,direct_match
+"paignton, united kingdom",United Kingdom,direct_match
+pakistan,Pakistan,direct_match
+"palawan island, philippines",Philippines,direct_match
+"palm beach, australia",Australia,direct_match
+"palm cove, australia",Australia,direct_match
+"palma de mallorca, spain",Spain,direct_match
+"palmerston north, new zealand",New Zealand,direct_match
+"palmerston, australia",Australia,direct_match
+"palmwoods, australia",Australia,direct_match
+"palo alto, california",Unknown,unknown_fallback_cache
+pamplemousses district,Unknown,unknown_fallback_cache
+"panama city, panama",Panama,direct_match
+"panchkula, india",India,direct_match
+"panjim, india",India,direct_match
+"papakura, new zealand",New Zealand,direct_match
+"papamoa, new zealand",New Zealand,direct_match
+"papatoetoe, new zealand",New Zealand,direct_match
+"paracas, peru",Peru,direct_match
+paris,Unknown,unknown_fallback_cache
+"paris, france",France,direct_match
+"park city, utah",Unknown,unknown_fallback_cache
+"park orchards, australia",Australia,direct_match
+"paro, bhutan",Bhutan,direct_match
+"parwanoo, india",India,direct_match
+"pasay, philippines",Philippines,direct_match
+paso robles,Unknown,unknown_fallback_cache
+"paso robles, california",Unknown,unknown_fallback_cache
+"patea, new zealand",New Zealand,direct_match
+"paternoster, south africa",South Africa,direct_match
+"pathanamthitta, india",India,direct_match
+"paulstown, ireland",Ireland,direct_match
+"peasenhall, united kingdom",United Kingdom,direct_match
+"pecs, hungary",Hungary,direct_match
+"peize, the netherlands",Netherlands,direct_match
+"pekanbaru, indonesia",Indonesia,direct_match
+"pembroke, united kingdom",United Kingdom,direct_match
+"pen-y-cae, united kingdom",United Kingdom,direct_match
+"penang island, malaysia",Malaysia,direct_match
+"penang, malaysia",Malaysia,direct_match
+"penistone, united kingdom",United Kingdom,direct_match
+penkhull,Unknown,unknown_fallback_cache
+pennsylvania,Unknown,unknown_fallback_cache
+"pensacola, florida, united states",United States,direct_match
+"penweathers, united kingdom",United Kingdom,direct_match
+"penzance, united kingdom",United Kingdom,direct_match
+"peregian beach, australia",Australia,direct_match
+"peregian springs, australia",Australia,direct_match
+"perpignan, france",France,direct_match
+"perranporth, united kingdom",United Kingdom,direct_match
+"perros-guirec, france",France,direct_match
+perth,Unknown,unknown_fallback_cache
+"perth hills, australia",Australia,direct_match
+"perth, australia",Australia,direct_match
+"perth, united kingdom",United Kingdom,direct_match
+"perugia, italy",Italy,direct_match
+"peshawar, pakistan",Pakistan,direct_match
+"petach tikva, israel",Israel,direct_match
+"petah tiqwa, israel",Israel,direct_match
+"petaling jaya, malaysia",Malaysia,direct_match
+"petaling jaya, selangor, malaysia",Malaysia,direct_match
+"peterborough, united kingdom",United Kingdom,direct_match
+"peterhead, united kingdom",United Kingdom,direct_match
+"petersfield, united kingdom",United Kingdom,direct_match
+"petersham, australia",Australia,direct_match
+"petra - wadi musa, jordan",Jordan,direct_match
+"philadelphia, new york",Unknown,unknown_fallback_cache
+"philadelphia, pennsylvania",Unknown,unknown_fallback_cache
+philippines,Philippines,direct_match
+"phillip island, australia",Australia,direct_match
+phnom penh,Unknown,unknown_fallback_cache
+"phnom penh, cambodia",Cambodia,direct_match
+"phoenix, arizona",Unknown,unknown_fallback_cache
+"phu quoc island, vietnam",Viet Nam,direct_match
+"phuket town, thailand",Thailand,direct_match
+"phuket, thailand",Thailand,direct_match
+"pickering, canada",Canada,direct_match
+"pickering, united kingdom",United Kingdom,direct_match
+"picnic bay, australia",Australia,direct_match
+"pilsen, czech republic",Czechia,direct_match
+pinner,Unknown,unknown_fallback_cache
+"pinner, united kingdom",United Kingdom,direct_match
+"pipera, romania",Romania,direct_match
+"piraeus, greece",Greece,direct_match
+"pistoia, italy",Italy,direct_match
+planet earth,Unknown,unknown_fallback_cache
+planet insectia,Unknown,unknown_fallback_cache
+"plasencia, spain",Spain,direct_match
+"playa blanca, spain",Spain,direct_match
+"playa d en bossa, spain",Spain,direct_match
+"playa del carmen, mexico",Mexico,direct_match
+"playa del carmen, quintana roo, mexico",Mexico,direct_match
+"playa del ingles, spain",Spain,direct_match
+"playa flamingo, costa rica",Costa Rica,direct_match
+"pleasanton, california",Unknown,unknown_fallback_cache
+"plumpton, australia",Australia,direct_match
+"plymouth, united kingdom",United Kingdom,direct_match
+"pocono pines, pennsylvania",Unknown,unknown_fallback_cache
+"podgorica, montenegro",Montenegro,direct_match
+pokhara,Unknown,unknown_fallback_cache
+"pokhara, nepal",Nepal,direct_match
+poland,Poland,direct_match
+poland in europe,Poland,direct_match
+"poland, ohio",Poland,direct_match
+"polegate, united kingdom",United Kingdom,direct_match
+"pollenca, spain",Spain,direct_match
+"polotsk, belarus",Belarus,direct_match
+"polzeath, united kingdom",United Kingdom,direct_match
+"pondicherry, india",India,direct_match
+"pont-d ouilly, france",France,direct_match
+"pontypool, united kingdom",United Kingdom,direct_match
+"pontypridd, united kingdom",United Kingdom,direct_match
+poole,Unknown,unknown_fallback_cache
+"poole, united kingdom",United Kingdom,direct_match
+"poowong, australia",Australia,direct_match
+"pornainen, finland",Finland,direct_match
+"port augusta, australia",Australia,direct_match
+"port barton, philippines",Philippines,direct_match
+"port blair, india",India,direct_match
+"port coquitlam, canada",Canada,direct_match
+"port douglas, australia",Australia,direct_match
+"port elizabeth, south africa",South Africa,direct_match
+"port hedland, australia",Australia,direct_match
+"port isaac, united kingdom",United Kingdom,direct_match
+port louis,Unknown,unknown_fallback_cache
+"port macquarie, australia",Australia,direct_match
+"port moresby, papua new guinea",Papua New Guinea,direct_match
+"port perry, canada",Canada,direct_match
+"port said, egypt",Egypt,direct_match
+"port severn, canada",Canada,direct_match
+"port talbot, united kingdom",United Kingdom,direct_match
+"portishead, united kingdom",United Kingdom,direct_match
+portland,Unknown,unknown_fallback_cache
+"portland, or",Unknown,unknown_fallback_cache
+"portland, oregon",Unknown,unknown_fallback_cache
+porto,Unknown,unknown_fallback_cache
+"porto alegre, rs",Serbia,direct_match
+"porto salvo, portugal",Portugal,direct_match
+"porto, portugal",Portugal,direct_match
+"portoroz, slovenia",Slovenia,direct_match
+portsmouth,Unknown,unknown_fallback_cache
+"portsmouth, new hampshire",Unknown,unknown_fallback_cache
+"portsmouth, united kingdom",United Kingdom,direct_match
+"portsoy, united kingdom",United Kingdom,direct_match
+portugal,Portugal,direct_match
+"portwrinkle, united kingdom",United Kingdom,direct_match
+"potters bar, united kingdom",United Kingdom,direct_match
+"potton, united kingdom",United Kingdom,direct_match
+"pottsville, australia",Australia,direct_match
+"poulton le fylde, united kingdom",United Kingdom,direct_match
+"poway, california",Unknown,unknown_fallback_cache
+"poynton, united kingdom",United Kingdom,direct_match
+"poznan, poland",Poland,direct_match
+prague,Unknown,unknown_fallback_cache
+"prague, czech republic",Czechia,direct_match
+"prague, hlavni mesto praha, czech republic",Czechia,direct_match
+"praia, cape verde",Unknown,unknown_fallback_cache
+preston,Unknown,unknown_fallback_cache
+"preston, united kingdom",United Kingdom,direct_match
+"prestwick, united kingdom",United Kingdom,direct_match
+pretoria,Unknown,unknown_fallback_cache
+"pretoria, south africa",South Africa,direct_match
+princes risborough,Unknown,unknown_fallback_cache
+"princes risborough, united kingdom",United Kingdom,direct_match
+"princeton, new jersey",Jersey,direct_match
+"providence, rhode island",Unknown,unknown_fallback_cache
+"province of barcelona, spain",Spain,direct_match
+"province of chieti, italy",Italy,direct_match
+"province of rimini, italy",Italy,direct_match
+"province of trento, italy",Italy,direct_match
+"province of verona, italy",Italy,direct_match
+"provincetown, massachusetts",Unknown,unknown_fallback_cache
+"prutz, austria",Austria,direct_match
+"puerto del carmen, spain",Spain,direct_match
+"puerto vallarta, mexico",Mexico,direct_match
+"pula, croatia",Croatia,direct_match
+"pulau redang, malaysia",Malaysia,direct_match
+"pulborough, united kingdom",United Kingdom,direct_match
+pune,Unknown,unknown_fallback_cache
+"pune district, india",India,direct_match
+"pune, india",India,direct_match
+"purley, united kingdom",United Kingdom,direct_match
+"putnam, connecticut",Unknown,unknown_fallback_cache
+puttaparthy,Unknown,unknown_fallback_cache
+qatar,Qatar,direct_match
+"qingdao, china",China,direct_match
+qld,Unknown,unknown_fallback_cache
+"quadra island, canada",Canada,direct_match
+"quebec city, canada",Canada,direct_match
+"quebec, canada",Canada,direct_match
+"queensland, australia",Australia,direct_match
+"queenstown, new zealand",New Zealand,direct_match
+"quetigny, france",France,direct_match
+"quezon city, philippines",Philippines,direct_match
+"quito, ecuador",Ecuador,direct_match
+"quorn, united kingdom",United Kingdom,direct_match
+"rabat, malta",Malta,direct_match
+"rabat, morocco",Morocco,direct_match
+"radlett, united kingdom",United Kingdom,direct_match
+"radstock, united kingdom",United Kingdom,direct_match
+"railay beach, thailand",Thailand,direct_match
+"raipur, india",India,direct_match
+"rajasthan, india",India,direct_match
+"rajkot, india",India,direct_match
+"rajshahi city, bangladesh",Bangladesh,direct_match
+"rakiura, stewart island",Unknown,unknown_fallback_cache
+"raleigh, north carolina",Unknown,unknown_fallback_cache
+"ramallah, palestinian territories",Unknown,unknown_fallback_cache
+"ramat hasharon, israel",Israel,direct_match
+"ramsey, united kingdom",United Kingdom,direct_match
+"ramsgate, united kingdom",United Kingdom,direct_match
+"ranchi, india",India,direct_match
+"rancho palos verdes, california",Unknown,unknown_fallback_cache
+"randwick, australia",Australia,direct_match
+"ranst, belgium",Belgium,direct_match
+"ras al khaimah, united arab emirates",United Arab Emirates,direct_match
+rasdhoo,Unknown,unknown_fallback_cache
+"ravenshead, united kingdom",United Kingdom,direct_match
+"rawai, thailand",Thailand,direct_match
+"rayleigh, united kingdom",United Kingdom,direct_match
+"rayong, thailand",Thailand,direct_match
+reading,Unknown,unknown_fallback_cache
+"reading, uk",United Kingdom,direct_match
+"reading, united kingdom",United Kingdom,direct_match
+rechberg,Unknown,unknown_fallback_cache
+"red deer, canada",Canada,direct_match
+"redcliffe, australia",Australia,direct_match
+"redditch, england",United Kingdom,direct_match
+"redlands, california",Unknown,unknown_fallback_cache
+"redmond, washington",Unknown,unknown_fallback_cache
+"redruth, united kingdom",United Kingdom,direct_match
+"regensburg, germany",Germany,direct_match
+"reggio emilia, italy",Italy,direct_match
+"reigate, united kingdom",United Kingdom,direct_match
+"reith bei seefeld, austria",Austria,direct_match
+"renfrewshire, united kingdom",United Kingdom,direct_match
+"reservoir, australia",Australia,direct_match
+"reuver, the netherlands",Netherlands,direct_match
+"reykjavik, iceland",Iceland,direct_match
+"rhayader, united kingdom",United Kingdom,direct_match
+"rhodes, greece",Greece,direct_match
+"rhyl, united kingdom",United Kingdom,direct_match
+"riberac, france",France,direct_match
+"riccione, italy",Italy,direct_match
+"richmond, australia",Australia,direct_match
+"richmond, united kingdom",United Kingdom,direct_match
+"richmond, virginia",Unknown,unknown_fallback_cache
+"richmond-upon-thames, united kingdom",United Kingdom,direct_match
+"riffa, bahrain",Bahrain,direct_match
+"riga, latvia",Latvia,direct_match
+"rijeka, croatia",Croatia,direct_match
+"rijssen, the netherlands",Netherlands,direct_match
+"rijswijk, the netherlands",Netherlands,direct_match
+"ringwood, united kingdom",United Kingdom,direct_match
+"rio de janeiro, rj",Germany,direct_match
+"rio verde, arizona",Unknown,unknown_fallback_cache
+"ripollet, spain",Spain,direct_match
+"risby, united kingdom",United Kingdom,direct_match
+"rishikesh, india",India,direct_match
+"rishon lezion, israel",Israel,direct_match
+"risskov, denmark",Denmark,direct_match
+"riverwoods, illinois",Unknown,unknown_fallback_cache
+riyadh,Unknown,unknown_fallback_cache
+"riyadh province, saudi arabia",Saudi Arabia,direct_match
+"riyadh, saudi arabia",Saudi Arabia,direct_match
+"robertsbridge, united kingdom",United Kingdom,direct_match
+"rochedale south, australia",Australia,direct_match
+"rochester, michigan",Unknown,unknown_fallback_cache
+"rochester, minnesota",Unknown,unknown_fallback_cache
+"rochester, new york",Unknown,unknown_fallback_cache
+"rochester, united kingdom",United Kingdom,direct_match
+"rochford, united kingdom",United Kingdom,direct_match
+"rockdale, australia",Australia,direct_match
+"rockhampton, australia",Australia,direct_match
+"rockingham, australia",Australia,direct_match
+rocky river,Unknown,unknown_fallback_cache
+"roeselare, belgium",Belgium,direct_match
+"rogate, united kingdom",United Kingdom,direct_match
+"romashkovo, russia",Unknown,unknown_fallback_cache
+rome,Unknown,unknown_fallback_cache
+"rome, italy",Italy,direct_match
+"romford, united kingdom",United Kingdom,direct_match
+"romsey, united kingdom",United Kingdom,direct_match
+"rooty hill, australia",Australia,direct_match
+"roscommon, ireland",Ireland,direct_match
+"rosebud, australia",Australia,direct_match
+"rosenheim, germany",Germany,direct_match
+"rosmalen, the netherlands",Netherlands,direct_match
+"ross, australia",Australia,direct_match
+"ross-on-wye, united kingdom",United Kingdom,direct_match
+"rossendale, united kingdom",United Kingdom,direct_match
+"rotherwick, united kingdom",United Kingdom,direct_match
+"rothesay, united kingdom",United Kingdom,direct_match
+"rothley, united kingdom",United Kingdom,direct_match
+"rothwell, united kingdom",United Kingdom,direct_match
+"rotorua, new zealand",New Zealand,direct_match
+rotterdam,Unknown,unknown_fallback_cache
+"rotterdam, the netherlands",Netherlands,direct_match
+"rotterdam, zuid-holland, netherlands",Netherlands,direct_match
+"roudnice nad labem, czech republic",Czechia,direct_match
+"rouen, france",France,direct_match
+"rowville, australia",Australia,direct_match
+"royal tunbridge wells, united kingdom",United Kingdom,direct_match
+"roydon, united kingdom",United Kingdom,direct_match
+"royston, united kingdom",United Kingdom,direct_match
+"rozelle, australia",Australia,direct_match
+"rudersdorf, germany",Germany,direct_match
+"rugby, united kingdom",United Kingdom,direct_match
+"rugeley, united kingdom",United Kingdom,direct_match
+"ruislip, united kingdom",United Kingdom,direct_match
+"rushall, united kingdom",United Kingdom,direct_match
+russia,Unknown,unknown_fallback_cache
+"rutland, united kingdom",United Kingdom,direct_match
+"rybachy, russia",Unknown,unknown_fallback_cache
+"rybnik, poland",Poland,direct_match
+"rychnov nad kneznou, czech republic",Czechia,direct_match
+"ryde, australia",Australia,direct_match
+"rye, australia",Australia,direct_match
+"rye, united kingdom",United Kingdom,direct_match
+s ddeutschland,Unknown,unknown_fallback_cache
+"s, akershus, norway",Norway,direct_match
+"sa coma, spain",Spain,direct_match
+"saalfelden am steinernen meer, austria",Austria,direct_match
+"saar, bahrain",Bahrain,direct_match
+"sabac, serbia",Serbia,direct_match
+"sabadell, spain",Spain,direct_match
+"sacramento, california",Unknown,unknown_fallback_cache
+"saddle brook, new jersey",Jersey,direct_match
+"saffron walden, united kingdom",United Kingdom,direct_match
+saint amand belgium,Belgium,direct_match
+"saint francis bay, south africa",South Africa,direct_match
+"saint hyacinthe, canada",Canada,direct_match
+"saint julian s, malta",Malta,direct_match
+"saint louis, missouri",Unknown,unknown_fallback_cache
+"saint paul, minnesota",Unknown,unknown_fallback_cache
+"saint-brieuc, france",France,direct_match
+"saint-lambert, canada",Canada,direct_match
+"saint-malo, france",France,direct_match
+"saint-maur-des-fosses, france",France,direct_match
+"salach, germany",Germany,direct_match
+"salamanca, spain",Spain,direct_match
+"salamander bay, australia",Australia,direct_match
+"saldanha, south africa",South Africa,direct_match
+"sale, united kingdom",United Kingdom,direct_match
+"salem, oregon",Unknown,unknown_fallback_cache
+"salento, italy",Italy,direct_match
+"salford, united kingdom",United Kingdom,direct_match
+"salisbury, united kingdom",United Kingdom,direct_match
+"salmiya, kuwait",Kuwait,direct_match
+"salmon arm, canada",Canada,direct_match
+"salt lake city, utah",Unknown,unknown_fallback_cache
+"salt spring island, canada",Canada,direct_match
+salzburg,Unknown,unknown_fallback_cache
+"salzburg, austria",Austria,direct_match
+samoa,Samoa,direct_match
+"samorin, bratislava, slovakia",Slovakia,direct_match
+"san agustin, spain",Spain,direct_match
+"san carlos, california",Unknown,unknown_fallback_cache
+"san carlos, mexico",Mexico,direct_match
+"san clemente, california",Unknown,unknown_fallback_cache
+"san diego, california",Unknown,unknown_fallback_cache
+"san felice del benaco, italy",Italy,direct_match
+san francisco,Unknown,unknown_fallback_cache
+"san francisco, california",Unknown,unknown_fallback_cache
+"san francisco, california, united states",United States,direct_match
+"san francisco, united states",United States,direct_match
+"san jose, california",Unknown,unknown_fallback_cache
+"san jose, costa rica",Costa Rica,direct_match
+"san luis obispo, california",Unknown,unknown_fallback_cache
+"san mateo, california",Unknown,unknown_fallback_cache
+"san rafael de escazu, costa rica",Costa Rica,direct_match
+"san rafael, california",Unknown,unknown_fallback_cache
+"san ramon, california",Unknown,unknown_fallback_cache
+"san sebastian - donostia, spain",Spain,direct_match
+"sanaa, yemen",Yemen,direct_match
+"sancreed, united kingdom",United Kingdom,direct_match
+"sandbach, united kingdom",United Kingdom,direct_match
+"sandhurst, united kingdom",United Kingdom,direct_match
+"sandnes, norway",Norway,direct_match
+"sandpoint, idaho",Unknown,unknown_fallback_cache
+"sandringham, new zealand",New Zealand,direct_match
+sandy utah,Unknown,unknown_fallback_cache
+"sankt polten, austria",Austria,direct_match
+"santa barbara, california",Unknown,unknown_fallback_cache
+"santa catalina, panama",Panama,direct_match
+"santa cruz de tenerife, spain",Spain,direct_match
+"santa cruz, portugal",Portugal,direct_match
+"santa fe, new mexico",Mexico,direct_match
+"santa marta, colombia",Colombia,direct_match
+"santa monica, california",Unknown,unknown_fallback_cache
+"santa rosa, california",Unknown,unknown_fallback_cache
+"santiago, cape verde",Unknown,unknown_fallback_cache
+"santiago, chile",Chile,direct_match
+"santo tirso, portugal",Portugal,direct_match
+santorini,Unknown,unknown_fallback_cache
+"santorini, greece",Greece,direct_match
+"santos, sp",Unknown,unknown_fallback_cache
+"sao paulo, sp",Unknown,unknown_fallback_cache
+"saranda, albania",Albania,direct_match
+"saratoga, california",Unknown,unknown_fallback_cache
+"saskatoon, canada",Canada,direct_match
+"satu mare, romania",Romania,direct_match
+saudi arabia,Saudi Arabia,direct_match
+"savage, minnesota",Unknown,unknown_fallback_cache
+"scarborough, australia",Australia,direct_match
+"scarborough, united kingdom",United Kingdom,direct_match
+"schaerbeek, belgium",Belgium,direct_match
+"scheveningen, the netherlands",Netherlands,direct_match
+"schinnen, the netherlands",Netherlands,direct_match
+"schrobenhausen, germany",Germany,direct_match
+"scissett, united kingdom",United Kingdom,direct_match
+scotland,United Kingdom,direct_match
+"scotland, uk",United Kingdom,direct_match
+"scotland, united kingdom",United Kingdom,direct_match
+"scottsdale, arizona",Unknown,unknown_fallback_cache
+"scunthorpe, united kingdom",United Kingdom,direct_match
+"seaford, united kingdom",United Kingdom,direct_match
+"seal beach, california",Unknown,unknown_fallback_cache
+"seattle, washington",Unknown,unknown_fallback_cache
+"seaview, united kingdom",United Kingdom,direct_match
+"secunderabad, india",India,direct_match
+"seddon, australia",Australia,direct_match
+segovia,Unknown,unknown_fallback_cache
+"seia, portugal",Portugal,direct_match
+"selangor, malaysia",Malaysia,direct_match
+"selby, united kingdom",United Kingdom,direct_match
+"seligenstadt, germany",Germany,direct_match
+seongnam,Unknown,unknown_fallback_cache
+seoul,Unknown,unknown_fallback_cache
+"seoul, south korea","Korea, Republic of",direct_match
+serbia,Serbia,direct_match
+"seremban, malaysia",Malaysia,direct_match
+"sesimbra, portugal",Portugal,direct_match
+"setagaya, japan",Japan,direct_match
+"setubal, portugal",Portugal,direct_match
+"seven mile beach, australia",Australia,direct_match
+"sevenoaks, united kingdom",United Kingdom,direct_match
+sf bay area,Unknown,unknown_fallback_cache
+"sfo, ca",Canada,direct_match
+"shaftesbury, united kingdom",United Kingdom,direct_match
+"shah alam, malaysia",Malaysia,direct_match
+"shallotte, north carolina",Unknown,unknown_fallback_cache
+shanghai,Unknown,unknown_fallback_cache
+"shanghai region, china",China,direct_match
+"shanghai, china",China,direct_match
+shangri-la,Lao People's Democratic Republic,direct_match
+"shanklin, united kingdom",United Kingdom,direct_match
+sharjah,Unknown,unknown_fallback_cache
+"sharjah, united arab emirates",United Arab Emirates,direct_match
+sheffield,Unknown,unknown_fallback_cache
+"sheffield, england, united kingdom",United Kingdom,direct_match
+"sheffield, united kingdom",United Kingdom,direct_match
+"shefford, united kingdom",United Kingdom,direct_match
+"shell cove, australia",Australia,direct_match
+"shellharbour, australia",Australia,direct_match
+"shelton, connecticut",Unknown,unknown_fallback_cache
+"shenzhen, china",China,direct_match
+"shepton mallet, united kingdom",United Kingdom,direct_match
+"sherborne, united kingdom",United Kingdom,direct_match
+"sheringham, united kingdom",United Kingdom,direct_match
+"shibuya, japan",Japan,direct_match
+"shillingford, united kingdom",United Kingdom,direct_match
+"shimoga district, india",India,direct_match
+"shiraz, iran","Iran, Islamic Republic of",direct_match
+"shoalhaven, australia",Australia,direct_match
+"shoeburyness, united kingdom",United Kingdom,direct_match
+"shoreham-by-sea, united kingdom",United Kingdom,direct_match
+"shorne, united kingdom",United Kingdom,direct_match
+"shrewsbury, united kingdom",United Kingdom,direct_match
+"shropshire, united kingdom",United Kingdom,direct_match
+"shute harbour, australia",Australia,direct_match
+"sicily, italy",Italy,direct_match
+"siem reap, cambodia",Cambodia,direct_match
+"sihanoukville, cambodia",Cambodia,direct_match
+"sikkim, india",India,direct_match
+"silkeborg, denmark",Denmark,direct_match
+"silsden, united kingdom",United Kingdom,direct_match
+"simi valley, california",Unknown,unknown_fallback_cache
+singa,Unknown,unknown_fallback_cache
+singapore,Singapore,direct_match
+"singapore river, singapore",Singapore,direct_match
+"singapore, null, singapore",Singapore,direct_match
+"singapore, singapore",Singapore,direct_match
+"singen, germany",Germany,direct_match
+"sint-martens-latem, belgium",Belgium,direct_match
+"sirsa, india",India,direct_match
+sitges,Unknown,unknown_fallback_cache
+"sitges, spain",Spain,direct_match
+"sitrah, bahrain",Bahrain,direct_match
+"sittard, the netherlands",Netherlands,direct_match
+"skaering, denmark",Denmark,direct_match
+"skaneateles, new york",Unknown,unknown_fallback_cache
+"skanor, sweden",Sweden,direct_match
+"skawina, poland",Poland,direct_match
+"skerries, ireland",Ireland,direct_match
+"skipton, united kingdom",United Kingdom,direct_match
+sl,Sierra Leone,direct_match
+"sleaford, united kingdom",United Kingdom,direct_match
+"sligo, ireland",Ireland,direct_match
+"slough, united kingdom",United Kingdom,direct_match
+slovakia,Slovakia,direct_match
+slovenia,Slovenia,direct_match
+"smithfield, australia",Australia,direct_match
+"smoerum, denmark",Denmark,direct_match
+"snekkersten, denmark",Denmark,direct_match
+"sofia, bulgaria",Bulgaria,direct_match
+"soleure, switzerland",Switzerland,direct_match
+"solihull, united kingdom",United Kingdom,direct_match
+"soller, spain",Spain,direct_match
+solna,Unknown,unknown_fallback_cache
+"solna, sweden",Sweden,direct_match
+"solo, indonesia",Indonesia,direct_match
+solomon islands,Solomon Islands,direct_match
+somerset,Unknown,unknown_fallback_cache
+"somerset west, south africa",South Africa,direct_match
+"somerset, united kingdom",United Kingdom,direct_match
+"sopot, poland",Poland,direct_match
+"soriano nel cimino, italy",Italy,direct_match
+south africa,South Africa,direct_match
+south america,Unknown,unknown_fallback_cache
+"south australia, australia",Australia,direct_match
+"south bend, indiana",Unknown,unknown_fallback_cache
+south coast brit,Unknown,unknown_fallback_cache
+"south devon, united kingdom",United Kingdom,direct_match
+"south east england, united kingdom",United Kingdom,direct_match
+south korea,"Korea, Republic of",direct_match
+"south lake tahoe, california",Unknown,unknown_fallback_cache
+"south molton, united kingdom",United Kingdom,direct_match
+south pacific,Unknown,unknown_fallback_cache
+"south perth, australia",Australia,direct_match
+"south petherton, united kingdom",United Kingdom,direct_match
+"south shields, united kingdom",United Kingdom,direct_match
+south wales,United Kingdom,direct_match
+"south warnborough, united kingdom",United Kingdom,direct_match
+"south west england, united kingdom",United Kingdom,direct_match
+"south woodham ferrers, united kingdom",United Kingdom,direct_match
+"south yorkshire, united kingdom",United Kingdom,direct_match
+southampton,Unknown,unknown_fallback_cache
+southampton uk,United Kingdom,direct_match
+"southampton, england",United Kingdom,direct_match
+"southampton, united kingdom",United Kingdom,direct_match
+southend,Unknown,unknown_fallback_cache
+southend-on-sea,Unknown,unknown_fallback_cache
+"southend-on-sea, united kingdom",United Kingdom,direct_match
+"southern finland, finland",Finland,direct_match
+southernerbuzz,Unknown,unknown_fallback_cache
+"southport, australia",Australia,direct_match
+"southport, north carolina",Unknown,unknown_fallback_cache
+"southport, united kingdom",United Kingdom,direct_match
+"southwater, united kingdom",United Kingdom,direct_match
+"southwell, united kingdom",United Kingdom,direct_match
+"southwold, united kingdom",United Kingdom,direct_match
+spain,Spain,direct_match
+"spalding, united kingdom",United Kingdom,direct_match
+"split, croatia",Croatia,direct_match
+"splitska, croatia",Croatia,direct_match
+"spring lake, new jersey",Jersey,direct_match
+"springfield, massachusetts",Unknown,unknown_fallback_cache
+sri lanka,Sri Lanka,direct_match
+st albans,Sao Tome and Principe,direct_match
+st andrews,Sao Tome and Principe,direct_match
+"st austell, united kingdom",United Kingdom,direct_match
+"st helens, united kingdom",United Kingdom,direct_match
+"st ives, united kingdom",United Kingdom,direct_match
+"st johann im pongau, austria",Austria,direct_match
+"st kilda, australia",Australia,direct_match
+"st. albans, united kingdom",United Kingdom,direct_match
+"st. davids, united kingdom",United Kingdom,direct_match
+"st. gallen, switzerland",Switzerland,direct_match
+"st. george, utah",Sao Tome and Principe,direct_match
+"st. helier, united kingdom",United Kingdom,direct_match
+"st. ives, australia",Australia,direct_match
+"st. neots, united kingdom",United Kingdom,direct_match
+"st. pete beach, florida",Sao Tome and Principe,direct_match
+"st. petersburg, russia",Sao Tome and Principe,direct_match
+"stafford, united kingdom",United Kingdom,direct_match
+"staffordshire, united kingdom",United Kingdom,direct_match
+"staines, united kingdom",United Kingdom,direct_match
+"stamford, united kingdom",United Kingdom,direct_match
+stanmore,Unknown,unknown_fallback_cache
+"stanmore, united kingdom",United Kingdom,direct_match
+"stanstead abbotts, united kingdom",United Kingdom,direct_match
+"stanton, united kingdom",United Kingdom,direct_match
+"staraya kupavna, russia",Unknown,unknown_fallback_cache
+"staten island, new york",Unknown,unknown_fallback_cache
+"staunton, virginia",Unknown,unknown_fallback_cache
+"stavanger, norway",Norway,direct_match
+"stavanger, rogaland, norway",Norway,direct_match
+"stellenbosch, south africa",South Africa,direct_match
+"stenloese, denmark",Denmark,direct_match
+"sterling, virginia",Unknown,unknown_fallback_cache
+"stevenage, united kingdom",United Kingdom,direct_match
+steyning,Unknown,unknown_fallback_cache
+"steyning, united kingdom",United Kingdom,direct_match
+sth yorkshire,Unknown,unknown_fallback_cache
+"stirling, united kingdom",United Kingdom,direct_match
+"stockbridge, united kingdom",United Kingdom,direct_match
+stockholm,Unknown,unknown_fallback_cache
+"stockholm county, sweden",Sweden,direct_match
+stockholm sweden,Sweden,direct_match
+"stockholm, stockholms l n, sweden",Sweden,direct_match
+"stockholm, sverige",Unknown,unknown_fallback_cache
+"stockholm, sweden",Sweden,direct_match
+stockport,Unknown,unknown_fallback_cache
+"stockport, united kingdom",United Kingdom,direct_match
+"stockton, new jersey",Jersey,direct_match
+"stockton-on-tees, united kingdom",United Kingdom,direct_match
+"stoke gifford, united kingdom",United Kingdom,direct_match
+"stoke sub hamdon, united kingdom",United Kingdom,direct_match
+"stoke-on-trent, england, united kingdom",United Kingdom,direct_match
+"stoke-on-trent, united kingdom",United Kingdom,direct_match
+"stone town, tanzania","Tanzania, United Republic of",direct_match
+"stone, staffs",Unknown,unknown_fallback_cache
+"stourbridge, united kingdom",United Kingdom,direct_match
+"strasbourg, france",France,direct_match
+"stratford-upon-avon, united kingdom",United Kingdom,direct_match
+"stratham, new hampshire",Unknown,unknown_fallback_cache
+"strausberg, germany",Germany,direct_match
+"streaky bay, australia",Australia,direct_match
+"stuttgart, germany",Germany,direct_match
+"subang jaya, malaysia",Malaysia,direct_match
+"sudbury, united kingdom",United Kingdom,direct_match
+"suffolk, united kingdom",United Kingdom,direct_match
+"sukhothai, thailand",Thailand,direct_match
+"sulaymaniyah, iraq",Iraq,direct_match
+"summer hill, australia",Australia,direct_match
+"summerstrand, south africa",South Africa,direct_match
+"sunapee, new hampshire",Unknown,unknown_fallback_cache
+"sunbury, united kingdom",United Kingdom,direct_match
+"sunderland, united kingdom",United Kingdom,direct_match
+"sunrise beach, australia",Australia,direct_match
+sunshine coast,Unknown,unknown_fallback_cache
+"sunshine coast, australia",Australia,direct_match
+"surabaya, indonesia",Indonesia,direct_match
+surat,Unknown,unknown_fallback_cache
+"surat, india",India,direct_match
+"surbiton, united kingdom",United Kingdom,direct_match
+"surfers paradise, australia",Australia,direct_match
+surrey,Unknown,unknown_fallback_cache
+"surrey, canada",Canada,direct_match
+"surrey, england",United Kingdom,direct_match
+"surrey, united kingdom",United Kingdom,direct_match
+"surry hills, australia",Australia,direct_match
+"sussex, new jersey",Jersey,direct_match
+"sutton, united kingdom",United Kingdom,direct_match
+"suva, fiji",Fiji,direct_match
+"svendborg, denmark",Denmark,direct_match
+swan lake mb canada,Canada,direct_match
+"swanage, united kingdom",United Kingdom,direct_match
+swansea,Unknown,unknown_fallback_cache
+"swansea county, united kingdom",United Kingdom,direct_match
+"swansea, united kingdom",United Kingdom,direct_match
+sweden,Sweden,direct_match
+"swindon, united kingdom",United Kingdom,direct_match
+swis,Unknown,unknown_fallback_cache
+switzerland,Switzerland,direct_match
+sydney,Unknown,unknown_fallback_cache
+"sydney, australia",Australia,direct_match
+"sydney, new south wales, australia",Australia,direct_match
+"sydney, nsw",Unknown,unknown_fallback_cache
+"sylvania, australia",Australia,direct_match
+"szazhalombatta, hungary",Hungary,direct_match
+"szczecin, poland",Poland,direct_match
+"szentendre, hungary",Hungary,direct_match
+"taby, sweden",Sweden,direct_match
+"tacoma, washington",Unknown,unknown_fallback_cache
+"tadworth, united kingdom",United Kingdom,direct_match
+"taichung, taiwan","Taiwan, Province of China",direct_match
+"tain, united kingdom",United Kingdom,direct_match
+taipei,Unknown,unknown_fallback_cache
+"taipei, taiwan","Taiwan, Province of China",direct_match
+"taito, japan",Japan,direct_match
+taiwan,"Taiwan, Province of China",direct_match
+"tallinn, estonia",Estonia,direct_match
+"tamborine mountain, australia",Australia,direct_match
+"tampa, florida",Unknown,unknown_fallback_cache
+"tampere, finland",Finland,direct_match
+"tamworth, australia",Australia,direct_match
+tang xia china,China,direct_match
+"tanjung benoa, indonesia",Indonesia,direct_match
+"tanjung pinang, indonesia",Indonesia,direct_match
+"tannum sands, australia",Australia,direct_match
+"taoyuan district, taoyuan",Unknown,unknown_fallback_cache
+"taren point, australia",Australia,direct_match
+"tarpon springs, florida",Unknown,unknown_fallback_cache
+"tarporley, united kingdom",United Kingdom,direct_match
+"tarragona, spain",Spain,direct_match
+tasmania,Unknown,unknown_fallback_cache
+"tatla lake, canada",Canada,direct_match
+taunton,Unknown,unknown_fallback_cache
+"taunton, united kingdom",United Kingdom,direct_match
+"taupo, new zealand",New Zealand,direct_match
+"tauranga, new zealand",New Zealand,direct_match
+"tbilisi, georgia",Georgia,direct_match
+"te henga bethells beach, new zealand",New Zealand,direct_match
+"teddington, united kingdom",United Kingdom,direct_match
+"tehran, iran","Iran, Islamic Republic of",direct_match
+tel aviv,Unknown,unknown_fallback_cache
+"tel aviv, israel",Israel,direct_match
+"telford, united kingdom",United Kingdom,direct_match
+"temple ewell, united kingdom",United Kingdom,direct_match
+"terranora, australia",Australia,direct_match
+"terrassa, spain",Spain,direct_match
+"tersefanou, cyprus",Cyprus,direct_match
+texas,Unknown,unknown_fallback_cache
+"texas gulf coast, texas",Unknown,unknown_fallback_cache
+thailand,Thailand,direct_match
+thane - west,Unknown,unknown_fallback_cache
+"thane, india",India,direct_match
+"thanh lam, vietnam",Viet Nam,direct_match
+"the hague, the netherlands",Netherlands,direct_match
+the netherlands,Netherlands,direct_match
+"the royal town of sutton coldfield, united kingdom",United Kingdom,direct_match
+thens,Unknown,unknown_fallback_cache
+"thiais, france",France,direct_match
+"thimphu district, bhutan",Bhutan,direct_match
+"thimphu, bhutan",Bhutan,direct_match
+"thiruvananthapuram trivandrum, india",India,direct_match
+"thiruvidandai, india",India,direct_match
+"thorne, united kingdom",United Kingdom,direct_match
+"thornham, united kingdom",United Kingdom,direct_match
+"thornlie, australia",Australia,direct_match
+"thornton cleveleys, united kingdom",United Kingdom,direct_match
+"thorpdale, australia",Australia,direct_match
+"thrapston, united kingdom",United Kingdom,direct_match
+"thrissur district, india",India,direct_match
+"thrissur, india",India,direct_match
+"thundersley, united kingdom",United Kingdom,direct_match
+"tibubeneng, indonesia",Indonesia,direct_match
+"tiburon, california",Unknown,unknown_fallback_cache
+"tidworth, united kingdom",United Kingdom,direct_match
+"tilburg, the netherlands",Netherlands,direct_match
+timaru,Unknown,unknown_fallback_cache
+"timaru, new zealand",New Zealand,direct_match
+"timisoara, romania",Romania,direct_match
+"tiong bahru, singapore",Singapore,direct_match
+"tipperary, ireland",Ireland,direct_match
+"tirupati, india",India,direct_match
+"tiruvannamalai, india",India,direct_match
+"tjaereborg, denmark",Denmark,direct_match
+tokyo,Unknown,unknown_fallback_cache
+"tokyo prefecture, japan",Japan,direct_match
+"tokyo, japan",Japan,direct_match
+"tonsberg, norway",Norway,direct_match
+"toowoomba, australia",Australia,direct_match
+"torekov, sweden",Sweden,direct_match
+toronto,Unknown,unknown_fallback_cache
+"toronto, australia",Australia,direct_match
+"toronto, canada",Canada,direct_match
+"toronto, ontario, canada",Canada,direct_match
+"torquay, united kingdom",United Kingdom,direct_match
+"torrensville, australia",Australia,direct_match
+"torun, poland",Poland,direct_match
+"totton, united kingdom",United Kingdom,direct_match
+"toulouse, france",France,direct_match
+"towcester, united kingdom",United Kingdom,direct_match
+"townsville, australia",Australia,direct_match
+"towson, maryland",Unknown,unknown_fallback_cache
+"trakai, lithuania",Lithuania,direct_match
+traralgon,Unknown,unknown_fallback_cache
+"tremelo, belgium",Belgium,direct_match
+"trim, ireland",Ireland,direct_match
+"tring, united kingdom",United Kingdom,direct_match
+trinidad and tobago,Trinidad and Tobago,direct_match
+"trinidad, colorado",Unknown,unknown_fallback_cache
+"trois-rivieres, canada",Canada,direct_match
+"troisdorf, germany",Germany,direct_match
+"trondheim, norway",Norway,direct_match
+"troon, united kingdom",United Kingdom,direct_match
+"trosa, sweden",Sweden,direct_match
+trou aux biches,Unknown,unknown_fallback_cache
+"trowbridge, united kingdom",United Kingdom,direct_match
+"truro, united kingdom",United Kingdom,direct_match
+"trusham, united kingdom",United Kingdom,direct_match
+"tualatin, oregon",Unknown,unknown_fallback_cache
+"tucson, arizona",Unknown,unknown_fallback_cache
+"tulum, mexico",Mexico,direct_match
+"tumkur, india",India,direct_match
+"tumut, australia",Australia,direct_match
+"tunis, tunisia",Tunisia,direct_match
+"tur langton, united kingdom",United Kingdom,direct_match
+"turin, italy",Italy,direct_match
+turkiye,Unknown,unknown_fallback_cache
+"turku, finland",Finland,direct_match
+"turnhout, belgium",Belgium,direct_match
+"tweed heads, australia",Australia,direct_match
+"twello, the netherlands",Netherlands,direct_match
+"twickenham, united kingdom",United Kingdom,direct_match
+"twyford, united kingdom",United Kingdom,direct_match
+"tyne and wear, united kingdom",United Kingdom,direct_match
+tyne wear,Unknown,unknown_fallback_cache
+"tynemouth, england, united kingdom",United Kingdom,direct_match
+"tyreso, sweden",Sweden,direct_match
+u s a,Unknown,unknown_fallback_cache
+uae,United Arab Emirates,direct_match
+"ubon ratchathani, thailand",Thailand,direct_match
+"uccle, belgium",Belgium,direct_match
+"uckfield, united kingdom",United Kingdom,direct_match
+"udaipur, india",India,direct_match
+"uddevalla, sweden",Sweden,direct_match
+"udine, italy",Italy,direct_match
+udupi,Unknown,unknown_fallback_cache
+"udupi district, india",India,direct_match
+"udupi, india",India,direct_match
+"uga, spain",Spain,direct_match
+uganda,Uganda,direct_match
+"ugijar, spain",Spain,direct_match
+"uithoorn, the netherlands",Netherlands,direct_match
+uk,United Kingdom,direct_match
+"ulaanbaatar, mongolia",Mongolia,direct_match
+ulladulla,Unknown,unknown_fallback_cache
+"umina beach, australia",Australia,direct_match
+"union territory of pondicherry, india",India,direct_match
+united arab emirates,United Arab Emirates,direct_match
+united kingdom,United Kingdom,direct_match
+united states,United States,direct_match
+"united, pennsylvania",Unknown,unknown_fallback_cache
+"upper moutere, new zealand",New Zealand,direct_match
+"uppsala, sweden",Sweden,direct_match
+urbana,Unknown,unknown_fallback_cache
+"urmston, united kingdom",United Kingdom,direct_match
+"urunga, australia",Australia,direct_match
+us,United States,direct_match
+"utrecht province, the netherlands",Netherlands,direct_match
+"utrecht, the netherlands",Netherlands,direct_match
+"utsunomiya, japan",Japan,direct_match
+uttar kashi,Unknown,unknown_fallback_cache
+"uttoxeter, united kingdom",United Kingdom,direct_match
+"uvaly, czech republic",Czechia,direct_match
+"uxbridge, united kingdom",United Kingdom,direct_match
+"vaassen, niederlande",Unknown,unknown_fallback_cache
+"vadnais heights, minnesota",Unknown,unknown_fallback_cache
+vadodara,Unknown,unknown_fallback_cache
+"vadodara district, india",India,direct_match
+"vadodara, india",India,direct_match
+"vaduz, liechtenstein",Liechtenstein,direct_match
+"val d isere, france",France,direct_match
+"valen, norway",Norway,direct_match
+"valence, france",France,direct_match
+"valencia, spain",Spain,direct_match
+"valencian community, spain",Spain,direct_match
+"valley heights, australia",Australia,direct_match
+vancouver,Unknown,unknown_fallback_cache
+"vancouver coast and mountains, canada",Canada,direct_match
+"vancouver island, canada",Canada,direct_match
+"vancouver, canada",Canada,direct_match
+"vancouver, wa",Unknown,unknown_fallback_cache
+"vancouver, washington",Unknown,unknown_fallback_cache
+"vanlose, denmark",Denmark,direct_match
+"varca, india",India,direct_match
+various,Unknown,unknown_fallback_cache
+"varna, bulgaria",Bulgaria,direct_match
+"vaslui, romania",Romania,direct_match
+"vatican city, italy",Italy,direct_match
+vavuniya,Unknown,unknown_fallback_cache
+"veenendaal, the netherlands",Netherlands,direct_match
+"vejle, denmark",Denmark,direct_match
+"velika gorica, croatia",Croatia,direct_match
+"vellore, india",India,direct_match
+"venice, florida",Unknown,unknown_fallback_cache
+"venice, italy",Italy,direct_match
+"venlo, the netherlands",Netherlands,direct_match
+"ventura, california",Unknown,unknown_fallback_cache
+"verdals ren, nord-trondelag, norway",Norway,direct_match
+"vermont, australia",Australia,direct_match
+"vermont, usa",United States,direct_match
+"vernon, canada",Canada,direct_match
+"verona, italy",Italy,direct_match
+"versailles, france",France,direct_match
+"vevey, switzerland",Switzerland,direct_match
+"vicenza, italy",Italy,direct_match
+victoria bc,Unknown,unknown_fallback_cache
+"victoria, australia",Australia,direct_match
+"victoria, canada",Canada,direct_match
+"victoria, seychelles",Seychelles,direct_match
+vienna,Unknown,unknown_fallback_cache
+"vienna region, austria",Austria,direct_match
+"vienna, austria",Austria,direct_match
+"vienna, virginia",Unknown,unknown_fallback_cache
+"vientiane, laos",Lao People's Democratic Republic,direct_match
+vietnam,Viet Nam,direct_match
+"vila nova de gaia, portugal",Portugal,direct_match
+"vila nova de santo andre, portugal",Portugal,direct_match
+"villanueva de la canada, spain",Canada,direct_match
+vilnius,Unknown,unknown_fallback_cache
+"vilnius, lithuania",Lithuania,direct_match
+"vilvoorde, belgium",Belgium,direct_match
+"vinca, france",France,direct_match
+"vineland, canada",Canada,direct_match
+"vinkovci, croatia",Croatia,direct_match
+virginia,Unknown,unknown_fallback_cache
+"visakhapatnam, india",India,direct_match
+"viviers, france",France,direct_match
+"vogelenzang, the netherlands",Netherlands,direct_match
+"vologda, russia",Unknown,unknown_fallback_cache
+"voorburg, the netherlands",Netherlands,direct_match
+"voorschoten, the netherlands",Netherlands,direct_match
+"voronezh, russia",Unknown,unknown_fallback_cache
+"vrhnika, slovenia",Slovenia,direct_match
+"vrindavan, india",India,direct_match
+wadduwa,Unknown,unknown_fallback_cache
+"wadebridge, united kingdom",United Kingdom,direct_match
+"wadhurst, united kingdom",United Kingdom,direct_match
+"wageningen, the netherlands",Netherlands,direct_match
+"waikato region, new zealand",New Zealand,direct_match
+"waipiata, new zealand",New Zealand,direct_match
+"wakefield, massachusetts",Unknown,unknown_fallback_cache
+"wakefield, united kingdom",United Kingdom,direct_match
+"waldbronn, deutschland",Unknown,unknown_fallback_cache
+wales,United Kingdom,direct_match
+wales uk,United Kingdom,direct_match
+"wales, united kingdom",United Kingdom,direct_match
+"wallasey, united kingdom",United Kingdom,direct_match
+"wallingford, united kingdom",United Kingdom,direct_match
+"wallington, surrey",Unknown,unknown_fallback_cache
+"walsall, united kingdom",United Kingdom,direct_match
+"wanaka, new zealand",New Zealand,direct_match
+wangaratta,Unknown,unknown_fallback_cache
+"ware, united kingdom",United Kingdom,direct_match
+"wareham, united kingdom",United Kingdom,direct_match
+"warfield, united kingdom",United Kingdom,direct_match
+"warkworth, united kingdom",United Kingdom,direct_match
+"warminster, united kingdom",United Kingdom,direct_match
+"warragul, australia",Australia,direct_match
+"warrington, united kingdom",United Kingdom,direct_match
+"warrnambool, australia",Australia,direct_match
+"warsaw, poland",Poland,direct_match
+"warsaw, warszawa, poland",Poland,direct_match
+"warwick, australia",Australia,direct_match
+"warwick, united kingdom",United Kingdom,direct_match
+"warwickshire, united kingdom",United Kingdom,direct_match
+washington dc,Unknown,unknown_fallback_cache
+"washington dc, district of columbia",Unknown,unknown_fallback_cache
+"wassenaar, the netherlands",Netherlands,direct_match
+"waterford, ireland",Ireland,direct_match
+"waterloo, canada",Canada,direct_match
+"waterlooville, united kingdom",United Kingdom,direct_match
+"watford, united kingdom",United Kingdom,direct_match
+"watlington, united kingdom",United Kingdom,direct_match
+"wayne, new jersey",Jersey,direct_match
+"weert, the netherlands",Netherlands,direct_match
+"wellingborough, united kingdom",United Kingdom,direct_match
+"wellington, new zealand",New Zealand,direct_match
+"wellington, united kingdom",United Kingdom,direct_match
+"wells, uk",United Kingdom,direct_match
+"wells, united kingdom",United Kingdom,direct_match
+"welwyn garden city, united kingdom",United Kingdom,direct_match
+"welwyn, united kingdom",United Kingdom,direct_match
+"wembley, united kingdom",United Kingdom,direct_match
+"wendover, united kingdom",United Kingdom,direct_match
+"wenduine, belgium",Belgium,direct_match
+"wenzhou, china",China,direct_match
+"werribee, australia",Australia,direct_match
+"wesley chapel, florida",Unknown,unknown_fallback_cache
+"west end, united kingdom",United Kingdom,direct_match
+"west hartford, united states",United States,direct_match
+"west malling, england, united kingdom",United Kingdom,direct_match
+"west malling, united kingdom",United Kingdom,direct_match
+"west midlands, united kingdom",United Kingdom,direct_match
+"west molesey, united kingdom",United Kingdom,direct_match
+"west palm beach, florida",Unknown,unknown_fallback_cache
+"west stockholm, new york",Unknown,unknown_fallback_cache
+"west sussex, united kingdom",United Kingdom,direct_match
+"west vancouver, canada",Canada,direct_match
+"west yorkshire, united kingdom",United Kingdom,direct_match
+"westcliff-on-sea, united kingdom",United Kingdom,direct_match
+"westerham, united kingdom",United Kingdom,direct_match
+western australia,Australia,direct_match
+"western australia, australia",Australia,direct_match
+"western ireland, ireland",Ireland,direct_match
+"western norway, norway",Norway,direct_match
+"westhoughton, united kingdom",United Kingdom,direct_match
+"westlake, south africa",South Africa,direct_match
+weston super mare,Unknown,unknown_fallback_cache
+"weston super mare, united kingdom",United Kingdom,direct_match
+weston-super-mare,Unknown,unknown_fallback_cache
+"westport, connecticut",Unknown,unknown_fallback_cache
+"wetherby, united kingdom",United Kingdom,direct_match
+"weymouth, united kingdom",United Kingdom,direct_match
+"whangarei, new zealand",New Zealand,direct_match
+"whistler, canada",Canada,direct_match
+"whitchurch, united kingdom",United Kingdom,direct_match
+"white plains, new york",Unknown,unknown_fallback_cache
+"whitefish, montana",Unknown,unknown_fallback_cache
+"whitehorse, canada",Canada,direct_match
+"whitley bay, united kingdom",United Kingdom,direct_match
+"whitstable, united kingdom",United Kingdom,direct_match
+"wichita, kansas",Unknown,unknown_fallback_cache
+"wickford, united kingdom",United Kingdom,direct_match
+"wickham bishops, united kingdom",United Kingdom,direct_match
+"wickham market, united kingdom",United Kingdom,direct_match
+wien,Unknown,unknown_fallback_cache
+wiesbaden,Unknown,unknown_fallback_cache
+"wiesbaden, germany",Germany,direct_match
+"wiggensbach, germany",Germany,direct_match
+"wil, switzerland",Switzerland,direct_match
+"willebroek, belgium",Belgium,direct_match
+"wilmington, delaware",Unknown,unknown_fallback_cache
+"wilmslow, united kingdom",United Kingdom,direct_match
+"wiltshire, united kingdom",United Kingdom,direct_match
+"wilyabrup, australia",Australia,direct_match
+"wimborne minster, united kingdom",United Kingdom,direct_match
+"winchcombe, united kingdom",United Kingdom,direct_match
+"winchester, united kingdom",United Kingdom,direct_match
+"windang, australia",Australia,direct_match
+"windermere, united kingdom",United Kingdom,direct_match
+"windhoek, namibia",Namibia,direct_match
+"windsor and maidenhead, united kingdom",United Kingdom,direct_match
+"windsor, canada",Canada,direct_match
+"windsor, united kingdom",United Kingdom,direct_match
+"wing, united kingdom",United Kingdom,direct_match
+"wingfield, united kingdom",United Kingdom,direct_match
+"winnipeg, canada",Canada,direct_match
+"winshill, united kingdom",United Kingdom,direct_match
+"winter park florida, united states",United States,direct_match
+winterswijk,Unknown,unknown_fallback_cache
+"winterthur, switzerland",Switzerland,direct_match
+wirksworth,Unknown,unknown_fallback_cache
+"wirksworth, united kingdom",United Kingdom,direct_match
+wirral,Unknown,unknown_fallback_cache
+"wirral, united kingdom",United Kingdom,direct_match
+"witheridge, united kingdom",United Kingdom,direct_match
+"withernsea, england, united kingdom",United Kingdom,direct_match
+"witney, united kingdom",United Kingdom,direct_match
+"woburn, massachusetts",Unknown,unknown_fallback_cache
+"woking, united kingdom",United Kingdom,direct_match
+"wokingham, united kingdom",United Kingdom,direct_match
+"wolfenbuttel, germany",Germany,direct_match
+wollongong,Unknown,unknown_fallback_cache
+"wollongong, australia",Australia,direct_match
+"wolverhampton, united kingdom",United Kingdom,direct_match
+"wonga park, australia",Australia,direct_match
+"woodbridge, australia",Australia,direct_match
+"woodbridge, canada",Canada,direct_match
+"woodbridge, united kingdom",United Kingdom,direct_match
+"woodmere, ohio",Unknown,unknown_fallback_cache
+"woodvale, australia",Australia,direct_match
+"woolacombe, united kingdom",United Kingdom,direct_match
+"woolgoolga, australia",Australia,direct_match
+"worcester, massachusetts",Unknown,unknown_fallback_cache
+"worcester, united kingdom",United Kingdom,direct_match
+"worcestershire, united kingdom",United Kingdom,direct_match
+"workington, united kingdom",United Kingdom,direct_match
+"worksop, united kingdom",United Kingdom,direct_match
+world,Unknown,unknown_fallback_cache
+"worle, united kingdom",United Kingdom,direct_match
+"wormer, the netherlands",Netherlands,direct_match
+"worms, germany",Germany,direct_match
+"worthing, united kingdom",United Kingdom,direct_match
+"woy woy, australia",Australia,direct_match
+"wrexham, united kingdom",United Kingdom,direct_match
+"wroclaw, poland",Poland,direct_match
+"wroxall, united kingdom",United Kingdom,direct_match
+"wuppertal, germany",Germany,direct_match
+"wurzburg, germany",Germany,direct_match
+"wyndham, australia",Australia,direct_match
+"xi an, china",China,direct_match
+"xining, china",China,direct_match
+"xuzhou, china",China,direct_match
+"yalding, united kingdom",United Kingdom,direct_match
+"yandina, australia",Australia,direct_match
+"yangon rangoon, myanmar",Myanmar,direct_match
+"yarm, united kingdom",United Kingdom,direct_match
+"yarraville, australia",Australia,direct_match
+"yate, united kingdom",United Kingdom,direct_match
+"yazd, iran","Iran, Islamic Republic of",direct_match
+"yekaterinburg, russia",Unknown,unknown_fallback_cache
+"yeovil, united kingdom",United Kingdom,direct_match
+"yeppoon, australia",Australia,direct_match
+"yerevan, armenia",Armenia,direct_match
+"yinnar, australia",Australia,direct_match
+"ylojarvi, finland",Finland,direct_match
+"yokohama, japan",Japan,direct_match
+york,Unknown,unknown_fallback_cache
+"york, maine",Unknown,unknown_fallback_cache
+"york, u.k but sometimes india and sometimes austria and soon to be germany",Austria,direct_match
+"york, united kingdom",United Kingdom,direct_match
+yorks,Unknown,unknown_fallback_cache
+yorkshire,Unknown,unknown_fallback_cache
+"yorkshire, united kingdom",United Kingdom,direct_match
+"young america, minnesota",Unknown,unknown_fallback_cache
+"youngstown, ohio",Unknown,unknown_fallback_cache
+z rich,Unknown,unknown_fallback_cache
+"z rich, schweiz",Unknown,unknown_fallback_cache
+"zaandam, noord-holland, netherlands",Netherlands,direct_match
+"zagazig, egypt",Egypt,direct_match
+"zagreb, croatia",Croatia,direct_match
+"zanzibar archipelago, tanzania","Tanzania, United Republic of",direct_match
+"zanzibar island, tanzania","Tanzania, United Republic of",direct_match
+"zbiroh, czech republic",Czechia,direct_match
+"zeewolde, the netherlands",Netherlands,direct_match
+zhaoqing,Unknown,unknown_fallback_cache
+zmir,Unknown,unknown_fallback_cache
+"zoeterwoude, the netherlands",Netherlands,direct_match
+"zollikerberg, switzerland",Switzerland,direct_match
+"zoutleeuw, belgium",Belgium,direct_match
+zuerich,Unknown,unknown_fallback_cache
+"zug, switzerland",Switzerland,direct_match
+"zurich, switzerland",Switzerland,direct_match
+"zutphen, the netherlands",Netherlands,direct_match
+"zwickau, germany",Germany,direct_match
+"zwolle, the netherlands",Netherlands,direct_match

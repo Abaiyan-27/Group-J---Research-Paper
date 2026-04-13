@@ -5,6 +5,35 @@ reproducible script:
 
 - `scripts/final_tourism_analysis_framework.py`
 
+## Notebook 1 Reproducibility Update
+
+`Tourism Analysis 1 - Dataset Preparation.ipynb` was hardened for reproducible runs.
+
+What was changed:
+
+- Removed runtime `pip install` from notebook cells.
+- Added explicit dependency pinning in `requirements.txt`.
+- Added `geopy` to requirements (previously used but not declared).
+- Switched user-country resolution to offline-first mode by default:
+  - direct alias matching + local cache (`country_resolution_cache.csv`)
+  - optional live geocoding exists but is disabled by default
+- Added fail-fast required-column checks before export.
+
+How to run Notebook 1 reproducibly:
+
+1. Install dependencies:
+
+```bash
+python -m pip install -r requirements.txt
+```
+
+2. Open `Tourism Analysis 1 - Dataset Preparation.ipynb` and run all cells from top.
+
+3. Keep `ENABLE_GEOCODING = False` in the country-resolution cell for deterministic,
+   network-independent runs.
+
+4. Use generated timestamped output CSV for downstream notebooks/scripts.
+
 ## Setup
 
 ```bash
