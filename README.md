@@ -43,24 +43,24 @@ What was changed:
 - Pinned model revision for sentiment inference:
   - model: `cardiffnlp/twitter-roberta-base-sentiment`
   - revision: `daefdd1f6ae931839bce4d0f3db0a1a4265cd50f`
-- Run report now stores warning summary instead of large raw warning dumps:
-  - `warnings_total`
-  - `warnings_top` (top 20 unique warning messages with counts)
-- Run report still includes key reproducibility metadata:
-  - environment versions (python, pandas, torch, transformers, datasets)
-  - runtime configuration
-  - row counts and sentiment distribution
-  - output SHA256 hash
+- Removed runtime package installation from the execution path (`datasets` must be preinstalled).
+- Kept deterministic preprocessing and label mapping (`Title + Text` -> sentiment labels).
+- Cleaned notebook execution logic to keep only required output generation (`Sentiment` column + CSV export).
+
+Kaggle reproducibility evidence:
+
+- Re-runs produced the same sentiment distribution:
+  - `POSITIVE: 13041`, `NEGATIVE: 1602`, `NEUTRAL: 1513`
+- Re-runs produced the same output hash:
+  - `63e000b1328c36dee27c5f521bf6b5582f869891f7c3479a1b08d8090ecbeeb3`
 
 How to run Notebook 2 reproducibly:
 
 1. Use Kaggle Notebook with GPU enabled (T4 is sufficient).
 2. Keep the same input dataset version in Kaggle.
 3. Run all cells from top.
-4. Archive both output artifacts after each run:
-   - `Processed_Reviews_with_Sentiment.csv`
-   - `Processed_Reviews_with_Sentiment_run_report.json`
-5. Compare `output_sha256` between reruns; matching hashes indicate deterministic output for the same input and environment.
+4. Archive `Processed_Reviews_with_Sentiment.csv` after each run.
+5. Compare output file SHA256 between reruns; matching hashes indicate deterministic output for the same input and environment.
 
 ## Setup
 
