@@ -1,7 +1,7 @@
 \documentclass[conference]{IEEEtran}
 
 % Core packages
-\usepackage{cite}
+%\usepackage{cite}
 \usepackage{amsmath,amssymb,amsfonts}
 \usepackage{graphicx}
 \usepackage{textcomp}
@@ -64,6 +64,25 @@ Prior work in tourism analytics has used sentiment mining, aspect extraction, an
 Our work addresses this gap through a transparent feature engineering workflow and explicit export of processed datasets for downstream tasks.
 
 \section{Methodology}
+This section presents the proposed framework for tourism review analytics. The methodology follows a structured pipeline consisting of three main phases: data preprocessing, feature engineering, and model validation. Table~\ref{tab:methodology_overview} provides a high-level summary of each phase.
+
+\begin{table}[htbp]
+\caption{Methodology framework overview}
+\label{tab:methodology_overview}
+\centering
+\begin{tabular}{p{3.2cm}p{4.5cm}p{6cm}}
+\toprule
+\textbf{Phase} & \textbf{Key Tasks} & \textbf{Output} \\
+\midrule
+Dataset \& Preprocessing & Missing value removal, duplicate detection, location normalization (province/district extraction), user country inference & Cleaned, normalized dataset \\
+\midrule
+Feature Engineering & Location features (province, district, city, type), Temporal features (travel/pub month/year, review delay), Behavioral features (user contributions, helpful votes), Text features (title/review length) & Engineered feature set \\
+\midrule
+Modeling \& Validation & Train-test split, cross-validation, classification (Accuracy, Precision, Recall, F1-score) & Validated predictive models \\
+\bottomrule
+\end{tabular}
+\end{table}
+
 \subsection{Dataset and Preprocessing}
 The dataset consists of tourism reviews with fields such as location name, city, user locale, rating, review text, and timestamps. Records are cleaned for missing values, duplicates, and type inconsistencies.
 
@@ -94,24 +113,48 @@ For classification, we report:
 where $TP$, $TN$, $FP$, and $FN$ denote true positives, true negatives, false positives, and false negatives.
 
 \section{Results and Discussion}
-Table~\ref{tab:results} provides a template for model comparison.
+
+\subsection{RQ2: Does incongruence vary significantly across location types?}
+
+To examine whether sentiment--rating incongruence differs across venue categories, we conducted a chi-square test of independence between \textit{Location Type} and the binary incongruence label. The association was statistically significant, $\chi^2(10)=125.85$, $p<0.001$, indicating that the probability of observing incongruent reviews is not evenly distributed across attraction types. However, the effect size was small (Cram\'er's $V=0.088$), suggesting that location type explains only a modest proportion of the overall variation in incongruence.
+
+Table~\ref{tab:rq2_location_type} summarizes the incongruence rates across venue categories. National Parks recorded the lowest incongruence rate (12.8\%) and were therefore used as the reference category for odds-ratio comparison. In contrast, Museums showed the highest rate (26.3\%), followed by Bodies of Water (23.7\%) and Zoological Gardens (21.6\%). Relative to National Parks, these categories showed substantially higher odds of sentiment--rating mismatch, with odds ratios of 2.43, 2.12, and 1.88, respectively.
+
+Religious Sites (19.8\%), Beaches (19.0\%), and Waterfalls (18.0\%) formed an intermediate group with above-average incongruence levels. Lower-risk categories included Gardens (17.4\%), Farms (16.6\%), Nature \& Wildlife Areas (16.4\%), and Historic Sites (15.6\%), though all remained above the National Parks baseline. Overall, the findings indicate that incongruence is systematically concentrated in particular tourism settings, even if the overall strength of association remains limited.
+
+A plausible interpretation is that certain attraction types encourage more emotionally mixed or narratively complex reviews, causing the written sentiment to diverge from the assigned rating. Museums, waterfront attractions, and zoos may evoke nuanced visitor experiences that are not fully captured by a single numeric score. By contrast, National Parks appear to generate more consistent alignment between narrative sentiment and explicit rating behavior.
 
 \begin{table}[htbp]
-\caption{Model Performance Comparison}
-\label{tab:results}
+\caption{Incongruence rate by location type}
+\label{tab:rq2_location_type}
 \centering
-\begin{tabular}{lcccc}
+\begin{tabular}{lrrrr}
 \toprule
-Model & Accuracy & Precision & Recall & F1-score \\
+Location Type & $N$ & Incongruent & Rate (\%) & OR vs NP \\
 \midrule
-Baseline Model & 0.000 & 0.000 & 0.000 & 0.000 \\
-Model A & 0.000 & 0.000 & 0.000 & 0.000 \\
-Model B & 0.000 & 0.000 & 0.000 & 0.000 \\
+Museums & 1525 & 401 & 26.3 & 2.43 \\
+Bodies of Water & 839 & 199 & 23.7 & 2.12 \\
+Zoological Gardens & 213 & 46 & 21.6 & 1.88 \\
+Religious Sites & 3017 & 596 & 19.8 & 1.68 \\
+Beaches & 2110 & 401 & 19.0 & 1.60 \\
+Waterfalls & 933 & 168 & 18.0 & 1.50 \\
+Gardens & 1354 & 235 & 17.4 & 1.43 \\
+Farms & 1884 & 312 & 16.6 & 1.35 \\
+Nature \& Wildlife Areas & 1557 & 256 & 16.4 & 1.34 \\
+Historic Sites & 1519 & 237 & 15.6 & 1.26 \\
+National Parks & 1205 & 154 & 12.8 & 1.00 \\
 \bottomrule
 \end{tabular}
 \end{table}
 
-The final paper should replace placeholder values with actual experimental results and include error analysis and ablation discussion.
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\linewidth]{fig2_rq2_location_type.png}
+\caption{Incongruence rate by location type. National Parks are used as the reference category, and the dashed line denotes the overall mean incongruence rate.}
+\label{fig:rq2_location_type}
+\end{figure}
+
+The practical implication of this result is that location type should be treated as a meaningful contextual predictor in downstream modeling and interpretation. Although the effect size is not large, the clear differences across venue categories suggest that destination-specific context contributes to how visitors translate their experiences into text and ratings.
 
 \section{Threats to Validity}
 Potential threats include dataset representativeness, annotation assumptions in rating-class conversion, and location parsing noise in ambiguous records. External validity should be assessed by testing the framework on additional tourism datasets.
