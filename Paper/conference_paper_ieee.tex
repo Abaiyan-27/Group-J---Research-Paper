@@ -64,42 +64,53 @@ Prior work in tourism analytics has used sentiment mining, aspect extraction, an
 Our work addresses this gap through a transparent feature engineering workflow and explicit export of processed datasets for downstream tasks.
 
 \section{Methodology}
-This section presents the proposed framework for tourism review analytics. The methodology follows a structured pipeline consisting of three main phases: data preprocessing, feature engineering, and model validation. Table~\ref{tab:methodology_overview} provides a high-level summary of each phase.
+This section presents the proposed framework for tourism review analytics. The methodology follows a structured pipeline comprising data preprocessing, feature engineering, natural language processing (NLP), topic modeling, and statistical validation. Table~\ref{tab:methodology_overview} provides a comprehensive summary of all methods applied in each phase.
 
 \begin{table}[htbp]
-\caption{Methodology framework overview}
+\caption{Comprehensive Methodology Framework}
 \label{tab:methodology_overview}
 \centering
-\begin{tabular}{p{3.2cm}p{4.5cm}p{6cm}}
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{p{2.8cm}p{4cm}p{3cm}}
 \toprule
-\textbf{Phase} & \textbf{Key Tasks} & \textbf{Output} \\
+\textbf{Phase} & \textbf{Applied Methods} & \textbf{Output / Purpose} \\
 \midrule
-Dataset \& Preprocessing & Missing value removal, duplicate detection, location normalization (province/district extraction), user country inference & Cleaned, normalized dataset \\
+Dataset \& Preprocessing & Missing value removal, duplicate detection, rule-based string parsing, date parsing & Cleaned dataset, temporal metadata \\
 \midrule
-Feature Engineering & Location features (province, district, city, type), Temporal features (travel/pub month/year, review delay), Behavioral features (user contributions, helpful votes), Text features (title/review length) & Engineered feature set \\
+Location \& Origin Inference & Dictionary-based mapping (\textit{pycountry}), rule-based geocoding & Normalized province, district, country, and tourism region \\
 \midrule
-Modeling \& Validation & Train-test split, cross-validation, classification (Accuracy, Precision, Recall, F1-score) & Validated predictive models \\
+Feature Engineering & Descriptive statistics, length/score bucketing, ranking metrics & Behavioral, temporal, location, and destination performance features \\
+\midrule
+NLP \& Sentiment Analysis & Transformer ensemble (CardiffNLP, SieBERT, BERTweet), DistilRoBERTa emotion modeling & Robust sentiment scores, emotion labels, sentiment-rating gap \\
+\midrule
+Topic Modeling & BERTopic with Sentence Transformers (\textit{all-MiniLM-L6-v2}), heuristic theme mapping & Dominant topics, review themes \\
+\midrule
+Validation \& Statistical Analysis & RoBERTa Fine-tuning, chunked inference, Chi-square tests of independence, Mann-Whitney U tests & Validation of sentiment accuracy (F1-score), test for temporal drift and significance of gaps \\
 \bottomrule
-\end{tabular}
+\end{tabular}%
+}
 \end{table}
 
 \subsection{Dataset and Preprocessing}
-The dataset consists of tourism reviews with fields such as location name, city, user locale, rating, review text, and timestamps. Records are cleaned for missing values, duplicates, and type inconsistencies.
-
-Location normalization includes province and district extraction from raw location strings using curated mappings and rule-based parsing. User country inference combines direct string matching, locale-based fallback, and cache-backed resolution to ensure deterministic outputs.
+The dataset consists of tourism reviews featuring location names, user locales, ratings, text, and timestamps. Records are initially subjected to missing value imputation and duplicate removal. Date parsing extracts the travel year and month, publication dates, and calculates the temporal review delay in days. Additionally, travel seasons (e.g., peak dry, inter-monsoon, southwest monsoon) are derived from the travel month. Location normalization maps raw strings to consistent province, district, and generalized tourism regions. User country and region inference utilize dictionary-based mappings combined with string matching rules via the \textit{pycountry} library.
 
 \subsection{Feature Engineering}
-The following feature groups are generated:
+A comprehensive set of predictors is generated to capture multiple facets of the visitor experience:
 \begin{itemize}
-    \item \textbf{Location features:} province, district, city, and location type.
-    \item \textbf{Temporal features:} travel and publication month/year; review delay in days.
-    \item \textbf{Behavioral features:} user contributions and helpful votes.
-    \item \textbf{Text features:} title length and review length.
-    \item \textbf{Label feature:} rating class (Negative, Neutral, Positive).
+    \item \textbf{Behavioral and Text Features:} Review text and title word counts, discretized length buckets, user contribution levels, and a normalized helpfulness ratio. A composite review quality score is also computed based on text richness and helpful votes.
+    \item \textbf{Destination Performance Features:} Destinations are aggregated to calculate average ratings, total review counts, and ranking metrics (rating vs. popularity gap).
+    \item \textbf{Temporal Features:} Travel season, review delay in days, and longitudinal patterns.
 \end{itemize}
 
-\subsection{Modeling and Validation}
-A supervised learning setup is used for rating class prediction. Data is split into training and testing partitions, and cross-validation is applied for robust comparison. Performance is reported using Accuracy, Precision, Recall, and F1-score.
+\subsection{Natural Language Processing and Topic Modeling}
+To derive robust textual insights, an ensemble sentiment classification approach is employed using three pre-trained transformer pipelines: \textit{CardiffNLP Twitter-RoBERTa}, \textit{SieBERT}, and \textit{BERTweet}. A mean voting mechanism creates a consolidated sentiment label and score, protecting against model biases. Emotion classification is executed using a pre-trained DistilRoBERTa model. These outputs enable the calculation of the sentiment-rating gap to identify incongruence.
+
+Furthermore, latent document topics are extracted using \textbf{BERTopic} equipped with the \textit{all-MiniLM-L6-v2} sentence transformer. Discovered topic keywords are procedurally mapped to broad review themes, such as hospitality, wildlife, or heritage.
+
+\subsection{Model Validation and Statistical Analysis}
+The final phase validates the NLP outputs and interprets review attributes statistically. To validate the sentiment pipeline, the Cardiff RoBERTa model was fine-tuned on a manually annotated dataset (700 training reviews, 300 test reviews) using chunked training and inference to handle long text sequences. Predictive performance was systematically evaluated using Accuracy, Precision, Recall, and Macro F1-score metrics.
+
+For statistical interpretation, relationships between variables---such as rating-sentiment incongruence across venue categories---are tested. Categorical relationships are evaluated using the \textbf{Chi-square test of independence} and odds-ratio comparisons. For continuous predictors (e.g., evaluating differences in review length, review delay, and tracking temporal drift against congruence), the non-parametric \textbf{Mann-Whitney U test} is applied.
 
 \section{Experimental Setup}
 \subsection{Implementation Details}
@@ -114,15 +125,51 @@ where $TP$, $TN$, $FP$, and $FN$ denote true positives, true negatives, false po
 
 \section{Results and Discussion}
 
-\subsection{RQ2: Does incongruence vary significantly across location types?}
+\subsection{RQ2: Variation in Review Incongruence Across Location Types}
 
-To examine whether sentiment--rating incongruence differs across venue categories, we conducted a chi-square test of independence between \textit{Location Type} and the binary incongruence label. The association was statistically significant, $\chi^2(10)=125.85$, $p<0.001$, indicating that the probability of observing incongruent reviews is not evenly distributed across attraction types. However, the effect size was small (Cram\'er's $V=0.088$), suggesting that location type explains only a modest proportion of the overall variation in incongruence.
+To examine whether review incongruence varies by location type, a chi-square test of independence was conducted between location type and incongruence status.
+The results indicate a statistically significant association:
+\begin{itemize}
+    \item $\chi^2(10) = 125.85$
+    \item $p = 3.27 \times 10^{-22}$ ($p < 0.001$)
+    \item Cram\'er's $V = 0.0883$
+\end{itemize}
 
-Table~\ref{tab:rq2_location_type} summarizes the incongruence rates across venue categories. National Parks recorded the lowest incongruence rate (12.8\%) and were therefore used as the reference category for odds-ratio comparison. In contrast, Museums showed the highest rate (26.3\%), followed by Bodies of Water (23.7\%) and Zoological Gardens (21.6\%). Relative to National Parks, these categories showed substantially higher odds of sentiment--rating mismatch, with odds ratios of 2.43, 2.12, and 1.88, respectively.
+This confirms that incongruence is not uniformly distributed across location types. However, the effect size (Cram\'er's $V \approx 0.09$) suggests that while the relationship is statistically significant, the practical strength of the association is small.
 
-Religious Sites (19.8\%), Beaches (19.0\%), and Waterfalls (18.0\%) formed an intermediate group with above-average incongruence levels. Lower-risk categories included Gardens (17.4\%), Farms (16.6\%), Nature \& Wildlife Areas (16.4\%), and Historic Sites (15.6\%), though all remained above the National Parks baseline. Overall, the findings indicate that incongruence is systematically concentrated in particular tourism settings, even if the overall strength of association remains limited.
+\subsubsection{Variation Across Location Types}
+A clear gradient in incongruence rates is observed across different categories:
 
-A plausible interpretation is that certain attraction types encourage more emotionally mixed or narratively complex reviews, causing the written sentiment to diverge from the assigned rating. Museums, waterfront attractions, and zoos may evoke nuanced visitor experiences that are not fully captured by a single numeric score. By contrast, National Parks appear to generate more consistent alignment between narrative sentiment and explicit rating behavior.
+\textbf{Higher-than-average incongruence}
+\begin{itemize}
+    \item Museums: 26.3\% (OR = 2.43)
+    \item Bodies of Water: 23.7\% (OR = 2.12)
+    \item Zoological Gardens: 21.6\% (OR = 1.88)
+\end{itemize}
+These categories show substantially elevated odds of incongruence compared to the reference category (National Parks). For example, reviews of museums are 2.43 times more likely to be incongruent than those of national parks.
+
+\textbf{Moderately elevated incongruence}
+\begin{itemize}
+    \item Religious Sites: 19.8\% (OR = 1.68)
+    \item Beaches: 19.0\% (OR = 1.60)
+    \item Waterfalls: 18.0\% (OR = 1.50)
+\end{itemize}
+These locations cluster around or slightly above the overall average (18.6\%), indicating moderate variability in user experience or expression.
+
+\textbf{Lower incongruence (closer to baseline)}
+\begin{itemize}
+    \item Gardens: 17.4\% (OR = 1.43)
+    \item Farms: 16.6\% (OR = 1.35)
+    \item Nature \& Wildlife Areas: 16.4\% (OR = 1.34)
+    \item Historic Sites: 15.6\% (OR = 1.26)
+\end{itemize}
+These categories exhibit relatively stable and consistent reviews, with lower levels of mismatch between rating and textual sentiment.
+
+\textbf{Lowest incongruence (reference group)}
+\begin{itemize}
+    \item National Parks: 12.8\% (OR = 1.00)
+\end{itemize}
+National parks serve as the baseline and demonstrate the highest consistency between ratings and review text.
 
 \begin{table}[htbp]
 \caption{Incongruence rate by location type}
@@ -154,7 +201,39 @@ National Parks & 1205 & 154 & 12.8 & 1.00 \\
 \label{fig:rq2_location_type}
 \end{figure}
 
-The practical implication of this result is that location type should be treated as a meaningful contextual predictor in downstream modeling and interpretation. Although the effect size is not large, the clear differences across venue categories suggest that destination-specific context contributes to how visitors translate their experiences into text and ratings.
+\subsubsection{Interpretation and Insights}
+\textbf{1. Experience subjectivity vs. consistency}\\
+Locations like museums and zoological gardens tend to produce more subjective experiences. Visitors may evaluate exhibits differently based on personal interest, expectations, or prior knowledge. This variability can lead to mismatches—for example, a high rating paired with critical comments, or vice versa.
+In contrast, national parks and nature-based locations often provide more uniform and immersive experiences, leading to greater alignment between rating and sentiment.
+
+\textbf{2. Expectation--reality gaps}\\
+Higher incongruence in categories like museums and bodies of water may reflect expectation mismatches. For instance:
+\begin{itemize}
+    \item A museum may be rated highly for cultural value but criticized for maintenance or crowding.
+    \item A beach or water body might receive a good rating overall, yet include complaints about cleanliness or facilities.
+\end{itemize}
+Such mixed experiences naturally produce incongruent review signals.
+
+\textbf{3. Emotional vs. functional evaluation}\\
+Some location types encourage emotional or symbolic evaluation:
+\begin{itemize}
+    \item Religious sites may receive high ratings due to spiritual significance despite negative practical aspects (e.g., crowding, accessibility).
+\end{itemize}
+Others are evaluated more functionally and holistically:
+\begin{itemize}
+    \item National parks and nature reserves are often judged based on overall experience, leading to more coherent rating--text alignment.
+\end{itemize}
+
+\textbf{4. Implications of small effect size}\\
+Although the differences are statistically significant, the low Cram\'er's V (0.0883) indicates that:
+\begin{itemize}
+    \item Location type alone explains only a small portion of the variation in incongruence.
+    \item Other factors (e.g., reviewer behavior, cultural norms, sentiment expression styles) likely play a larger role.
+\end{itemize}
+
+\subsubsection{Conclusion}
+RQ2 demonstrates that location type significantly influences the likelihood of review incongruence, with structured and expectation-sensitive environments (e.g., museums) showing higher mismatch rates, and more immersive, nature-based settings (e.g., national parks) showing stronger alignment.
+However, the relatively small effect size suggests that incongruence is a multifactorial phenomenon, and location type should be considered alongside behavioral and contextual variables in explaining review inconsistencies.
 
 \section{Threats to Validity}
 Potential threats include dataset representativeness, annotation assumptions in rating-class conversion, and location parsing noise in ambiguous records. External validity should be assessed by testing the framework on additional tourism datasets.
