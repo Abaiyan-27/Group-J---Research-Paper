@@ -85,7 +85,7 @@ NLP \& Sentiment Analysis & Transformer ensemble (CardiffNLP, SieBERT, BERTweet)
 \midrule
 Topic Modeling & BERTopic with Sentence Transformers (\textit{all-MiniLM-L6-v2}), heuristic theme mapping & Dominant topics, review themes \\
 \midrule
-Statistical Analysis \& Modeling & Chi-square tests of independence, Odds ratios, Supervised learning (cross-validation) & Statistical significance, classification metrics (Accuracy, F1-score) \\
+Validation \& Statistical Analysis & RoBERTa Fine-tuning, chunked inference, Chi-square tests of independence, Mann-Whitney U tests & Validation of sentiment accuracy (F1-score), test for temporal drift and significance of gaps \\
 \bottomrule
 \end{tabular}%
 }
@@ -107,8 +107,10 @@ To derive robust textual insights, an ensemble sentiment classification approach
 
 Furthermore, latent document topics are extracted using \textbf{BERTopic} equipped with the \textit{all-MiniLM-L6-v2} sentence transformer. Discovered topic keywords are procedurally mapped to broad review themes, such as hospitality, wildlife, or heritage.
 
-\subsection{Statistical Analysis, Modeling and Validation}
-The final phase interprets and predicts review attributes. To explore relationships such as rating-sentiment incongruence across venue categories, categorical statistical tools like the Chi-square test of independence and odds-ratios are used. For predictive tasks, a supervised learning setup is utilized. Data is split into training and testing partitions using cross-validation. Performance is systematically evaluated using Accuracy, Precision, Recall, and F1-score metrics.
+\subsection{Model Validation and Statistical Analysis}
+The final phase validates the NLP outputs and interprets review attributes statistically. To validate the sentiment pipeline, the Cardiff RoBERTa model was fine-tuned on a manually annotated dataset (700 training reviews, 300 test reviews) using chunked training and inference to handle long text sequences. Predictive performance was systematically evaluated using Accuracy, Precision, Recall, and Macro F1-score metrics.
+
+For statistical interpretation, relationships between variables---such as rating-sentiment incongruence across venue categories---are tested. Categorical relationships are evaluated using the \textbf{Chi-square test of independence} and odds-ratio comparisons. For continuous predictors (e.g., evaluating differences in review length, review delay, and tracking temporal drift against congruence), the non-parametric \textbf{Mann-Whitney U test} is applied.
 
 \section{Experimental Setup}
 \subsection{Implementation Details}
