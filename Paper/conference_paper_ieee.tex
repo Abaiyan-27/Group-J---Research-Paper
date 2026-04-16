@@ -64,42 +64,51 @@ Prior work in tourism analytics has used sentiment mining, aspect extraction, an
 Our work addresses this gap through a transparent feature engineering workflow and explicit export of processed datasets for downstream tasks.
 
 \section{Methodology}
-This section presents the proposed framework for tourism review analytics. The methodology follows a structured pipeline consisting of three main phases: data preprocessing, feature engineering, and model validation. Table~\ref{tab:methodology_overview} provides a high-level summary of each phase.
+This section presents the proposed framework for tourism review analytics. The methodology follows a structured pipeline comprising data preprocessing, feature engineering, natural language processing (NLP), topic modeling, and statistical validation. Table~\ref{tab:methodology_overview} provides a comprehensive summary of all methods applied in each phase.
 
 \begin{table}[htbp]
-\caption{Methodology framework overview}
+\caption{Comprehensive Methodology Framework}
 \label{tab:methodology_overview}
 \centering
-\begin{tabular}{p{3.2cm}p{4.5cm}p{6cm}}
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{p{2.8cm}p{4cm}p{3cm}}
 \toprule
-\textbf{Phase} & \textbf{Key Tasks} & \textbf{Output} \\
+\textbf{Phase} & \textbf{Applied Methods} & \textbf{Output / Purpose} \\
 \midrule
-Dataset \& Preprocessing & Missing value removal, duplicate detection, location normalization (province/district extraction), user country inference & Cleaned, normalized dataset \\
+Dataset \& Preprocessing & Missing value removal, duplicate detection, rule-based string parsing, date parsing & Cleaned dataset, temporal metadata \\
 \midrule
-Feature Engineering & Location features (province, district, city, type), Temporal features (travel/pub month/year, review delay), Behavioral features (user contributions, helpful votes), Text features (title/review length) & Engineered feature set \\
+Location \& Origin Inference & Dictionary-based mapping (\textit{pycountry}), rule-based geocoding & Normalized province, district, country, and tourism region \\
 \midrule
-Modeling \& Validation & Train-test split, cross-validation, classification (Accuracy, Precision, Recall, F1-score) & Validated predictive models \\
+Feature Engineering & Descriptive statistics, length/score bucketing, ranking metrics & Behavioral, temporal, location, and destination performance features \\
+\midrule
+NLP \& Sentiment Analysis & Transformer ensemble (CardiffNLP, SieBERT, BERTweet), DistilRoBERTa emotion modeling & Robust sentiment scores, emotion labels, sentiment-rating gap \\
+\midrule
+Topic Modeling & BERTopic with Sentence Transformers (\textit{all-MiniLM-L6-v2}), heuristic theme mapping & Dominant topics, review themes \\
+\midrule
+Statistical Analysis \& Modeling & Chi-square tests of independence, Odds ratios, Supervised learning (cross-validation) & Statistical significance, classification metrics (Accuracy, F1-score) \\
 \bottomrule
-\end{tabular}
+\end{tabular}%
+}
 \end{table}
 
 \subsection{Dataset and Preprocessing}
-The dataset consists of tourism reviews with fields such as location name, city, user locale, rating, review text, and timestamps. Records are cleaned for missing values, duplicates, and type inconsistencies.
-
-Location normalization includes province and district extraction from raw location strings using curated mappings and rule-based parsing. User country inference combines direct string matching, locale-based fallback, and cache-backed resolution to ensure deterministic outputs.
+The dataset consists of tourism reviews featuring location names, user locales, ratings, text, and timestamps. Records are initially subjected to missing value imputation and duplicate removal. Date parsing extracts the travel year and month, publication dates, and calculates the temporal review delay in days. Additionally, travel seasons (e.g., peak dry, inter-monsoon, southwest monsoon) are derived from the travel month. Location normalization maps raw strings to consistent province, district, and generalized tourism regions. User country and region inference utilize dictionary-based mappings combined with string matching rules via the \textit{pycountry} library.
 
 \subsection{Feature Engineering}
-The following feature groups are generated:
+A comprehensive set of predictors is generated to capture multiple facets of the visitor experience:
 \begin{itemize}
-    \item \textbf{Location features:} province, district, city, and location type.
-    \item \textbf{Temporal features:} travel and publication month/year; review delay in days.
-    \item \textbf{Behavioral features:} user contributions and helpful votes.
-    \item \textbf{Text features:} title length and review length.
-    \item \textbf{Label feature:} rating class (Negative, Neutral, Positive).
+    \item \textbf{Behavioral and Text Features:} Review text and title word counts, discretized length buckets, user contribution levels, and a normalized helpfulness ratio. A composite review quality score is also computed based on text richness and helpful votes.
+    \item \textbf{Destination Performance Features:} Destinations are aggregated to calculate average ratings, total review counts, and ranking metrics (rating vs. popularity gap).
+    \item \textbf{Temporal Features:} Travel season, review delay in days, and longitudinal patterns.
 \end{itemize}
 
-\subsection{Modeling and Validation}
-A supervised learning setup is used for rating class prediction. Data is split into training and testing partitions, and cross-validation is applied for robust comparison. Performance is reported using Accuracy, Precision, Recall, and F1-score.
+\subsection{Natural Language Processing and Topic Modeling}
+To derive robust textual insights, an ensemble sentiment classification approach is employed using three pre-trained transformer pipelines: \textit{CardiffNLP Twitter-RoBERTa}, \textit{SieBERT}, and \textit{BERTweet}. A mean voting mechanism creates a consolidated sentiment label and score, protecting against model biases. Emotion classification is executed using a pre-trained DistilRoBERTa model. These outputs enable the calculation of the sentiment-rating gap to identify incongruence.
+
+Furthermore, latent document topics are extracted using \textbf{BERTopic} equipped with the \textit{all-MiniLM-L6-v2} sentence transformer. Discovered topic keywords are procedurally mapped to broad review themes, such as hospitality, wildlife, or heritage.
+
+\subsection{Statistical Analysis, Modeling and Validation}
+The final phase interprets and predicts review attributes. To explore relationships such as rating-sentiment incongruence across venue categories, categorical statistical tools like the Chi-square test of independence and odds-ratios are used. For predictive tasks, a supervised learning setup is utilized. Data is split into training and testing partitions using cross-validation. Performance is systematically evaluated using Accuracy, Precision, Recall, and F1-score metrics.
 
 \section{Experimental Setup}
 \subsection{Implementation Details}
