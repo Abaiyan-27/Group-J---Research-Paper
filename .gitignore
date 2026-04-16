@@ -87,3 +87,13 @@ large_data/
 data/
 output/
 temp/
+
+# LaTeX build artifacts
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.synctex.gz
+*.toc
+*.out
+*.pdf
