@@ -9,241 +9,354 @@
 \usepackage{array}
 \usepackage{multirow}
 \usepackage{url}
+\usepackage{microtype}
+
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+\setlength{\emergencystretch}{2em}
 
 \begin{document}
 
 \title{Sentiment-Rating Incongruence in Sri Lanka Tourism Attraction Reviews}
 
-\author{%
-\IEEEauthorblockN{Author Name(s)}
-\IEEEauthorblockA{%
-\textit{Affiliation} \\
-City, Country \\
-email@example.com}
-}
+\author{}
 
 \maketitle
 
 \begin{abstract}
-Star ratings are widely used as ground-truth sentiment labels in opinion mining research, yet the assumption that ratings and written review text always agree is rarely tested empirically. This study investigates sentiment-rating incongruence, defined as the systematic disagreement between a reviewer's star rating and the sentiment expressed in written text, using 16,156 tourism attraction reviews from Sri Lanka spanning 2011 to 2023, sourced from Mendeley Data. Sentiment was pre-computed from review text and title. Across three research questions, we establish that incongruence affects 18.6\% of reviews and manifests through nine-category typology, comprising three congruent outcomes and six directional incongruence patterns of which the Conservative Rater and the Obligatory 5-Star are the most prevalent. Incongruence varies significantly across venue types, with museums showing the highest rate (26.3\%, OR = 2.43 versus national parks). Logistic regression identifies venue type, reviewer expertise tier, and review length as independent predictors of incongruence, while certain proposed predictors show no significant effect. These findings challenge the foundational assumption that star ratings are reliable sentiment proxies, with direct implications for NLP practitioners who use ratings as training labels and for tourism platforms that rely on aggregated scores to rank destinations.
+Star ratings are widely used as ground-truth sentiment labels in opinion mining, yet their alignment with review text remains under-examined. This study investigates sentiment-rating incongruence, the mismatch between star ratings and textual sentiment, using 16,156 tourism attraction reviews from Sri Lanka. Textual sentiment is derived using a transformer-based pipeline, revealing incongruence in 18.6\% of reviews. This mismatch is structured across six directional patterns, with the Conservative Rater and Obligatory 5-Star patterns accounting for 66.7\% of all incongruent reviews. Incongruence varies significantly across venue types ($\chi^2 = 125.85$, $p < 0.001$), with museums showing the highest rates. A complementary modeling framework, Logistic Regression, Random Forest, and SHAP-based interpretation, identifies venue type, reviewer expertise, and review length as key predictors, while review delay shows no meaningful effect. Despite statistically significant predictors, predictive performance remains modest (AUC $\approx$ 0.58--0.61), indicating that incongruence is structured yet only partially explainable using observable features. These findings challenge the assumption that star ratings reliably represent textual sentiment and highlight implications for sentiment modeling and tourism platform design.
 \end{abstract}
 
 \begin{IEEEkeywords}
-sentiment analysis, rating incongruence, tourism reviews, opinion mining, Sri Lanka, logistic regression
+Sentiment Analysis, Sentiment-Rating Incongruence, Tourism Reviews, Opinion Mining, Sri Lanka, Logistic Regression, SHAP, Random Forest
 \end{IEEEkeywords}
 
 \section{Introduction}
-Online tourism reviews have become a primary information source for travellers making destination decisions, with star ratings and written text serving as the two principal signals through which reviewers communicate their experiences. Within the sentiment analysis community, star ratings have long been treated as reliable proxies for text sentiment, used to label, train, and evaluate models on the assumption that a five-star review reflects positive sentiment and a one-star review reflects negative sentiment. This assumption is rarely questioned, yet it carries significant consequences for the validity of any downstream analysis that relies on it: when ratings and text diverge, the rating becomes a noisy label, and any NLP pipeline trained on it inherits that noise systematically.
+Tourism reviews have become a primary source of information guiding travel decisions, with most platforms presenting both a star rating and accompanying written text. In sentiment analysis research, these star ratings are commonly treated as ground-truth labels, providing a convenient mapping between numerical scores and sentiment polarity \cite{pang2008opinion,alaei2019tourism}. While this assumption simplifies model development, it remains relatively under-examined. In practice, ratings and written text do not always align, and when they diverge, the rating introduces systematic noise into the data that is subsequently learned and propagated by downstream models.
 
-In practice, the two signals do not always agree. A visitor to the National Museum of Colombo who writes "the colonial collection is genuinely fascinating and the staff were knowledgeable" may nonetheless assign three stars because their global reviewing standard demands more from a five-star experience. Conversely, a visitor to a Kandy temple who gives five stars out of reverence for a sacred site may write only "it was okay, quite crowded," leaving the rating inflated by social obligation rather than satisfaction. These are not data entry errors. They are structured behavioural patterns driven by cultural norms, reviewer experience, and the cognitive complexity of specific venue types. This paper refers to this phenomenon as sentiment-rating incongruence and treats it not as a labelling problem to be corrected, but as a structured phenomenon to be measured and explained.
+Such divergence is not necessarily the result of error. A visitor to the National Museum of Colombo may describe their experience positively, highlighting engaging exhibits and helpful staff, yet assign a moderate rating based on a stricter personal benchmark. Conversely, a visitor to a religious site in Kandy may assign a high rating out of cultural reverence while expressing only neutral or mildly critical sentiment in text. These cases reflect consistent and interpretable reviewer behaviour shaped by expectations, prior experience, and contextual factors. This study refers to this phenomenon as \textit{sentiment-rating incongruence} and treats it not as a labeling issue to be corrected, but as a structured behavioural pattern to be measured and explained.
 
-Prior research has established that sentiment analysis predominantly uses star ratings as ground-truth labels without questioning their reliability. Pang and Lee~\cite{pang2008opinion} noted early that rating errors could theoretically be corrected where written content clearly contradicts a numerical score, yet this observation was never developed into a systematic empirical programme. Subsequent work in tourism sentiment analysis, reviewed by Alaei, Becken, and Stantic~\cite{alaei2019tourism}, has continued the same practice, treating ratings as weakly labelled data and focusing on hotel and restaurant contexts in established destinations. Studies that have examined the relationship between ratings and sentiment more directly, including Bigne et al.~\cite{bigne2023aligned} in Venetian tourism attractions, have found general alignment but acknowledged that their results may not generalise to emerging destinations. Kwon et al.~\cite{kwon2025beyond} demonstrated that rating-text inconsistency is not uniformly negative in its effects and varies with contextual factors, while Chua and Banerjee~\cite{chua2015helpfulness} showed that reviewer characteristics independently shape how ratings and review content interact. Ibrahim, Wei, and Ocean~\cite{ibrahim2026moderate} further demonstrated that moderate ratings generate systematic evaluative ambiguity, producing predictable biases in how the same experience is rated numerically versus described textually.
+Despite its implications, this phenomenon remains insufficiently examined. Prior work in tourism sentiment analysis continues to rely on star ratings as proxy labels, predominantly focusing on hotels and restaurants in well-studied destinations \cite{alaei2019tourism}. Studies in Sri Lankan contexts have identified incompatibility between ratings and textual sentiment in hotel reviews, demonstrating that such mismatches are both present and practically relevant \cite{abeysinghe2022selflearning,abeysinghe2021anuradhapura}. More broadly, research has examined alignment between ratings and textual sentiment in tourism and review platforms, often finding general agreement but with important contextual variations \cite{bigne2023aligned}. Work in related domains further suggests that rating-text inconsistencies can arise systematically and may be influenced by reviewer behaviour and contextual factors \cite{kwon2025beyond,chua2015helpfulness}.
 
-What the literature has not done is measure how often incongruence occurs in a tourism attraction context, identify the full typology of directional patterns through which it manifests, or establish which venue-level and reviewer-level factors independently predict its occurrence. Sri Lanka provides the setting for this investigation: an emerging destination absent from all prior incongruence research, where cultural norms around public expression, face-saving behaviour, and reverence for sacred sites create conditions for incongruence that are structurally distinct from the European and North American contexts that dominate existing literature. The dataset covers 16,156 reviews spanning 2011 to 2023 across eleven attraction categories.
-
-Three research questions guide the study. RQ1 asks how prevalent sentiment-rating incongruence is and what the full typology of directional patterns through which it manifests looks like. RQ2 asks whether incongruence rates differ significantly across the eleven attraction types in the dataset, and which venue types carry the highest and lowest incongruence risk. RQ3 asks which reviewer-level and review-level characteristics independently predict the likelihood of incongruence, and which proposed predictors have no significant effect. The study addresses these questions through chi-square tests, Mann-Whitney comparisons, and binary logistic regression. The remainder of this paper is organised as follows: Section II reviews related work; Section III describes the dataset and methodology; Section IV presents results; Section V discusses findings; Section VI concludes.
+There remains limited understanding of how frequently incongruence occurs, how it is structured across different forms, whether it varies across attraction types, and which reviewer-level and review-level characteristics contribute to its emergence. This study addresses these gaps using a dataset of 16,156 tourism attraction reviews from Sri Lanka spanning 2010 to 2023 \cite{sewwandi2023} across eleven venue categories. Sri Lanka provides a compelling context due to its relative absence in prior research and the influence of cultural norms, such as face-saving behaviour and reverence for sacred sites, on how experiences are expressed. By quantifying its prevalence, characterizing its structural patterns, examining variation across venue types, and identifying its key predictors, this work provides a systematic account of how sentiment is encoded differently across numerical and textual channels in tourism reviews.
 
 \section{Related Work}
-Sentiment analysis and opinion mining emerged as a formal research discipline through the foundational survey of Pang and Lee~\cite{pang2008opinion}, which systematically mapped the computational treatment of opinion, sentiment, and subjectivity in text, covering classification approaches, summarisation methods, and the economic consequences of review systems. A critical assumption embedded throughout this tradition is that numerical star ratings reliably represent the sentiment expressed in accompanying review text. Pang and Lee themselves noted that this assumption was imperfect, observing that classifiers could theoretically correct cases where users accidentally assigned low ratings when their text indicated positive evaluation, but this observation was never developed into a systematic empirical programme. The assumption has persisted as a foundational convention of tourism NLP ever since.
+The foundational survey by Pang and Lee \cite{pang2008opinion} established sentiment analysis as a formal discipline and embedded a key assumption that numerical star ratings reliably represent the sentiment expressed in accompanying review text. While this assumption was acknowledged as imperfect, it has persisted as a practical convention within sentiment analysis and tourism research.
 
-In the tourism domain, sentiment analysis has been widely deployed to extract visitor satisfaction signals from user-generated content on platforms such as TripAdvisor. Alaei, Becken, and Stantic~\cite{alaei2019tourism} conducted a comprehensive review of sentiment analysis methods applied in tourism and travel, finding that star ratings are systematically used as weakly-labelled ground truth across the literature, with numerical scores treated as reliable proxies for text sentiment without empirical justification. Their review further established that existing tourism sentiment research concentrates heavily on hotels and restaurants, with tourism attraction reviews in emerging destinations remaining substantially understudied. The present study addresses both gaps directly.
+In the tourism domain, Alaei, Becken, and Stantic \cite{alaei2019tourism} reviewed sentiment analysis methods applied to travel and hospitality data and found that star ratings are widely used as weakly labelled ground truth without explicit validation. Their review further highlights that existing research is heavily concentrated on hotels and restaurants, with tourism attraction reviews in emerging destinations remaining substantially understudied.
 
-The closest precedent in the Sri Lankan context is the work of Abeysinghe and Bandara~\cite{abeysinghe2022selflearning}, who studied incompatibility between TripAdvisor bubble ratings and written hotel reviews across five Sri Lankan cities: Colombo, Nuwaraeliya, Kandy, Anuradhapura, and Galle. Using four lexicon-based sentiment methods (VADER, TextBlob, Afinn, and Stanza), they found low correlation between user bubble ratings and text-derived sentiment polarities, and proposed a two-phase ensemble and self-learning model to resolve the mismatch. Their earlier conference paper~\cite{abeysinghe2021anuradhapura} established the same problem specifically for Anuradhapura hotel reviews using VADER and TextBlob, concluding that the bubble rating is not a satisfactory indicator of user experience because users frequently write negative sentences in positively-rated reviews and vice versa. These studies confirm that rating-text incompatibility is present in Sri Lankan tourism contexts, demonstrate that no single lexicon-based method resolves it, and identify the issue as practically consequential for hotel managers making service decisions. However, both studies focus exclusively on hotel reviews, rely on unsupervised lexicon-based methods without ground-truth validation, treat incompatibility as a labelling problem to be corrected rather than a phenomenon to be explained, and do not examine which reviewer-level or venue-level characteristics predict when incompatibility occurs. The present study extends this Sri Lankan literature to tourism attraction reviews, uses a domain-adapted transformer model with validated accuracy, and shifts the research question from correction to explanation.
+Within the Sri Lankan context, Abeysinghe and Bandara \cite{abeysinghe2022selflearning,abeysinghe2021anuradhapura} documented incompatibility between TripAdvisor ratings and lexicon-derived sentiment in hotel reviews across multiple cities. Their findings demonstrate that rating-text mismatches are present and practically relevant, but their work focuses on hotel settings, relies on lexicon-based approaches, and primarily treats inconsistency as a labeling issue to be corrected. In contrast, the present study extends this investigation to tourism attraction reviews, employs a transformer-based sentiment pipeline, and frames incongruence as a behavioural phenomenon to be explained rather than corrected.
 
-Alignment between star ratings and textual sentiment in broader tourism contexts has received empirical attention beyond Sri Lanka, though findings remain context-dependent. Bigne et al.~\cite{bigne2023aligned} examined consistency between star ratings and text sentiment in 20,954 TripAdvisor reviews of tourism attractions in Venice using deep learning, finding that sentiment valence is generally aligned with star ratings and that a cancel-out effect operates between positive and negative sentiments in mixed, neutral three-star reviews. Crucially, Bigne et al. acknowledged that their findings apply only to well-known cultural attractions in a mature European destination and explicitly called for future research comparing results in emerging destination contexts. That gap is a direct motivation for the present study.
+In broader tourism contexts, Bigne et al. \cite{bigne2023aligned} examined alignment between ratings and textual sentiment in attraction reviews and reported general consistency, while noting that such findings may not generalise across different destinations. Beyond tourism, Kwon et al. \cite{kwon2025beyond} demonstrate that rating-text inconsistency is not guaranteed even in general review datasets and varies with contextual factors.
 
-Rating-text inconsistency has also been examined outside the tourism domain. Kwon et al.~\cite{kwon2025beyond} analysed 41,258 Amazon product reviews, demonstrating that prior literature had assumed strong correlation between star ratings and review text while this assumption is not guaranteed in practice. Distinguishing between degree inconsistency, where text sentiment diverges from the average sentiment of reviews with the same star rating, and direction inconsistency, where text sentiment is directionally opposite to the star rating, they found that inconsistency can increase perceived review usefulness under conditions of high product awareness, drawing on curiosity theory to explain why incongruent reviews attract additional cognitive processing. While this study advances understanding of how readers respond to inconsistent reviews, it does not examine what venue-level or reviewer-level characteristics predict whether a reviewer produces an inconsistent review in the first place. Valdivia et al.~\cite{valdivia2019tripadvisor} introduced a unified index between user ratings and automated sentiment analysis methods on TripAdvisor data and confirmed that inconsistencies occur across all star ratings, concentrating most heavily in 2-star and 4-star reviews. Their work establishes that inconsistency is not confined to the midpoint of the rating scale but follows distributional patterns across rating levels.
+Reviewer-level characteristics also play an important role in shaping how ratings and textual content are produced. Chua and Banerjee \cite{chua2015helpfulness} show that reviewer expertise influences the relationship between ratings and review content, suggesting that these signals carry independent informational value.
 
-Rating bias literature provides theoretical grounding for understanding why incongruence follows specific directional patterns rather than occurring randomly. Ibrahim, Wei, and Ocean~\cite{ibrahim2026moderate} identified a moderate rating bias in interpersonal tourism recommendations, demonstrating that recommenders systematically overestimate how likely others are to accept moderately-rated recommendations. This bias arises from asymmetric egocentric evaluations in which recommenders emphasise shared preferences while recipients prioritise their unique preferences, and it diminishes when ratings are clearly positive or negative. This finding directly contextualises one of the directional patterns in the present dataset, the Conservative Rater who assigns 3-star ratings despite writing positively, as behaviour consistent with the evaluative ambiguity that moderate ratings generate. Reviewers using midpoint ratings appear to be attempting to convey nuance that a higher or lower rating would not communicate, while their text more directly records their affective experience.
-
-Reviewer-level characteristics provide a further theoretical lens for understanding why incongruence rates differ systematically between reviewer groups. Chua and Banerjee~\cite{chua2015helpfulness} studied review helpfulness as a function of reviewer reputation, review rating, and review depth, finding that reviewer reputation positively predicts perceived helpfulness and that review depth significantly moderates the relationship between reviewer characteristics and information processing. Their work demonstrates that star ratings and textual content carry independent informational signals that readers weight differently depending on reviewer expertise, directly supporting the premise that experienced reviewers may produce text that diverges from their numerical scores. Sugathan~\cite{sugathan2024incongruence} formally conceptualised an incongruence frame for online reviews, defining incongruence as occurring when the valence of review text is not aligned with the product star rating and demonstrating through four studies that incongruence undermines review diagnosticity and authenticity. Sugathan's work examines the consumer consequences of incongruence rather than what produces it at the reviewer level, leaving the predictive question open.
-
-The existing literature thus points toward a clear explanatory gap. Sentiment analysis treats ratings as reliable sentiment labels without adequate empirical justification. Rating-text incompatibility exists in Sri Lankan hotel review contexts but has not been examined for tourism attractions. General alignment between ratings and text has been observed in mature destination contexts, with emerging destinations explicitly identified as understudied. Incompatibility is systematic rather than random, following distributional patterns across rating levels and responding to reviewer-level characteristics. Yet no study has mapped the full typology of directional patterns through which incongruence manifests, nor identified which venue and reviewer characteristics independently predict it. This study provides that evidence, drawing on 16,156 reviews from Sri Lanka spanning eleven attraction types and using validated transformer-based sentiment classification.
+Taken together, the literature indicates that while rating-text mismatches are acknowledged, they remain insufficiently characterized in tourism attraction contexts, particularly in emerging destinations. To the best of our knowledge, no study has systematically characterized the full typology of directional incongruence patterns or identified their underlying structural predictors. This study addresses this gap using a large-scale dataset of tourism attraction reviews from Sri Lanka spanning multiple venue types.
 
 \section{Methodology}
 \subsection{Dataset and Preprocessing}
-The dataset consists of tourism reviews featuring location names, user locales, ratings, text, and timestamps. Records are initially subjected to missing value imputation and duplicate removal. Date parsing extracts the travel year and month, publication dates, and calculates the temporal review delay in days. Additionally, travel seasons (e.g., peak dry, inter-monsoon, southwest monsoon) are derived from the travel month. Location normalization maps raw strings to consistent province, district, and generalized tourism regions. User country and region inference utilize dictionary-based mappings combined with string matching rules via the \texttt{pycountry} library.
-
-\subsection{Analytical Variables}
-Three core variables were derived from the processed dataset without additional modeling to support the analysis:
-
-\begin{itemize}
-    \item \textbf{Incongruence Binary Flag:} An indicator (0 = congruent, 1 = incongruent) defined by comparing each review's Rating\_Class against its pre-computed Sentiment label. Congruence holds when a Positive rating co-occurs with POSITIVE sentiment, Neutral with NEUTRAL, or Negative with NEGATIVE. All six remaining combinations across the $3\times3$ matrix are flagged as incongruent.
-    \item \textbf{Directional Pattern Label:} A six-category label assigned to each review to provide a complete enumeration of theoretically possible mismatches across the rating-sentiment space.
-    \item \textbf{Reviewer Expertise:} Operationalized as a four-tier ordinal variable derived from TripAdvisor's User\_Contributions count. Cut-points at 5, 20, and 100 contributions produce four distinct tiers: Novice (0--5), Casual (6--20), Active (21--100), and Expert (101+).
-\end{itemize}
-
-Continuous variables, specifically Review\_Length and Review\_Delay\_Days, were log-transformed using $\log1p$ to address right skewness prior to modeling.
-
-\subsection{Natural Language Processing and Topic Modeling}
-To derive robust textual insights, an ensemble sentiment classification approach is employed using three pre-trained transformer pipelines: CardiffNLP Twitter-RoBERTa, SieBERT, and BERTweet. A mean voting mechanism creates a consolidated sentiment label and score, protecting against model biases. Emotion classification is executed using a pre-trained DistilRoBERTa model. These outputs enable the calculation of the sentiment-rating gap to identify incongruence.
-
-Furthermore, latent document topics are extracted using BERTopic equipped with the all-MiniLM-L6-v2 sentence transformer. Discovered topic keywords are procedurally mapped to broad review themes, such as hospitality, wildlife, or heritage.
-
-\subsection{Statistical Procedures and Model Validation}
-The final phase validates the NLP outputs and interprets review attributes through the following steps:
-
-\begin{enumerate}
-    \item \textbf{Exploratory Testing:} RQ1 derives overall incongruence prevalence as a proportion. RQ2 applies a Chi-square test of independence with Cramer's $V$ effect size to evaluate relationships between categorical variables; odds ratios are computed with National Parks as the reference category.
-    \item \textbf{Feature Screening:} For RQ3, candidate predictors are individually screened using Chi-square tests for categorical variables (Reviewer Tier, Province) and Mann-Whitney $U$ tests for continuous variables (Review Length, Review Delay, Travel Year). All bivariate p-values are adjusted using the Benjamini-Hochberg False Discovery Rate (FDR) procedure, with $q < 0.05$ as the retention threshold.
-    \item \textbf{Multicollinearity and Regression:} A Variance Inflation Factor (VIF) check was performed to confirm no multicollinearity concerns (max VIF = 3.663, mean VIF = 2.186).
-    \item \textbf{Predictive Modeling:}
-    \begin{itemize}
-        \item Model 1A: A class-balanced logistic regression evaluated via 5-fold stratified cross-validation and a held-out 80/20 stratified test split, using AUC-ROC as the primary metric.
-        \item Model 1B: A statsmodels logit model fitted on the full dataset to produce interpretable coefficients, Wald-test z-statistics, odds ratios with 95\% confidence intervals, and McFadden's pseudo-$R^2$.
-        \item Model 2: A class-balanced RBF kernel SVM with a grid-searched regularization parameter $C$, used to test whether nonlinear feature interactions contribute discriminative power beyond the linear decision boundary.
-    \end{itemize}
-\end{enumerate}
+The analysis is based on the \textit{Tourism and Travel Reviews: Sri Lankan Destinations} dataset available on Mendeley Data \cite{sewwandi2023}, comprising 16,156 tourism attraction reviews collected across multiple regions in Sri Lanka. The dataset contains both structured attributes (e.g., ratings, location, reviewer metadata) and unstructured textual content, making it well-suited for analysing sentiment-rating relationships within real-world user-generated data. Sri Lanka represents a diverse emerging tourism destination, encompassing cultural, religious, natural, and heritage attractions, thereby creating a heterogeneous evaluation context in which rating-text inconsistencies are more likely to arise.
 
 \begin{table}[htbp]
-\caption{Summary of Methodology Framework}
-\label{tab:methodology_framework}
+\caption{Dataset Attributes}
+\label{tab:dataset_attributes}
 \centering
 \resizebox{\columnwidth}{!}{%
-\begin{tabular}{p{2.4cm}p{4.5cm}p{2.7cm}}
+\begin{tabular}{L{3.0cm}L{4.6cm}}
+\toprule
+\textbf{Feature} & \textbf{Description} \\
+\midrule
+Location\_Name & Name of the tourism attraction \\
+Located\_City & City where the attraction is located \\
+Location & Raw location string (may include city, district, province) \\
+Location\_Type & Category of attraction (e.g., museum, beach, temple) \\
+User\_ID & Unique identifier for the reviewer \\
+User\_Location & Free-text location of the reviewer \\
+User\_Locale & Locale/language setting (e.g., en\_US) \\
+User\_Contributions & Number of contributions made by the reviewer \\
+Travel\_Date & Date of visit \\
+Published\_Date & Date when the review was posted \\
+Rating & Numerical rating (1--5 stars) \\
+Helpful\_Votes & Number of users who found the review helpful \\
+Title & Short title of the review \\
+Text & Full review content \\
+\bottomrule
+\end{tabular}%
+}
+\end{table}
+
+The preprocessing pipeline begins with data inspection, followed by missing value handling and duplicate removal to ensure data quality. Temporal features are extracted from \textit{Travel\_Date} and \textit{Published\_Date} through date parsing, including travel and publication year (\textit{Travel\_Year, Published\_Year}). A key derived feature, \textit{Review\_Delay\_Days}, is computed as the difference between publication and travel dates, with negative values corrected to maintain temporal consistency. It was included to test whether temporal distance between experience and review writing influences sentiment-rating incongruence.
+
+Spatial information is standardized through rule-based location normalization. \textit{Province} and \textit{District} attributes are extracted from \textit{Location} using predefined mappings and pattern-based string parsing. \textit{User\_Country} information is inferred from \textit{User\_Location} through text normalization, dictionary-based matching, and the \textit{pycountry} library, with fallback rules applied to maximize coverage.
+
+Additional text-based features, including \textit{Review\_Length}, are computed to capture review verbosity. A categorical \textit{Rating\_Class} variable is derived from the numerical rating to represent \textit{Positive (4--5)}, \textit{Neutral (3)}, and \textit{Negative (1--2)} sentiment categories. This binning strategy is commonly adopted in sentiment analysis studies, where ordinal rating scales are mapped to polarity classes for supervised analysis \cite{pang2008opinion,alaei2019tourism}, enabling direct comparison with text-derived sentiment. Finally, redundant and intermediate attributes, such as raw location strings, user identifiers, and original date fields, are removed after feature extraction. The resulting dataset is structured to support subsequent statistical analysis and predictive modeling.
+
+\subsection{Sentiment Model Selection for Prediction}
+To generate sentiment labels for the full corpus of 16,156 reviews, multiple candidate sentiment models were evaluated using a manually annotated subset of the dataset. A total of 1,000 reviews were randomly sampled and labeled into Positive, Neutral, and Negative classes based on the combined interpretation of both the review title and full text. The labeled dataset was stratified and split into 700 training samples and 300 test samples, ensuring class distribution consistency across splits. Two models (Cardiff RoBERTa and RoBERTa-base) were fine-tuned on the 700-review training set, while all candidate models, including pretrained and fine-tuned variants, were evaluated on the same held-out 300-review test set.
+
+For all models, review titles and full text were concatenated to preserve contextual information. To handle long reviews exceeding model token limits, a chunking strategy was applied. During training, long reviews were split into overlapping chunks using a sliding window approach. During inference, predictions were generated for each chunk and aggregated via probability averaging to produce a final review-level sentiment prediction.
+
+Performance was evaluated using standard classification metrics, with Macro F1 as the primary criterion due to class imbalance, and Accuracy and Weighted F1 as secondary measures. Among the evaluated models, \textit{cardiffnlp/twitter-roberta-base-sentiment} (pretrained) was selected for corpus-wide sentiment prediction. While the fine-tuned \textit{roberta-base} model achieved the highest Macro F1-score (0.6984), the selected model demonstrated superior overall balance, achieving the highest Accuracy (0.8300) and Weighted F1-score (0.8051), while maintaining competitive Macro F1 (0.6918). Additionally, the pretrained model avoids reliance on task-specific fine-tuning and offers greater reproducibility across environments. All models were evaluated under a consistent pipeline, ensuring fair comparison and reliable sentiment labels for downstream analysis.
+
+\begin{table*}[t]
+\caption{Sentiment Model Performance on Test Set ($n=300$)}
+\label{tab:sentiment_model_performance}
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{L{6.1cm}ccccc L{4.1cm}}
+\toprule
+\textbf{Candidate Model} & \textbf{Accuracy} & \textbf{Macro Precision} & \textbf{Macro Recall} & \textbf{Macro F1} & \textbf{Weighted F1} & \textbf{Selection Note} \\
+\midrule
+gosorio/robertaSentimentFT\_TripAdvisor & 0.7300 & 0.2433 & 0.3333 & 0.2813 & 0.6161 & Rejected (poor minority-class performance) \\
+cardiffnlp/twitter-roberta-base-sentiment (pretrained) & 0.8300 & 0.7420 & 0.6889 & 0.6918 & 0.8051 & Selected for corpus-wide prediction \\
+Fine-tuned Cardiff RoBERTa (700/300, chunked) & 0.7333 & 0.6531 & 0.7377 & 0.6768 & 0.7576 & Strong recall, lower overall stability \\
+Fine-tuned roberta-base (700/300, chunked) & 0.7767 & 0.6781 & 0.7234 & 0.6984 & 0.7801 & Highest Macro F1, slightly lower overall balance \\
+\bottomrule
+\end{tabular}%
+}
+\end{table*}
+
+\subsection{Sentiment Prediction and Analytical Variables}
+Using the selected sentiment model, a new categorical variable, \textit{Sentiment}, was generated for all reviews in the dataset. This variable represents the predicted polarity of each review based on the combined textual content of the title and review body. Afterwards, \textit{Title} and \textit{Text} columns were removed. To support subsequent statistical analysis, three core analytical variables were derived without additional predictive modeling:
+
+\begin{itemize}
+\item \textbf{Incongruent:} Incongruence (0/1) was defined by comparing \textit{Rating\_Class} and \textit{Sentiment}, with matching polarity treated as congruent and all other combinations as incongruent.
+\item \textbf{Pattern:} A six-category variable captures directional mismatches, enabling finer analysis beyond binary incongruence.
+\item \textbf{Reviewer\_Tier:} \textit{Reviewer\_Tier} was operationalized as an ordinal variable derived from \textit{User\_Contributions}. Given the highly right-skewed distribution of contribution counts (mean = 191.6, median = 54, max = 9010), a tiered categorization was adopted: \textit{Novice (0--5)}, \textit{Casual (6--20)}, \textit{Active (21--100)}, and \textit{Expert (101+)}.
+\end{itemize}
+
+This discretization produced a balanced representation across tiers (21--100: 37.2\%, 101+: 35.0\%, 6--20: 19.7\%, 0--5: 8.0\%), enabling stable statistical comparisons while preserving the ordinal structure of reviewer expertise. In addition, continuous variables, specifically \textit{Review\_Length} and \textit{Review\_Delay\_Days}, were log-transformed using $\log(1+x)$ to mitigate right-skewness and improve suitability for statistical modeling. All variables were computed deterministically from the processed dataset to ensure reproducibility. \textit{User\_Contributions} was dropped afterwards.
+
+\subsection{Statistical Procedures and Model Validation}
+The final phase integrates statistical testing, predictive modeling, and model interpretation to validate the analytical framework and identify key drivers of sentiment-rating incongruence. \textit{Location\_Name} and \textit{Located\_City} were excluded due to high cardinality and redundancy with higher-level spatial features (\textit{Province, Location\_Type}). \textit{User\_Country} and \textit{User\_Locale} were omitted due to sparsity and inconsistent formatting. \textit{Published\_Date}, \textit{Travel\_Date}, and \textit{Published\_Year} were not directly modeled because their information is captured through derived temporal variables (\textit{Travel\_Year}, \textit{Review\_Delay}), while \textit{Title\_Length} was excluded due to its high correlation with \textit{Review\_Length}.
+
+\subsubsection{Exploratory and Association Testing}
+Overall incongruence prevalence is computed as a proportion of total reviews. Associations between incongruence and categorical variables (\textit{Location\_Type}, \textit{Reviewer\_Tier}, \textit{Province}) are evaluated using the Chi-square test of independence. Effect sizes are reported using Cramer's V, and for \textit{Location\_Type} odds ratios are calculated relative to a reference category (National Parks). National Parks were chosen as the reference category due to their lowest observed incongruence rate and relatively uniform evaluation context.
+
+For continuous variables (\textit{Review\_Length}, \textit{Review\_Delay}, \textit{Travel\_Year}), group differences between congruent and incongruent reviews are assessed using the Mann-Whitney U test due to non-normality. To control for multiple hypothesis testing, all p-values are adjusted using the Benjamini-Hochberg False Discovery Rate (FDR) procedure, with a significance threshold of $q<0.05$.
+
+\subsubsection{Predictive Modeling Framework}
+The target variable for all predictive models is binary Incongruence (0 = congruent, 1 = incongruent), as the primary objective is to identify and explain factors that lead to sentiment-rating mismatch. The variables \textit{Sentiment}, \textit{Rating}, and \textit{Rating\_Class} were excluded from the predictor set because they are directly used to construct the target variable.
+
+The predictor set used three groups of dummy variables: \textit{Location\_Type}, \textit{Province}, and \textit{Reviewer\_Tier}. It also included temporal terms (\textit{Travel\_Year\_c}, \textit{Travel\_Year\_c2}) and review characteristics (\textit{log\_review\_length}, \textit{log\_review\_delay}). Categorical predictors were dummy encoded with National Parks, Southern Province, and Novice (0--5) as reference categories. Logistic Regression (Model 1A) was used as a baseline predictive model, while a statsmodels logit model (Model 1B) provided statistical inference via odds ratios and confidence intervals. A Random Forest (Model 2) captured nonlinear effects, and SHAP was applied for feature-level interpretation.
+
+The logit model expresses results in terms of odds ratios (OR). OR greater than 1 indicates higher odds of incongruence compared to the baseline category, while OR less than 1 indicates lower odds.
+
+\begin{table*}[t]
+\caption{Summary of Methodology}
+\label{tab:summary_methodology}
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{L{3.0cm}L{6.3cm}L{4.0cm}}
 \toprule
 \textbf{Phase} & \textbf{Applied Methods} & \textbf{Output / Purpose} \\
 \midrule
-Dataset \& Preprocessing & Missing value removal, duplicate detection, rule-based string parsing, date parsing & Cleaned dataset, temporal metadata \\
-Location \& Origin Inference & Dictionary-based mapping (\texttt{pycountry}), rule-based geocoding & Normalized province, district, country, and tourism region \\
-Feature Engineering & Descriptive statistics, length/score bucketing, ranking metrics & Behavioral, temporal, location, and destination performance features \\
-NLP \& Sentiment Analysis & Transformer ensemble (RoBERTa, SieBERT, BERTweet), DistilRoBERTa emotion modeling & Sentiment scores, emotion labels, sentiment-rating gap \\
-Topic Modeling & BERTopic with Sentence Transformers (all-MiniLM-L6-v2) & Dominant topics and review themes \\
-Validation \& Analysis & RoBERTa Fine-tuning, Chi-square, Mann-Whitney U, Logistic Regression, SVM & Validation of accuracy (F1), significance testing, and predictive modeling \\
+Dataset \& Preprocessing & Cleaning, date parsing, location normalization & Structured dataset with temporal and spatial features \\
+Feature Engineering & Review\_Length, Review\_Delay, Rating\_Class, Reviewer Expertise tiers & Analytical variables for modeling \\
+Sentiment Prediction & Pretrained RoBERTa (cardiffnlp) with chunked inference & Sentiment labels for all reviews \\
+Incongruence Construction & Rating vs Sentiment comparison & Binary incongruence + directional patterns \\
+Statistical Analysis & Chi-square, Cramer's V, Mann-Whitney U, FDR correction & Significance testing and effect sizes \\
+Predictive Modeling & Logistic Regression (CV + test split), Random Forest & Predictive performance and robustness \\
+Model Interpretation & SHAP analysis & Global and local feature importance insights \\
 \bottomrule
-\end{tabular}
+\end{tabular}%
 }
-\end{table}
+\end{table*}
 
 \section{Results}
-\subsection{RQ1 -- Prevalence and Six-Pattern Typology}
-Of 16,156 TripAdvisor attraction reviews, 3,005 are incongruent, establishing an overall prevalence of 18.6\% -- approximately one in every five reviews. Table~\ref{tab:rq1_patterns} presents the complete directional typology derived from all six populated off-diagonal cells of the $3\times3$ Rating\_Class $\times$ Sentiment cross-tabulation.
+\subsection{Prevalence and Six-Pattern Typology}
+Of 16,156 Tourism and Travel attraction reviews, 3,005 are incongruent, establishing an overall prevalence of 18.6\%, approximately one in every five reviews.
 
 \begin{table}[htbp]
-\caption{Six Directional Incongruence Patterns ($n=3{,}005$ incongruent reviews)}
-\label{tab:rq1_patterns}
+\caption{Six Directional Incongruence Patterns ($n=3,005$ incongruent reviews)}
+\label{tab:six_patterns}
 \centering
 \resizebox{\columnwidth}{!}{%
-\begin{tabular}{lllrcc}
+\begin{tabular}{clllcc}
 \toprule
-\# & Pattern & Rating & Sentiment & $n$ & \% of Incongruent / All \\
+\# & Pattern & Rating & Sentiment & $n$ & \% of Incongruent / \% of All \\
 \midrule
-1 & Conservative Rater & Neutral (3-star) & POSITIVE & 1155 & 38.4 / 7.1 \\
-2 & Obligatory 5-Star & Positive (4--5-star) & NEUTRAL & 851 & 28.3 / 5.3 \\
-3 & Frustrated Neutral & Neutral (3-star) & NEGATIVE & 509 & 16.9 / 3.2 \\
-4 & Polite Inflator & Positive (4--5-star) & NEGATIVE & 219 & 7.3 / 1.4 \\
-5 & Harsh Deflator & Negative (1--2-star) & NEUTRAL & 160 & 5.3 / 1.0 \\
-6 & Punitive Rater & Negative (1--2-star) & POSITIVE & 111 & 3.7 / 0.7 \\
+1 & Conservative Rater & Neutral (3$\star$) & POSITIVE & 1,155 & 38.4\% / 7.1\% \\
+2 & Obligatory 5-Star & Positive (4--5$\star$) & NEUTRAL & 851 & 28.3\% / 5.3\% \\
+3 & Frustrated Neutral & Neutral (3$\star$) & NEGATIVE & 509 & 16.9\% / 3.2\% \\
+4 & Polite Inflator & Positive (4--5$\star$) & NEGATIVE & 219 & 7.3\% / 1.4\% \\
+5 & Harsh Deflator & Negative (1--2$\star$) & NEUTRAL & 160 & 5.3\% / 1.0\% \\
+6 & Punitive Rater & Negative (1--2$\star$) & POSITIVE & 111 & 3.7\% / 0.7\% \\
 \bottomrule
-\end{tabular}
+\end{tabular}%
 }
 \end{table}
 
-The Conservative Rater is the dominant pattern at 38.4\% of all incongruent reviews: these reviewers write positively about their visit yet assign only three stars. The Obligatory 5-Star (28.3\%) captures the complementary bias: high star ratings accompanied by restrained, neutral written text. Together, these two patterns account for 66.7\% of all incongruent reviews, establishing that incongruence is directionally structured and concentrated in two dominant behavioural modes rather than spread evenly across mismatch types. Patterns 3 and 4 -- Frustrated Neutral and Polite Inflator -- together contribute 24.2\% of incongruent reviews and share a common structure: negative written sentiment paired with a non-negative star. Both are consistent with face-saving behaviour toward publicly rated local attractions.
+The Conservative Rater is the dominant pattern at 38.4\% of all incongruent reviews. The Obligatory 5-Star pattern contributes 28.3\%. Together, these two patterns account for 66.7\% of all incongruent reviews, establishing that incongruence is directionally structured and concentrated in two dominant behavioural modes.
 
-\subsection{RQ2 -- Variation Across Venue Types}
-Incongruence rates vary significantly across the 11 attraction categories ($\chi^2(10)=125.85$, $p<0.001$, Cramer's $V=0.088$). Although the Cramer's $V$ effect size is small, the association is statistically robust and reveals a theoretically coherent venue-type gradient, presented in Table~\ref{tab:rq2_location}.
+\subsection{Variation Across Venue Types}
+Incongruence rates vary significantly across the 11 attraction categories ($\chi^2(10)=125.85$, $p<0.001$, Cramer's V = 0.088). Although the Cramer's V effect size is small, the association is statistically robust and reveals a coherent venue-type gradient.
 
 \begin{table}[htbp]
 \caption{Incongruence Rate by Venue Type, Ranked (Reference: National Parks)}
-\label{tab:rq2_location}
+\label{tab:venue_type_incongruence}
 \centering
 \resizebox{\columnwidth}{!}{%
 \begin{tabular}{lcc}
 \toprule
-Venue Type & Incongruence Rate (\%) & OR vs National Parks \\
+Venue Type & Incongruence Rate & OR vs. National Parks \\
 \midrule
-Museums & 26.3 & 2.43 \\
-Beaches & 23.1 & 1.98 \\
-Religious Sites & 22.4 & 1.87 \\
-Bodies of Water & 21.8 & 1.80 \\
-Gardens & 21.2 & 1.74 \\
-Farms & 20.9 & 1.71 \\
-Waterfalls & 19.7 & 1.58 \\
-Nature \& Wildlife Areas & 18.3 & 1.43 \\
-Zoological Gardens & 17.6 & 1.35 \\
-Historic Sites & 16.4 & 1.23 \\
-National Parks & 12.8 & 1.00 (ref) \\
+Museums & 26.3\% & 2.43 \\
+Beaches & 19.0\% & 1.60 \\
+Religious Sites & 19.8\% & 1.68 \\
+Bodies of Water & 23.7\% & 1.88 \\
+Gardens & 17.4\% & 1.43 \\
+Farms & 16.6\% & 1.35 \\
+Waterfalls & 18.0\% & 1.50 \\
+Nature \& Wildlife Areas & 1.0\% & 1.43 \\
+Zoological Gardens & 21.6\% & 1.88 \\
+Historic Sites & 15.6\% & 1.26 \\
+National Parks & 12.8\% & 1.00 (ref) \\
 \bottomrule
-\end{tabular}
+\end{tabular}%
 }
 \end{table}
 
-Museums carry 2.43 times the incongruence odds of National Parks -- the largest venue-type differential in the dataset. The gradient runs from 12.8\% at National Parks to 26.3\% at Museums, a 13.5 percentage-point spread across venue types that is too large and too structured to reflect sampling variation.
+Museums carry 2.43 times the incongruence odds of National Parks, the largest venue-type differential in the dataset. The gradient runs from 12.8\% at National Parks to 26.3\% at Museums, a 13.5 percentage-point spread across venue types.
 
-\subsection{RQ3 -- Predictors of Incongruence}
-Bivariate screening with FDR correction. Table~\ref{tab:rq3_bivariate_fdr} presents all five bivariate tests with both raw and FDR-adjusted $q$-values. Four of five predictors survive correction. Review delay is the sole non-significant predictor ($q=0.750$), providing no support for the hypothesis that timing between visit and writing drives incongruence.
+\subsection{Predictors of Incongruence}
+\textbf{Bivariate screening with FDR correction.} Table~\ref{tab:bivariate_fdr} presents all five bivariate tests with both raw and FDR-adjusted $q$-values. Four of five predictors survive correction. Review delay is the sole non-significant predictor ($q=0.750$).
 
 \begin{table}[htbp]
 \caption{Bivariate Predictor Screening with Benjamini-Hochberg FDR Correction}
-\label{tab:rq3_bivariate_fdr}
+\label{tab:bivariate_fdr}
 \centering
 \resizebox{\columnwidth}{!}{%
-\begin{tabular}{lccc}
+\begin{tabular}{lcccc}
 \toprule
-Predictor & Test Statistic & Raw $p$ / $q$ & Retained \\
+Predictor & Test Statistic & Raw $p$ & $q$-value & Retained \\
 \midrule
-Reviewer Tier & $\chi^2(3)=85.99$ & $1.59\times10^{-18}$ / $7.94\times10^{-18}$ & Yes \\
-Province & $\chi^2(7)=49.10$ & $2.17\times10^{-8}$ / $3.62\times10^{-8}$ & Yes \\
-Travel Year & Mann-Whitney & $7.73\times10^{-11}$ / $1.93\times10^{-10}$ & Yes \\
-Review Length & Mann-Whitney & 0.0011 / 0.0014 & Yes \\
-Review Delay & Mann-Whitney & 0.7503 / 0.7503 & No \\
+Reviewer Tier & $\chi^2(3)=85.99$ & $1.59\times10^{-18}$ & $7.94\times10^{-18}$ & Yes \\
+Province & $\chi^2(7)=49.10$ & $2.17\times10^{-8}$ & $3.62\times10^{-8}$ & Yes \\
+Travel Year & Mann-Whitney & $7.73\times10^{-11}$ & $1.93\times10^{-10}$ & Yes \\
+Review Length & Mann-Whitney & 0.0011 & 0.0014 & Yes \\
+Review Delay & Mann-Whitney & 0.7503 & 0.7503 & No \\
 \bottomrule
-\end{tabular}
+\end{tabular}%
 }
 \end{table}
 
-Expert reviewers (101+ contributions) are 1.97 times more likely to produce incongruent reviews than Novice reviewers (0--5 contributions) at the bivariate level. Incongruent reviews are systematically longer at the median (296 characters) compared to congruent reviews (279 characters), reflecting that elaborated text creates more surface area for star-text divergence to emerge.
+Expert reviewers (101+ contributions) are 1.97 times more likely to produce incongruent reviews than Novice reviewers (0--5 contributions) at the bivariate level. Incongruent reviews are longer at the median (296 characters) compared to congruent reviews (279 characters).
 
-Model 1A -- LR discrimination. The balanced logistic regression with 5-fold stratified CV achieved a mean CV AUC of 0.5890 $\pm$ 0.0093 and a held-out test AUC of 0.5840. The low CV standard deviation (0.0093) confirms stable discrimination across folds.
+A Variance Inflation Factor (VIF) analysis of the full design matrix confirms no multicollinearity concerns (max VIF = 3.663, mean VIF = 2.186), validating simultaneous use of retained predictors in Model 1B.
 
-Model 1B -- Explanatory logit. Fitted on the full dataset, the logit produced a McFadden's pseudo-$R^2$ of 0.0203, indicating a modest but genuine improvement over the null model. Nineteen predictors are statistically significant at $p<0.05$: Museum, Beach, Religious Site, Body of Water, Waterfall, Nature and Wildlife, and Zoological Garden dummies relative to National Parks; multiple province indicators; reviewer tier; log review length; and centred travel year. Five predictors are non-significant: Gardens, Farms, Historic Sites, Eastern Province, and the quadratic travel year term -- indicating no evidence of a curvilinear temporal trend in incongruence beyond the linear year-on-year drift.
+\subsection{Model-Based Analysis and Interpretation}
+\subsubsection{Model 1A: Logistic Regression (Baseline Discrimination)}
+A class-balanced logistic regression model was trained using a leakage-free pipeline with five-fold stratified cross-validation. The model achieves a mean cross-validated AUC of $0.5890 \pm 0.0093$ and a held-out test AUC of 0.5840. This indicates modest but stable discriminative performance and serves as the baseline reference for linear predictive capacity.
 
-Model 2 -- SVM nonlinearity test. The tuned RBF SVM achieved a mean CV AUC of 0.6098 and a held-out test AUC of 0.6205 -- an improvement of $+0.0365$ over the logistic regression on the identical test set. Table~\ref{tab:model_perf_summary} consolidates all model performance metrics.
+\subsubsection{Model 1B: Explanatory Logit (Primary Inference Model)}
+To identify statistically significant predictors of incongruence, a logistic regression model was fitted using \textit{statsmodels}. A total of 19 predictors are statistically significant ($p<0.05$), and the model yields a McFadden's pseudo-$R^2$ of 0.0203.
 
-\begin{table}[htbp]
-\caption{Model Performance Summary}
-\label{tab:model_perf_summary}
+\textbf{Venue type effects:} Compared to National Parks, Museums (OR = 2.386), Beaches (OR = 2.171), Bodies of Water (OR = 2.022), and Religious Sites (OR = 1.492) show significantly higher odds of incongruence.
+
+\textbf{Reviewer expertise:} Expert users (OR = 1.740), Active users (OR = 1.522), and Casual users (OR = 1.243) are each significantly more likely to produce incongruent reviews relative to Novices.
+
+\textbf{Geographic effects:} Northern Province (OR = 1.787), Sabaragamuwa (OR = 1.641), North Central (OR = 1.601), and Central Province (OR = 1.586) show elevated odds relative to the reference province.
+
+\textbf{Review characteristics:} Review length (OR = 1.219) has a significant positive association. Review delay (OR = 0.960) is weak and marginal.
+
+\textbf{Temporal trend:} Travel year (OR = 0.946) is significant, while the quadratic term is non-significant.
+
+\textbf{Non-significant predictors:} Gardens, Farms, Historic Sites, Eastern Province, and the quadratic time term.
+
+\subsubsection{Model 2: Random Forest (Nonlinear Structure Assessment)}
+To evaluate nonlinear relationships and interactions, a Random Forest model was trained on the same split. It achieves a mean CV AUC of 0.6023 and a test AUC of 0.6095, improving by +0.0256 over the logistic baseline. This indicates nonlinear and interaction effects are present but not dominant.
+
+\subsubsection{SHAP Analysis: Interpreting Nonlinear Behaviour}
+To interpret the nonlinear structure captured by the Random Forest, SHAP (SHapley Additive exPlanations) analysis was applied.
+
+Feature importance based on mean absolute SHAP values identifies review length (0.0306), expert reviewer tier (0.0273), travel year (0.0219), review delay (0.0203), and museums (0.0182) as the most influential predictors.
+
+The SHAP summary plot (Figure~\ref{fig:shap_analysis}(b)) provides additional behavioural insights beyond feature ranking. In particular, review length exhibits a strong monotonic effect, where higher values (longer reviews) consistently produce positive SHAP contributions, indicating an increased likelihood of incongruence. Similarly, expert reviewers show a clear directional pattern, with high-expertise users contributing positively to incongruence predictions, while less experienced users contribute negatively.
+
+Temporal effects are also evident: earlier travel years are associated with higher SHAP values, while more recent years shift predictions toward lower incongruence, confirming a decreasing trend over time consistent with the logit model.
+
+Venue-specific effects display nonlinear threshold behaviour. For example, the presence of a museum (binary feature) leads to a sharp increase in SHAP values, indicating a strong context-specific impact rather than a gradual effect.
+
+Additionally, the spread of SHAP values for key features such as review length and reviewer tier indicates interaction effects, where the impact of a feature varies depending on other contextual variables. These nonlinear and interaction patterns explain the modest performance improvement of the Random Forest over the logistic regression.
+
+Importantly, SHAP complements rather than replaces the logit model: The logit establishes statistical significance and effect size, while SHAP reveals how these effects manifest in nonlinear, context-dependent behavioural patterns.
+
+\begin{figure*}[!t]
 \centering
-\resizebox{\columnwidth}{!}{%
-\begin{tabular}{lccc}
-\toprule
-Model & Role & CV AUC (mean $\pm$ std) & Test AUC \\
-\midrule
-Model 1A -- LR (balanced, CV-tuned) & Discrimination & $0.5890 \pm 0.0093$ & 0.5840 \\
-Model 1B -- Logit (statsmodels) & Coefficient inference & -- & Pseudo-$R^2$ = 0.020 \\
-Model 2 -- SVM RBF (tuned) & Nonlinearity test & 0.6098 & 0.6205 \\
-AUC delta (SVM -- LR) & Nonlinear gain & -- & $+0.0365$ \\
-\bottomrule
-\end{tabular}
-}
-\end{table}
+\begin{minipage}[t]{0.49\textwidth}
+\centering
+\includegraphics[width=\linewidth]{fig7a_shap_importance.png}
+\\[-1mm]
+\footnotesize (a) SHAP feature importance
+\end{minipage}\hfill
+\begin{minipage}[t]{0.49\textwidth}
+\centering
+\includegraphics[width=\linewidth]{fig7b_shap_summary.png}
+\\[-1mm]
+\footnotesize (b) SHAP summary plot
+\end{minipage}
+\caption{SHAP-based interpretation of the Random Forest model.}
+\label{fig:shap_analysis}
+\end{figure*}
 
 \section{Discussion}
-\subsection{The Scale of Incongruence Reflects Contextual Structure, Not Data Noise}
-An 18.6\% incongruence rate -- one false label in every five reviews -- is substantially higher than the 6\% documented for European restaurant booking platforms and exceeds the expectation from general product review corpora. This elevation is not a dataset artefact. Three structural features of Sri Lanka's attraction landscape converge to produce it. First, a sacred religious heritage circuit -- temples, dagobas, pilgrimage sites -- creates strong social pressure to award high stars regardless of practical visit conditions, generating Obligatory 5-Star patterns. Second, a colonial-era museum infrastructure requires visitors to simultaneously evaluate curation quality, access infrastructure, artefact preservation, crowd management, and historical significance -- five dimensions that a single star cannot encode, generating Conservative Rater patterns. Third, an internationally active reviewer base on TripAdvisor has calibrated its written evaluations to global standards while its star-assigning habits remain conservative relative to those benchmarks. NLP pipelines treating Sri Lankan attraction reviews as reliably star-labelled training data carry approximately one false label in every five records -- and that error is not uniformly distributed.
+\subsection{The Scale of Incongruence Reflects Structured Context, Not Random Noise}
+An overall incongruence rate of 18.6\%, approximately one in five reviews, indicates substantial mismatch between textual sentiment and star ratings. This rate is unlikely to be random misalignment alone and suggests underlying structural and contextual factors.
 
-\subsection{The Conservative Rater Is the Primary Mechanism, and It Is Reviewer-Driven}
-The concentration of 38.4\% of all incongruence in the Conservative Rater pattern -- positive text, neutral star -- is the study's most interpretively significant finding for the tourism NLP domain. This is a systematic directional bias: reviewers who genuinely enjoyed their visit write appreciatively but suppress their numerical score, producing a false Neutral label on functionally positive sentiment data. The supplementary tier-by-pattern analysis confirms that the Conservative Rater proportion increases monotonically from Novice to Expert reviewer tiers -- a pattern consistent with evaluative calibration. As reviewers accumulate cross-venue experience, their written assessments benchmark against an increasingly wide global reference class while their star assignments grow more conservative. An Expert reviewer at Sigiriya who has visited Machu Picchu and Angkor Wat writes warmly about the rock fortress and gives it three stars. The text says positive; the star says neutral; any downstream model trusting that label is mislabelled. This is not the reviewer behaving irrationally -- it is the star scale failing to encode the distinction between "excellent given its context" and "excellent by global standards."
+Several characteristics of Sri Lanka's tourism landscape provide plausible explanations. Religious and cultural heritage sites may induce social or normative pressure to assign high ratings even when textual experience is mixed, contributing to Obligatory 5-Star patterns. Museum and cultural venues require multidimensional evaluation that cannot be fully represented by a single scalar rating. A globally experienced reviewer base may also lead to divergence between detailed textual evaluation and conservative rating behaviour.
 
-\subsection{Venue Type Is a Structural Moderator of Label Reliability}
-The museum OR of 2.43 is the most operationally actionable finding in this study. Museum reviews in Sri Lanka are 2.43 times more likely to carry a false sentiment label than national park reviews -- not because museum visitors are more dishonest, but because the evaluative task is categorically more complex. A wildlife safari visit is judged on one dominant criterion: wildlife encounter quality. Either the leopard appears or it does not. A museum visit requires simultaneous evaluation across five partially independent dimensions. When even a genuinely satisfied museum visitor must collapse those five evaluations into a single integer, the star that emerges will often fail to represent the positive sentiment that their text expresses directly. Aggregated museum star scores therefore systematically underestimate visitor satisfaction at these venues. The religious site finding (OR = 1.87) operates through the opposite mechanism: Obligatory 5-Star patterns concentrate at sacred venues where social reverence for sites such as the Temple of the Tooth or Sri Pada inflates the star rating independently of practical experience. In both cases, the source of the incongruence is venue-structural, not reviewer-idiosyncratic.
+These findings establish that sentiment-rating incongruence is not random noise but a structured, context-dependent phenomenon embedded within the review ecosystem.
 
-\subsection{The SVM Gap Identifies Nonlinear Reviewer-Venue Interactions}
-A logistic regression model assumes additive, independent predictor effects on the log-odds of incongruence. The SVM improvement of $+0.0365$ AUC on the identical test set demonstrates that this assumption is insufficient: the data contain nonlinear structure that a linear model cannot capture. The most theoretically plausible source is the interaction between reviewer tier and venue type. An Expert reviewer at a museum is not simply "more likely to be incongruent than a Novice" added to "more likely to be incongruent than a national park visitor" -- the combination amplifies the effect in ways that exceed the sum of the linear components. This does not disqualify the logistic regression as an explanatory tool; it contextualises the LR AUC as a deliberate linearity constraint chosen for interpretability, while the SVM quantifies what that constraint costs in discriminative terms.
+\subsection{Conservative Rater Behaviour as the Dominant Mechanism}
+The Conservative Rater pattern, positive textual sentiment paired with moderate ratings, accounts for 38.4\% of all incongruent reviews and is the dominant mismatch mechanism.
 
-\subsection{Review Delay Is an Informative Null}
-The complete absence of a review delay effect -- $q=0.750$, non-significant after FDR correction, consistent in both bivariate and multivariate analysis -- eliminates the most intuitive alternative explanation for incongruence. If emotional memory decay were driving incongruence, reviewers who wrote long after their visit would show higher mismatch rates as their affective recall faded while their numerical impression remained anchored. The data show no such gradient. Incongruence is not when a reviewer writes -- it is who the reviewer is and what type of venue they visited. This finding redirects theoretical attention firmly toward structural reviewer-venue characteristics and away from psychological timing processes, usefully narrowing the explanatory space for future work.
+This reflects a directional bias where reviewers express satisfaction in text but assign restrained stars. As a result, effectively positive experiences are labelled as neutral in structured datasets. Across reviewer tiers, Conservative Rater prevalence increases from 27.4\% among novices to 40.4\% among experts, consistent with a calibration-based behavioural mechanism.
+
+\subsection{Venue Type as a Structural Moderator of Label Reliability}
+Venue type emerges as a key structural determinant of incongruence. Relative to National Parks, museums show markedly higher odds (OR = 2.386), with elevated effects for beaches and bodies of water. This likely reflects differences in evaluative complexity, where multidimensional experiences are compressed into single star scores.
+
+Conversely, religious sites may show elevated incongruence through social or cultural expectations that inflate ratings independently of textual detail. Label reliability is therefore not uniform across attraction types.
+
+\subsection{Complementary Roles of Linear and Nonlinear Models}
+The multi-model framework shows that linear and nonlinear approaches provide complementary evidence.
+
+Model 1A provides stable linear discrimination (test AUC = 0.584). Model 1B identifies 19 statistically significant predictors with interpretable effect sizes. Model 2 improves test AUC to 0.6095, indicating nonlinear and interaction effects. The modest gain suggests nonlinear structure is present but secondary.
+
+The overall AUC range ($\approx$ 0.58--0.61) should be interpreted as evidence that incongruence is systematic but only partially explainable using observable features, with remaining variation likely tied to latent behavioural factors.
+
+SHAP analysis clarifies this by revealing nonlinear, context-dependent contributions for reviewer expertise, review length, and venue type. These findings complement, not contradict, the logit model.
+
+\subsection{Review Delay as an Informative Null Result}
+The absence of a significant review delay effect across bivariate tests, multivariate modeling, and SHAP ranking constrains interpretation. If memory decay were central, delayed reviews would show higher mismatch rates. No such pattern is observed.
+
+This null result helps rule out temporal delay as a primary driver, narrowing the explanatory space toward reviewer characteristics and context.
+
+\subsection{Behavioural Differentiation Across Reviewer Expertise}
+A deeper typology view reveals systematic differences across reviewer expertise levels. Conservative Rater patterns increase from novice to expert users, while emotionally extreme patterns such as Harsh Deflator decline with expertise.
+
+These findings reinforce a calibration-based interpretation and indicate that reviewer expertise fundamentally shapes how sentiment is encoded across textual and numerical channels.
+
+\section{Limitations}
+This study has several limitations.
+
+First, the analysis is based on a single dataset of tourism reviews from Sri Lanka. While this context is valuable, findings may not generalize directly to other regions or mature tourism markets.
+
+Second, the study relies primarily on structured features and does not incorporate deeper linguistic representations beyond sentiment classification.
+
+Third, incongruence identification depends on text-derived sentiment labels, which are themselves subject to model error.
+
+Fourth, modest predictive performance (AUC $\approx$ 0.58--0.61) indicates substantial unexplained variance, likely due to latent behavioural or contextual factors not observed in the dataset.
+
+Finally, the study is observational and cannot establish causal relationships. Interpretations are based on statistical association and behavioural patterning.
 
 \section{Conclusion}
-This study provides the first systematic measurement and structural explanation of sentiment-rating incongruence in tourism attraction reviews from an emerging destination. Across 16,156 TripAdvisor reviews of Sri Lanka attractions spanning 2010--2023, 18.6\% of records carry a directional mismatch between star rating and text-derived sentiment label. A complete six-pattern typology characterises the full structure of incongruence: the Conservative Rater (38.4\%) and Obligatory 5-Star (28.3\%) dominate, accounting for two-thirds of all mismatches, while Frustrated Neutral and Polite Inflator patterns together document systematic face-saving behaviour toward publicly rated local attractions.
+This study demonstrates that sentiment-rating incongruence in tourism reviews is not random noise, but a structured and systematically occurring phenomenon shaped by reviewer behaviour and contextual evaluation complexity. By combining statistical inference, predictive modeling, and interpretable machine learning, the analysis shows that mismatch arises through identifiable mechanisms such as reviewer calibration, multidimensional evaluation constraints, and context-specific rating norms.
 
-The museum-national park OR of 2.43 is the most practically actionable result: museum reviews in Sri Lanka are 2.43 times noisier as sentiment training labels than national park reviews, driven by the evaluative complexity of multi-dimensional cultural venues. After FDR correction, reviewer tier, review length, province, and travel year are all significant independent predictors; review delay is not, ruling out emotional timing as a mechanism. The explanatory logit identifies 19 significant predictors (McFadden pseudo-$R^2$ = 0.020). The SVM nonlinearity test (test AUC = 0.6205, delta = $+0.0365$ over LR) confirms that reviewer-venue interaction effects contribute structure beyond linear model capacity.
+The findings establish that while incongruence is partially explainable through observable structural factors, it remains only weakly predictable, reflecting the inherently subjective and latent nature of human evaluative behaviour. This duality, structured yet not fully observable, highlights a fundamental limitation in treating star ratings as reliable ground truth for sentiment modeling.
 
-For NLP researchers, the implication is precise: star-based training labels in Sri Lanka attraction reviews carry an 18.6\% directional error rate that is non-uniformly distributed -- museum labels are 2.43 times noisier than national park labels, and Expert reviewer labels are nearly twice as likely to be false as Novice labels. For tourism platforms, the face-saving signal in Frustrated Neutral and Polite Inflator patterns means that negative visitor experience is systematically underrepresented in aggregated star scores. Future work should extend this framework to other South and South-East Asian emerging destinations and test whether cultural dimensions of face-concern behaviour explain cross-national variation in social courtesy bias patterns -- a question that the contextual richness of this dataset cannot answer alone. This study reframes rating-text inconsistency not as noise to be corrected, but as a structured behavioral signal that reveals how users encode experience across numeric and textual channels.
+For NLP systems, the presence of systematic and non-uniform label distortion calls for caution when using star ratings as supervision signals. For tourism platforms, aggregated ratings may underrepresent true visitor sentiment, particularly in contexts shaped by social norms or evaluative complexity.
 
-\section*{Acknowledgment}
-This research was conducted as part of undergraduate research in data science. Replace this section with funding and institutional acknowledgments as applicable.
+More broadly, this study reframes rating-text inconsistency as a meaningful behavioural signal rather than an error to be eliminated, opening new directions for research at the intersection of human behaviour, cultural context, and machine learning. Future work should extend this framework across diverse geographic and cultural settings to better understand how social norms and evaluative practices influence the reliability of user-generated data.
 
 \bibliographystyle{IEEEtran}
 \bibliography{references}
